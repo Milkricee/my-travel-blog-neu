@@ -29,10 +29,10 @@ export default function Header() {
           <button className="hover:underline">Afrika</button>
           <ul className="absolute hidden group-hover:block bg-white text-black py-2 rounded shadow-lg">
             <li className="px-4 py-1 hover:bg-gray-200">
-              <Link href="/afrika/marokko">Marokko</Link>
+              <Link href="/marokko">Marokko</Link>
             </li>
             <li className="px-4 py-1 hover:bg-gray-200">
-              <Link href="/afrika/senegal">Senegal</Link>
+              <Link href="/senegal">Senegal</Link>
             </li>
           </ul>
         </div>
@@ -40,10 +40,10 @@ export default function Header() {
           <button className="hover:underline">Asien</button>
           <ul className="absolute hidden group-hover:block bg-white text-black py-2 rounded shadow-lg">
             <li className="px-4 py-1 hover:bg-gray-200">
-              <Link href="/asien/philippinen">Philippinen</Link>
+              <Link href="/philippinen">Philippinen</Link>
             </li>
             <li className="px-4 py-1 hover:bg-gray-200">
-              <Link href="/asien/vietnam">Vietnam</Link>
+              <Link href="/vietnam">Vietnam</Link>
             </li>
           </ul>
         </div>
@@ -51,10 +51,10 @@ export default function Header() {
           <button className="hover:underline">Amerika</button>
           <ul className="absolute hidden group-hover:block bg-white text-black py-2 rounded shadow-lg">
             <li className="px-4 py-1 hover:bg-gray-200">
-              <Link href="/amerika/nicaragua">Nicaragua</Link>
+              <Link href="/nicaragua">Nicaragua</Link>
             </li>
             <li className="px-4 py-1 hover:bg-gray-200">
-              <Link href="/amerika/kolumbien">Kolumbien</Link>
+              <Link href="/kolumbien">Kolumbien</Link>
             </li>
           </ul>
         </div>

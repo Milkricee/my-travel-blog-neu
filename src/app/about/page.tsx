@@ -18,9 +18,8 @@ export default function About() {
                 </p>
                 <p className="text-lg mb-4">
                     Ich werde hier meine Reiseerfahrungen teilen und eventuell Tipps, Tricks und potentielle 
-                    Routen für das jeweilige Land teilen. 
-                  <strong> <br/>Hier mein letzter Trip nach 
-                    <a href="/afrika/marokko" className="text-blue-400 underline hover:text-blue-500"> Marokko</a>.</strong> 
+                    Routen für das jeweilige Land teilen. Hier mein letzter Trip nach 
+                    <a href="/afrika/marokko" className="text-blue-400 underline hover:text-blue-500"> Marokko</a>.
                 </p>
                 <p className="text-lg mb-4">
                     Wenn ich einigen wenigen Besuchern mit meinen Berichten und Erfahrungen weiterhelfen konnte, 
