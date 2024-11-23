@@ -7,7 +7,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gray-800 text-white py-4 px-8 flex items-center justify-between">
+    <header className="bg-gray-800 text-white py-4 px-8 flex items-center justify-between z-20 relative">
       {/* Linke Seite: Logo und Titel */}
       <div className="flex items-center gap-4">
         <Image src="/imgs/cat.png" alt="Logo" width={60} height={60} />

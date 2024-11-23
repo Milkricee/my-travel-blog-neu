@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Footer from "./components/Footer"; // Importiere den Footer
-import Header from "./components/Header"; // Importiere den Header
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -26,13 +26,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-full flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          margin: 0,
+          padding: 0,
+          overflowX: "hidden", // Verhindert horizontales Scrollen
+          background: "none", // Entfernt Hintergrundfarbe
+        }}
       >
-        <Header /> {/* Header oben */}
-        <main className="flex-grow">{children}</main> {/* Hauptinhalt */}
-        <Footer /> {/* Footer unten */}
+        <Header />
+        <main style={{ minHeight: "100vh", position: "relative" }}>{children}</main>
+        <Footer />
       </body>
     </html>
   );

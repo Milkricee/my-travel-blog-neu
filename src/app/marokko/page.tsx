@@ -170,9 +170,9 @@ export default function Marokko() {
                 </div>
             )}
 
-            {/* Highlights */}
+            {/* Meine Route */}
             <div id="highlights" className="mt-12">
-                <h2 className="text-2xl font-bold mb-4">Highlights</h2>
+                <h2 className="text-2xl font-bold mb-4">Meine Route</h2>
                 <ul className="list-disc pl-6">
                     <li className="mb-2">Die geschäftigen Märkte und farbenfrohen Souks in Marrakesch.</li>
                     <li className="mb-2">Eine Wanderung durch das Atlasgebirge – atemberaubende Aussichten!</li>
