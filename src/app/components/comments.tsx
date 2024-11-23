@@ -108,11 +108,15 @@ export default function Comments() {
           </button>
         </form>
       ) : (
-        <p className="text-center text-gray-500 mb-8">
-          <a href="/login" className="text-blue-500 font-medium underline hover:text-blue-700">
-            Melde dich an
-          </a>, um einen Kommentar zu hinterlassen.
-        </p>
+        <p className="text-red-500 mb-4">
+  <a
+    href={`/login?redirect=${encodeURIComponent(window.location.pathname)}`}
+    className="underline text-blue-500 hover:text-blue-700"
+  >
+    Melde dich an
+  </a>, um einen Kommentar zu hinterlassen.
+</p>
+
       )}
 
       {/* Kommentare anzeigen */}

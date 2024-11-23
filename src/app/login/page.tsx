@@ -1,12 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useState,  } from "react";
 import { auth } from "@/app/firebaseConfig";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { FcGoogle } from "react-icons/fc"; // Google-Icon importieren
+import { useRouter, useSearchParams } from "next/navigation";
+import { FcGoogle } from "react-icons/fc";
 
 export default function Login() {
   const [error, setError] = useState<string | null>(null);
+  const router = useRouter();
+  const searchParams = useSearchParams();
 
   // Google Provider
   const provider = new GoogleAuthProvider();
@@ -16,6 +19,10 @@ export default function Login() {
     try {
       await signInWithPopup(auth, provider);
       alert("Erfolgreich mit Google eingeloggt!");
+
+      // Hole die Ziel-URL aus den Suchparametern
+      const redirectTo = searchParams.get("redirect") || "/";
+      router.push(redirectTo); // Weiterleiten zur Ziel-URL oder zur Main Page
     } catch (err: unknown) {
       if (err instanceof Error) {
         setError(err.message);
