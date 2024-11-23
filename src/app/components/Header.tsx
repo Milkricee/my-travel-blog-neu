@@ -84,12 +84,12 @@ export default function Header() {
 
       {/* Rechte Seite: Login/Logout und Registrieren */}
       <div
-        className={`flex items-center gap-4 mt-4 md:mt-0 ${
+        className={`flex items-center gap-6 mt-4 md:mt-0 ${
           isMenuOpen ? "flex-col" : "flex-row"
         }`}
       >
         {user ? (
-          <div className="flex flex-col md:flex-row items-center gap-4">
+          <div className="flex flex-col md:flex-row items-center md:gap-8 gap-6">
             <span className="text-gray-300 text-sm md:text-base break-words">
               Willkommen, {user.email}
             </span>
