@@ -89,10 +89,11 @@ export default function Header() {
         }`}
       >
         {user ? (
-          <div className="flex flex-col md:flex-row items-center md:gap-8 gap-6">
-            <span className="text-gray-300 text-sm md:text-base break-words">
-              Willkommen, {user.email}
-            </span>
+          <div className="flex flex-col md:flex-row items-center md:gap-8 gap-5">
+     <span className="text-gray-300 text-sm md:text-base ml-5 mr-5 whitespace-nowrap">
+  Willkommen, {user.email}
+</span>
+
             <button
               onClick={handleLogout}
               className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"

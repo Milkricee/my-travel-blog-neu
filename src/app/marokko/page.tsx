@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Comments from "../components/comments";
 
 export default function Marokko() {
     const [isNavVisible, setIsNavVisible] = useState(false);
@@ -180,6 +181,7 @@ export default function Marokko() {
                     <li className="mb-2">Abenteuerliche Fahrten durch die Wüste und Nächte unter den Sternen.</li>
                 </ul>
             </div>
+            <Comments />
         </div>
     );
 }
