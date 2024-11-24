@@ -48,8 +48,9 @@ export default function Senegal() {
             Mich hat ein Reiseführer begleitet, der mir anschließen 50$ abknöpfen wollte, die nicht abgemacht waren. Nachdem ich ihm 15$ getippt habe (er hat schon ganz gut erzählt), habe ich ihn nicht wieder gesehen.
             <br/>
             Die Insel war ein Ort, an dem Sklaven gehalten wurden, bevor sie nach Amerika verschifft wurden.
-            
+           
           </p>
+          <br/>
           <ImageGallery
             images={[
               { src: "/senegal/insel1.jpg", alt: "Die Insel der Sklaven" },
@@ -57,10 +58,11 @@ export default function Senegal() {
               { src: "/senegal/insel3.jpg", alt: "Eine Sklavenzelle" },
               { src: "/senegal/insel4.jpg", alt: "Die Insel wird auch von einigen Einheimischen bewohnt" },
               { src: "/senegal/insel5.jpg", alt: "Viele Gebäude hatten die Form eines Rumpfes, um die Sklaven schon vorzubereiten.." },
+              { src: "/senegal/insel6.jpg", alt: "Der Geschichte hat ordentlich auf mein Gemüt geschlagen" },
             
             ]}
           />
-          
+
           <p>
             <br/>
           Ein traumhaft schöner Ort, mit einer sehr traurigen Vergangenheit.
@@ -69,24 +71,36 @@ export default function Senegal() {
 
         {/* Abschnitt 3 */}
         <section>
-          <h2 className="text-2xl font-semibold mb-2">Die Reise entlang der Küste</h2>
+          <h2 className="text-2xl font-semibold mb-2">Nächster Stopp M&apos;bour</h2>
           <p>
-            Die Küste Senegals ist geprägt von charmanten Fischerdörfern, luxuriösen Strandresorts und unberührten Naturlandschaften. 
-            Auf dem Weg von Dakar nach Cap Skirring solltest du unbedingt in M’bour und Saint-Louis stoppen. Beide Orte bieten 
-            faszinierende Einblicke in die Geschichte und Kultur des Landes.
+            Puh, die Trips zwischen den Städten waren immer ein Erlebnis und ohne Sprachkenntnisse auch nicht immer einfach.
+             Gott sei Dank hatte ich ne Simkarte mit Internet und konnte nen Übersetzer nutzen, 
+             der mir so halbwegs weitergeholfen hat. 
+             (Aktuell würde ich ChatGPT als übersetzer nutzen)
+            <br/> Meist gibt es zwischen den Städten Sammeltaxen, die dich für wenig Geld mitnehmen, aber erst losfahren, 
+             wenn sie voll sind.
+             In M&apos;bour habe ich mir für 2 Tage ein Scooter gemietet und habe die Umgebung erkundet.
+             Unterwegs habe ich einen Einheimischen mit Motorrad kennengelernt, der mir den Fischereihafen gezeigt hat.
+            Das war das erste Highlight, welches mir vor Augen geführt hat, dass ich verdammt noch mal <strong>in Afrika</strong>  bin.
+            <br/>
+            Während er mir die Gegend gezeigt hat, hat mein Scooter den Geist aufgegeben, natürlich pünktlich zur Dunkelheit.
+            Lange Rede- kurzer Sinn, er hat einen random Scooterfahrer angehalten, der dann
+            mitten auf der Straße und im dunkeln, damit eine Stunde beschäftigt war meinen Scooter zu reparieren.
+            Während ich da dämlich rumstand, hat er meinen ganzen Scooter zerlegt, den Vergaser gereinigt und wieder zusammengebaut.
+            Danach führ der Scooter wieder. Ich habe mich mit 10€ bedankt. Hätte er auf einmal keine Lust mehr gehabt, würde ich da stehen, im dunkeln,
+            mit nem zerlegten Scooter.
           </p>
-          <div className="my-6">
-            <Image
-              src="/senegal/cap-skirring.jpg"
-              alt="Die Strände von Cap Skirring"
-              width={800}
-              height={500}
-              className="rounded-lg shadow-lg"
-            />
-            <p className="text-sm text-gray-500 mt-2 text-center">
-              Die paradiesischen Strände von Cap Skirring.
-            </p>
-          </div>
+          <br/>
+          <ImageGallery
+            images={[
+              { src: "/senegal/fischerei1.jpg", alt: "Hier herschte ein reges Treiben" },
+              { src: "/senegal/fischerei2.jpg", alt: "Der Geruch war auch demensprechend" },
+              { src: "/senegal/fischerei3.jpg", alt: "Aber dennoch ein sehr interessanter Einblick in deren Leben" },
+              { src: "/senegal/reparatur1.jpg", alt: "Da standen wir.. einer repariert, der andere leuchtet und der Dritte läuft nervös auf und ab" },
+              { src: "/senegal/reparatur2.jpg", alt: "Da issa - der Vergaser. Hab mich leider nicht getraut während der Reparatur mehr Fotos zu machen." },
+
+            ]}
+          />
         </section>
 
         {/* Abschnitt 4 */}

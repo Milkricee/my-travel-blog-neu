@@ -28,7 +28,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
         alt={images[currentIndex].alt}
         width={800}
         height={500}
-        className="rounded-lg shadow-lg"
+        className="rounded-lg shadow-lg object-contain max-w-full max-h-[70vh]" // Passt die Größe an
       />
       <p className="text-sm text-gray-500 mt-2 text-center">
         {images[currentIndex].alt}
