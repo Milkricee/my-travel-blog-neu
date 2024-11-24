@@ -42,6 +42,11 @@ export default function About() {
                     <p className="text-lg mb-4">
                         In meiner Freizeit programmiere ich gerne und habe mir gedacht, ich tue mal etwas Gutes
                         und erstelle eine Webseite, damit andere von meinen Erfahrungen profitieren können.
+                        Selbst wenn ich damit nur 10 Menschen weiterhelfen kann, hat sich der Aufwand gelohnt.
+                    </p>
+                    <p className="text-lg">
+                      Ich freue mich über Kommentare oder konstruktives Feedback.
+                      Auch bei weiteren Fragen zu spezifischen Reisezielen stehe ich sehr gerne zur Verfügung. 
                     </p>
                     <p className="text-lg">
                         Falls jemand spannende Projekte hat, bei denen ich mitwirken kann, bin ich gerne dabei.
