@@ -4,7 +4,7 @@ export default function Footer() {
             <p>
                 &copy; 2024 Dan&apos;s Travelblog. Alle Rechte vorbehalten. Folge mir auf{" "}
                 <a
-                    href="https://www.instagram.com"
+                    href="https://www.instagram.com/milchreiss/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline hover:text-blue-400"
