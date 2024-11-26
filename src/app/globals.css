@@ -37,6 +37,9 @@ body {
 }
 
 body {
-  padding-top: var(--header-height);
-  margin: 0;
+  margin: 0; /* Nur margin setzen */
+}
+
+main {
+  padding-top: var(--header-height, 60px);
 }

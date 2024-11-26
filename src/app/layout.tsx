@@ -34,7 +34,6 @@ export default function RootLayout({
           margin: 0,
           padding: 0,
           overflowX: "hidden", // Verhindert horizontales Scrollen
-          background: "none", // Entfernt Hintergrundfarbe
         }}
       >
         <HeaderWrapper />

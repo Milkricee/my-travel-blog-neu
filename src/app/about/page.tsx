@@ -22,16 +22,17 @@ export default function About() {
 
             {/* Inhalt */}
             <div
-                className="relative flex items-end h-full"
+                className="relative flex flex-col items-center justify-between h-full"
                 style={{
-                    paddingBottom: "5rem", // Abstand zum unteren Rand
                     zIndex: 1, // Inhalt wird über dem Bild angezeigt
                 }}
             >
                 <div
-                    className="bg-black bg-opacity-50 text-white p-8 rounded-lg text-center max-w-2xl mx-auto"
+                    className="bg-black bg-opacity-50 text-white p-8 rounded-lg text-center max-w-2xl w-full mx-auto"
                     style={{
                         animation: "slideIn 1s ease-out",
+                        maxHeight: "100vh", // Begrenzung für mobile Ansicht
+                        overflowY: "auto", // Scrollbar nur für mobile Ansicht
                     }}
                 >
                     <h1 className="text-4xl font-bold mb-4">Über mich</h1>
@@ -45,8 +46,8 @@ export default function About() {
                         Selbst wenn ich damit nur 10 Menschen weiterhelfen kann, hat sich der Aufwand gelohnt.
                     </p>
                     <p className="text-lg">
-                      Ich freue mich über Kommentare oder konstruktives Feedback.
-                      Auch bei weiteren Fragen zu spezifischen Reisezielen stehe ich sehr gerne zur Verfügung. 
+                        Ich freue mich über Kommentare oder konstruktives Feedback.
+                        Auch bei weiteren Fragen zu spezifischen Reisezielen stehe ich sehr gerne zur Verfügung.
                     </p>
                     <p className="text-lg">
                         Falls jemand spannende Projekte hat, bei denen ich mitwirken kann, bin ich gerne dabei.
@@ -54,6 +55,16 @@ export default function About() {
                         <strong>Do not hesitate to contact me.</strong>
                     </p>
                 </div>
+
+                {/* Footer */}
+                <footer
+                    className="text-center text-gray-500 mt-4"
+                    style={{
+                        position: "fixed",
+                        zIndex: 1,
+                    }}
+                >
+                </footer>
             </div>
 
             <style jsx>{`
@@ -65,6 +76,30 @@ export default function About() {
                     to {
                         transform: translateY(0);
                         opacity: 1;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    div[style] {
+                        height: 100vh; /* Volle Höhe für mobile Ansicht */
+                    }
+
+                    .bg-black {
+                        max-height: 70vh; /* Scrollbare Textbox für mobile Ansicht */
+                    }
+                }
+
+                @media (min-width: 769px) {
+                    .bg-black {
+                        max-height: none; /* Keine Begrenzung der Textbox in der Webansicht */
+                        overflow-y: visible; /* Kein Scrollen innerhalb der Textbox */
+                    }
+
+                    footer {
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
                     }
                 }
             `}</style>

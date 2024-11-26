@@ -52,7 +52,7 @@ export default function Marokko() {
 
 
             {/* Einführung */}
-            <div id="intro" className="border border-gray-300 bg-gray-50 p-6 rounded-lg shadow-sm mb-8">
+            <div id="intro">
                 <h1 className="text-4xl font-bold text-center mb-8">Mein Marokko-Urlaub</h1>
                 <p className="text-lg text-center mb-8">
                     Marokko ist eines meiner Lieblingsreiseziele. Die Vielfalt des Landes ist einfach unglaublich. <br />
