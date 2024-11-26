@@ -4,7 +4,7 @@ import ImageGallery from "@/app/components/ImageGallery";
 
 export default function Senegal() {
   return (
-    <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8">
+    <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8" style={{ paddingTop: "var(--header-height)" }}>
       {/* Header-Bereich */}
       <header className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-4">Entdecke den Senegal</h1>
@@ -20,17 +20,16 @@ export default function Senegal() {
         <section>
           <h2 className="text-2xl font-semibold mb-4">Die Hauptstadt Dakar</h2>
           <p>
-            So wie ich, wirst du höchstwahrscheinlich in Dakar starten. Vom Flughafen ist es ein bisschen Pain in the Ass zur Stadt zu kommen (wenn man niht bereit ist 50€ für ein Taxi zu zahlen).
+            So wie ich, wirst du höchstwahrscheinlich in Dakar starten. Vom Flughafen ist es ein bisschen Pain in the Ass zur Stadt zu kommen (wenn man nicht bereit ist 50€ für ein Taxi zu zahlen).
           </p>
           <p>
             Aber es gibt Collectivos (Sammeltaxen), die dich relativ günstig in die Stadt bringen.
             Die Hauptstadt sieht noch relativ &quot;europäisch&quot; aus, aber das ändert sich schnell, sobald du dich außerhalb der Stadt begibst.
           </p>
           <p>
-            Ich hatte eine Unterkunft direkt am Wasser, etwas außerhalb des Zentrums. In der Stadt bekommst du recht günstig eine SIM-Karte mit Internet. 
+            Ich hatte eine Unterkunft direkt am Wasser, etwas außerhalb des Zentrums. In der Stadt bekommst du recht günstig eine SIM-Karte mit Internet.
             Zur Fortbewegung in der Stadt kannst du Taxen nehmen. Einfach ein bisschen verhandeln vorher, bis dich der Preis zufriedenstellt.
           </p>
-          <br/>
           <ImageGallery
             images={[
               { src: "/senegal/dakar1.jpg", alt: "Der Blick von meiner Unterkunft" },
@@ -46,15 +45,12 @@ export default function Senegal() {
             Wenn man sich schon in Dakar aufhält, ist der Besuch der Insel ein absoluter Muss. Man erreicht die Insel recht einfach vom Hafen aus.
           </p>
           <p>
-            Wenn ihr etwas mehr über die Geschichte der Insel erfahren wollt, holt euch einen Reiseführer, den man vor Ort easy finden kann. Verhandelt den Preis <strong>vorher</strong> und lasst euch nicht abzocken. 
+            Wenn ihr etwas mehr über die Geschichte der Insel erfahren wollt, holt euch einen Reiseführer, den man vor Ort easy finden kann. Verhandelt den Preis <strong>vorher</strong> und lasst euch nicht abzocken.
           </p>
           <p>
             Mich hat ein Reiseführer begleitet, der mir anschließend 50$ abknöpfen wollte, die nicht abgemacht waren. Nachdem ich ihm 15$ getippt habe (er hat schon ganz gut erzählt), habe ich ihn nicht wieder gesehen.
           </p>
-          <p>
-            Die Insel war ein Ort, an dem Sklaven gehalten wurden, bevor sie nach Amerika verschifft wurden.          </p>
-            <br/>
-             <ImageGallery
+          <ImageGallery
             images={[
               { src: "/senegal/insel1.jpg", alt: "Die Insel der Sklaven" },
               { src: "/senegal/insel2.jpg", alt: "Historische Gebäude auf der Insel" },
@@ -64,9 +60,7 @@ export default function Senegal() {
               { src: "/senegal/insel6.jpg", alt: "Der Geschichte hat ordentlich auf mein Gemüt geschlagen" },
             ]}
           />
-          <p>
-          Ein traumhaft schöner Ort mit einer sehr traurigen Vergangenheit.
-          </p>
+          <p>Ein traumhaft schöner Ort mit einer sehr traurigen Vergangenheit.</p>
         </section>
 
         {/* Abschnitt 3 */}

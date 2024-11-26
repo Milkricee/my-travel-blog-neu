@@ -9,6 +9,7 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -37,7 +38,16 @@ export default function RootLayout({
         }}
       >
         <HeaderWrapper />
-        <main style={{ minHeight: "100vh", position: "relative" }}>{children}</main>
+        <main
+  style={{
+    minHeight: "100vh",
+    position: "relative",
+    paddingTop: "var(--header-height)", // Dynamisch anhand der CSS-Variable
+  }}
+>
+  {children}
+</main>
+
         <Footer />
       </body>
     </html>

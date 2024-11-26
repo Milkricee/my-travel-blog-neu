@@ -18,3 +18,25 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: none; /* Entfernt die Standard-Hintergrundfarbe */
 }
+
+:root {
+  --header-height-desktop: 60px; /* Höhe für Desktop */
+  --header-height-mobile: 30px; /* Höhe für Mobile */
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: var(--header-height-mobile);
+  }
+}
+
+@media (min-width: 769px) {
+  :root {
+    --header-height: var(--header-height-desktop);
+  }
+}
+
+body {
+  padding-top: var(--header-height);
+  margin: 0;
+}
