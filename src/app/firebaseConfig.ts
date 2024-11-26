@@ -2,16 +2,16 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC-z6JtslUh3evJ6dYKBbaG7RHh7SPKnA4",
-  authDomain: "test-a5bf1.firebaseapp.com",
-  projectId: "test-a5bf1",
-  storageBucket: "test-a5bf1.firebasestorage.app",
-  messagingSenderId: "588116302855",
-  appId: "1:588116302855:web:a337e0f91279ad1f725ea2",
-  measurementId: "G-LWS1MDCZKX",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app); // Exportiere die Authentifizierungsinstanz
+export const auth = getAuth(app);
 
 export default app;
