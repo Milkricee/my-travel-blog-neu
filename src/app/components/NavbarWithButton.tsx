@@ -33,8 +33,8 @@ export default function NavbarWithButton({
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    width: "40px", // Größe des Buttons
-                    height: "40px", // Größe des Buttons
+                    width: "30px", // Größe des Buttons
+                    height: "30px", // Größe des Buttons
                 }}
             >
                 <span className="text-2xl">&#9660;</span>
