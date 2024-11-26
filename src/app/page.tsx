@@ -3,8 +3,24 @@
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  const totalImages = 11; // Anzahl der Hintergrundbilder
+  const totalImagesPC = 8; // Anzahl der Bilder im Querformat (PC)
+  const totalImagesMobile = 3; // Anzahl der Bilder im Hochformat (Mobile)
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Überwache die Bildschirmgröße
+  useEffect(() => {
+    const updateScreenSize = () => {
+      setIsMobile(window.innerWidth <= 768); // Ist true, wenn Breite ≤ 768px (mobile)
+    };
+
+    updateScreenSize(); // Initial überprüfen
+    window.addEventListener("resize", updateScreenSize);
+
+    return () => window.removeEventListener("resize", updateScreenSize); // Aufräumen
+  }, []);
+
+  const totalImages = isMobile ? totalImagesMobile : totalImagesPC; // Bilderanzahl basierend auf Gerätetyp
 
   // Automatischer Wechsel der Hintergrundbilder
   useEffect(() => {
@@ -13,7 +29,7 @@ export default function Home() {
     }, 5000); // Wechsel alle 5 Sekunden
 
     return () => clearInterval(interval); // Aufräumen
-  }, []);
+  }, [totalImages]);
 
   // Manuelles Navigieren
   const goToPreviousImage = () => {
@@ -28,15 +44,17 @@ export default function Home() {
 
   return (
     <div
-      style={{
-        position: "relative",
-        height: "100vh", // Vollbildhöhe
-        backgroundImage: `url('/background/${currentImageIndex + 1}.jpg')`, // Aktuelles Hintergrundbild
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        transition: "background-image 1s ease-in-out", // Weicher Übergang
-      }}
+    style={{
+      position: "relative",
+      height: "100vh", // Vollbildhöhe
+      backgroundImage: `url('/${
+        isMobile ? 'background_mobile' : 'background'
+      }/${currentImageIndex + 1}.jpg')`, // Hintergrundbild je nach Gerätetyp und Ordner
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      transition: "background-image 1s ease-in-out", // Weicher Übergang
+    }}
     >
       {/* Begrüßungstext mit halbtransparentem Hintergrund */}
       <div

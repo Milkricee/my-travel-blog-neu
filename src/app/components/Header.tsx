@@ -28,8 +28,37 @@ export default function Header() {
     }
   };
 
+  const [isScrolledOutOfView, setIsScrolledOutOfView] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolledOutOfView(window.scrollY > 200); // Prüfe, ob der Header aus der Sicht ist
+    };
+  
+    const handleMouseMove = (e: MouseEvent) => {
+      const isMouseInUpperThird = e.clientY <= window.innerHeight / 3;
+      setIsHeaderVisible(isMouseInUpperThird); // Sichtbarkeit basierend auf Mausposition
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("mousemove", handleMouseMove);
+  
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+  
+
   return (
-    <header className="bg-gray-800 text-white py-4 px-8 flex flex-col md:flex-row md:items-center md:justify-between z-20 relative">
+<header
+  className={`bg-gray-800 text-white py-4 px-8 flex flex-col md:flex-row md:items-center md:justify-between z-20 fixed left-0 w-full transition-transform duration-500 ${
+    isHeaderVisible || !isScrolledOutOfView ? "translate-y-0" : "-translate-y-full"
+  }`}
+>
+
+  
       {/* Linke Seite: Logo und Titel */}
       <div className="flex items-center gap-4">
         <Image src="/imgs/cat.png" alt="Logo" width={60} height={60} />
@@ -90,9 +119,9 @@ export default function Header() {
       >
         {user ? (
           <div className="flex flex-col md:flex-row items-center md:gap-8 gap-5">
-     <span className="text-gray-300 text-sm md:text-base ml-5 mr-5 whitespace-nowrap">
-  Willkommen, {user.email}
-</span>
+            <span className="text-gray-300 text-sm md:text-base ml-5 mr-5 whitespace-nowrap">
+              Willkommen, {user.email}
+            </span>
 
             <button
               onClick={handleLogout}
