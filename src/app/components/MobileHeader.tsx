@@ -86,14 +86,14 @@ export default function MobileHeader() {
 
       {/* Navigationsmenü */}
       <div
-        className={`fixed top-0 right-0 bg-gray-700 text-white shadow-lg rounded-l-xl transition-transform duration-300 ease-in-out ${
+        className={`fixed top-[60px] right-0 bg-gray-700 text-white shadow-lg rounded-l-xl transition-transform duration-1000 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
-        style={{ width: "50%", height: "auto" }}
+        style={{ width: "Auto", height: "Auto" }}
       >
         <nav className="p-6">
           <ul className="space-y-4">
-            <li>
+          <li className=" border-b border-white">
               <Link
                 href="/about"
                 className="block hover:text-blue-400"
@@ -102,7 +102,7 @@ export default function MobileHeader() {
                 Über mich
               </Link>
             </li>
-            <li>
+            <li className=" border-b border-white ">
               <button
                 className="block w-full text-left hover:text-blue-400"
                 onClick={() => handleDropdownToggle("Afrika")}
@@ -132,7 +132,7 @@ export default function MobileHeader() {
                 </ul>
               )}
             </li>
-            <li>
+            <li className="border-b border-white ">
               <button
                 className="block w-full text-left hover:text-blue-400"
                 onClick={() => handleDropdownToggle("Asien")}
@@ -162,7 +162,7 @@ export default function MobileHeader() {
                 </ul>
               )}
             </li>
-            <li>
+            <li className=" border-b border-white">
               <button
                 className="block w-full text-left hover:text-blue-400"
                 onClick={() => handleDropdownToggle("Amerika")}

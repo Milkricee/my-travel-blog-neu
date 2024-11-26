@@ -5,15 +5,15 @@ import { useState } from "react";
 interface NavbarWithButtonProps {
     links: { href: string; label: string }[]; // Links für die Navigation
     buttonTop?: string; // Optionale Anpassung der Button-Position
-    navBackgroundColor?: string; // Hintergrundfarbe der Navigationsleiste
-    navOpacity?: string; // Transparenz der Navigationsleiste
+    buttonSize?: string; // Größe der Buttons
+    navButtonColor?: string; // Farbe der Buttons
 }
 
 export default function NavbarWithButton({
     links,
     buttonTop = "10%",
-    navBackgroundColor = "rgba(88,80,80,0.8)",
-    navOpacity = "0.8",
+    buttonSize = "40px", // Standardgröße der Buttons
+    navButtonColor = "bg-gray-800", // Standardfarbe der Buttons
 }: NavbarWithButtonProps) {
     const [isNavVisible, setIsNavVisible] = useState(false);
 
@@ -26,42 +26,44 @@ export default function NavbarWithButton({
             {/* Inhaltsverzeichnis Button */}
             <button
                 onClick={toggleNav}
-                className="fixed left-0 p-3 bg-gray-500 bg-opacity-50 text-white rounded-r-lg z-50"
+                className="fixed left-0 bg-gray-500 text-white rounded-r-lg z-50 shadow-md"
                 style={{
                     top: buttonTop,
+                    width: buttonSize,
+                    height: buttonSize,
                     borderRadius: "50%",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    width: "30px", // Größe des Buttons
-                    height: "30px", // Größe des Buttons
                 }}
             >
-                <span className="text-2xl">&#9660;</span>
+                <span className="text-xl">&#9660;</span>
             </button>
 
             {/* Navigationsleiste */}
             {isNavVisible && (
                 <div
-                    className="fixed left-0 shadow-md z-50 transition-transform duration-300 ease-in-out"
+                    className="fixed left-0 z-50 transition-transform duration-300 ease-in-out"
                     style={{
-                        backgroundColor: navBackgroundColor,
-                        opacity: navOpacity,
-                        top: `calc(${buttonTop} + 50px)`, // Direkt unter dem Button
-                        width: "auto", // Breite passt sich dem Inhalt an
+                        top: `calc(${buttonTop} + ${buttonSize} + 20px)`, // Abstand zum Button erhöht
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "10px", // Abstand zwischen den Buttons
                     }}
                 >
-                    <div className="flex flex-col p-6 space-y-6">
-                        {links.map((link, index) => (
-                            <a
-                                key={index}
-                                href={link.href}
-                                className="text-blue-700 hover:text-blue-700"
-                            >
-                                {link.label}
-                            </a>
-                        ))}
-                    </div>
+                    {links.map((link, index) => (
+                        <a
+                            key={index}
+                            href={link.href}
+                            className={`${navButtonColor} text-white text-center rounded-lg shadow-md p-2 hover:bg-blue-700 transition`}
+                            style={{
+                                borderRadius: "10px", // Abgerundete Buttons
+                                width: "150px", // Button-Breite
+                            }}
+                        >
+                            {link.label}
+                        </a>
+                    ))}
                 </div>
             )}
         </>

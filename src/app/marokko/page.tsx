@@ -3,17 +3,14 @@
 import { useState } from "react";
 import Image from "next/image";
 import Comments from "../components/comments";
+import NavbarWithButton from "@/app/components/NavbarWithButton";
 
 export default function Marokko() {
-    const [isNavVisible, setIsNavVisible] = useState(false);
     const [isModalOpen, setModalOpen] = useState(false);
     const [modalImage, setModalImage] = useState("");
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const toggleNav = () => {
-        setIsNavVisible(!isNavVisible);
-    };
-
+   
     const images = [
         "/marokko/atlas1.jpg",
         "/marokko/dünen.jpg",
@@ -43,40 +40,16 @@ export default function Marokko() {
 
     return (
         <div className="p-8 bg-gray-100 relative">
-            {/* Inhaltsverzeichnis Button */}
-            <button
-                onClick={toggleNav}
-                className="fixed top-[10%] left-0 p-3 bg-gray-500 bg-opacity-50 text-white rounded-r-lg z-50"
-                style={{
-                    borderRadius: "50%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: "40px",
-                    height: "40px",
-                }}
-            >
-                <span className="text-2xl">&#9660;</span>
-            </button>
+         {/* Inhaltsverzeichnis mit allgemeiner Komponente */}
+         <NavbarWithButton
+                links={[
+                    { href: "#intro", label: "Einführung" },
+                    { href: "#pro-contra", label: "Pro & Contra" },
+                    { href: "#bildergalerie", label: "Bildergalerie" },
+                    { href: "#highlights", label: "Highlights" },
+                ]}
+            />
 
-            {/* Navigationsleiste */}
-            {isNavVisible && (
-                <div
-                    className="fixed left-0 bg-[rgba(88,80,80,0.8)] shadow-md z-50 transition-transform duration-300 ease-in-out"
-                    style={{
-                        height: "auto",
-                        top: "calc(10% + 50px)",
-                        width: "auto",
-                    }}
-                >
-                    <div className="flex flex-col p-6 space-y-6">
-                        <a href="#intro" className="text-blue-700 hover:text-blue-700">Einführung</a>
-                        <a href="#pro-contra" className="text-blue-700 hover:text-blue-700">Pro & Contra</a>
-                        <a href="#bildergalerie" className="text-blue-700 hover:text-blue-700">Bildergalerie</a>
-                        <a href="#highlights" className="text-blue-700 hover:text-blue-700">Highlights</a>
-                    </div>
-                </div>
-            )}
 
             {/* Einführung */}
             <div id="intro" className="border border-gray-300 bg-gray-50 p-6 rounded-lg shadow-sm mb-8">
