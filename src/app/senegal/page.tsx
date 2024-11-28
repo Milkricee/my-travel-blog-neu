@@ -128,7 +128,7 @@ export default function Senegal() {
            <a href="https://www.booking.com/hotel/sn/nguel-du-saloum.de.html?label=metagha-link-MRDE-hotel-4086679_dev-desktop_los-1_bw-13_dow-Saturday_defdate-1_room-0_gstadt-1_rateid-public_aud-0_gacid-21411073817_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20241207_ppt-_lp-2276_r-3035490024571977269&sid=8ef3ab90e99f91c71bf2e2b742753eb3&utm_source=metagha&utm_medium=mapresults&utm_term=hotel-4086679&utm_content=dev-desktop_los-1_bw-13_dow-Saturday_defdate-1_room-0_gstadt-1_rateid-public_aud-0_gacid-21411073817_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20241207_ppt-&utm_campaign=DE&gclid=EAIaIQobChMIzeD6oZH2iQMVV42DBx2sDCwzEAoYASABEgJokPD_BwE&aid=356932&ucfs=1&arphpl=1&checkin=2024-12-07&checkout=2024-12-08&dest_id=-2271070&dest_type=city&group_adults=1&req_adults=1&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=1ecba5fb329a0305&srepoch=1732491389&all_sr_blocks=408667902_360279723_1_41_0&highlighted_blocks=408667902_360279723_1_41_0&matching_block_id=408667902_360279723_1_41_0&sr_pri_blocks=408667902_360279723_1_41_0__2650000&from_sustainable_property_sr=1&from=searchresults"> 
            in dieser Unterkunft </a>. 
            (Boa, seitdem hat sich der Preis aber deutlich erhöht, wenn mir die Preise mal so angucke.. 
-           ich habe nie mehr als 20€ pro Nacht bezahlt.)
+           ich habe nie mehr als 20-25€ pro Nacht bezahlt.)
             Die Unterkünfte sind hier eher spartanisch, aber das ist ja auch das, was es aus macht. Was mich an der Insel begeistert 
             hat, ist, dass die Menschen hier noch sehr einfach Leben und die Natur noch sehr ursprünglich ist
             und es auf der Insel keine Autos gibt, sondern Eseltaxen rumfahren.
@@ -136,7 +136,11 @@ export default function Senegal() {
           <br/>
           <ImageGallery
             images={[
-              { src: "", alt: "Fotos " },
+              { src: "/senegal/sine-saloum/taxiBoot.jpg", alt: "So bewegt man sich zwischen den Inseln" },
+              { src: "/senegal/sine-saloum/booking.jpg", alt: "Unterkunft" },
+              { src: "/senegal/sine-saloum/eseltaxi.jpg", alt: "Auf der Insel gab es keine Autos. Nur Pferde und Eseltaxen" },
+              { src: "/senegal/sine-saloum/kinder.jpg", alt: "Es gibt super viele Kinder auf der Insel" },
+             
             ]}
           />
         </section>
