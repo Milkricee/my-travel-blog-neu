@@ -22,7 +22,7 @@ export default function About() {
 
             {/* Inhalt */}
             <div
-                className="relative flex flex-col items-center justify-between h-full"
+                className="relative flex items-center justify-center h-full"
                 style={{
                     zIndex: 1, // Inhalt wird über dem Bild angezeigt
                 }}
@@ -50,10 +50,17 @@ export default function About() {
                         Auch bei weiteren Fragen zu spezifischen Reisezielen stehe ich sehr gerne zur Verfügung.
                     </p>
                     <p className="text-lg">
-                        Falls jemand spannende Projekte hat, bei denen ich mitwirken kann, bin ich gerne dabei.
-                        <br />
-                        <strong>Do not hesitate to contact me.</strong>
-                    </p>
+  Falls jemand spannende Projekte hat, bei denen ich mitwirken kann, bin ich gerne dabei.
+  <br />
+  <strong>
+    <a
+      href="mailto:jnr.daniil@gmail.com"
+      className="text-blue-500 underline hover:text-blue-700"
+    >
+      Do not hesitate to contact me.
+    </a>
+  </strong>
+</p>
                 </div>
 
                 {/* Footer */}
