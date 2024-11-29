@@ -60,6 +60,7 @@ export default function Senegal() {
               { src: "/senegal/insel6.jpg", alt: "Der Geschichte hat ordentlich auf mein Gemüt geschlagen" },
             ]}
           />
+          <br/>
           <p>Ein traumhaft schöner Ort mit einer sehr traurigen Vergangenheit.</p>
         </section>
 
@@ -104,7 +105,10 @@ export default function Senegal() {
             Von M&apos;bour aus bin ich weiter ins Saloum-Delta gefahren. Der Typ, den ich kennengelernt habe, hat mich netterweise 2 Stunden bis zum Flussbeginn gefahren.
           </p>
           <p>
-            Ich habe mich mit einem Mittagessen bedankt. (Fun Story: Ich hab vergessen, Bargeld abzuheben, was mir natürlich erst aufgefallen ist, als wir am Fluss angekommen sind.)
+            Ich habe mich mit einem Mittagessen bedankt. (Fun Story: Ich hab vergessen, Bargeld abzuheben, was mir natürlich erst aufgefallen ist, als wir am Fluss angekommen sind.
+            Und der nächste ATM war 1 Stunde entfertnt. Genau in der Richtung aus der wir gerade gekommen sind.)
+            Also sind wir noch eine Stunde zum nächsten Bankautomaten zurückgefahren. Da es langsam dunkel wurde, habe ich mir vor Ort eine Unterkunft genommen
+            und bin dann am nächsten Tag wieder irgendwie zur Anlegestelle Zurückgekommen.
           </p>
           
           <br/> 
@@ -124,14 +128,19 @@ export default function Senegal() {
             Das Saloum-Delta ist ein Naturschutzgebiet und ein UNESCO-Weltkulturerbe. Das war mein absoluter Lieblingsorte in Senegal. 
           </p>
           <p>
-           Das war eins meiner absoluten Lieblingsorte in Senegal. Ich war war in dem Örtchen Mar Lodj,
+           Ich war war in dem Örtchen Mar Lodj,
            <a href="https://www.booking.com/hotel/sn/nguel-du-saloum.de.html?label=metagha-link-MRDE-hotel-4086679_dev-desktop_los-1_bw-13_dow-Saturday_defdate-1_room-0_gstadt-1_rateid-public_aud-0_gacid-21411073817_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20241207_ppt-_lp-2276_r-3035490024571977269&sid=8ef3ab90e99f91c71bf2e2b742753eb3&utm_source=metagha&utm_medium=mapresults&utm_term=hotel-4086679&utm_content=dev-desktop_los-1_bw-13_dow-Saturday_defdate-1_room-0_gstadt-1_rateid-public_aud-0_gacid-21411073817_mcid-10_ppa-0_clrid-0_ad-1_gstkid-0_checkin-20241207_ppt-&utm_campaign=DE&gclid=EAIaIQobChMIzeD6oZH2iQMVV42DBx2sDCwzEAoYASABEgJokPD_BwE&aid=356932&ucfs=1&arphpl=1&checkin=2024-12-07&checkout=2024-12-08&dest_id=-2271070&dest_type=city&group_adults=1&req_adults=1&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=1ecba5fb329a0305&srepoch=1732491389&all_sr_blocks=408667902_360279723_1_41_0&highlighted_blocks=408667902_360279723_1_41_0&matching_block_id=408667902_360279723_1_41_0&sr_pri_blocks=408667902_360279723_1_41_0__2650000&from_sustainable_property_sr=1&from=searchresults"> 
            in dieser Unterkunft </a>. 
-           (Boa, seitdem hat sich der Preis aber deutlich erhöht, wenn mir die Preise mal so angucke.. 
+           (Boa, seitdem hat sich der Preis aber deutlich erhöht, wenn ich mir die Preise mal so angucke.. 
            ich habe nie mehr als 20-25€ pro Nacht bezahlt.)
-            Die Unterkünfte sind hier eher spartanisch, aber das ist ja auch das, was es aus macht. Was mich an der Insel begeistert 
+            Die Unterkünfte sind hier eher einfach gehalten, aber das ist ja auch das, was es aus macht. Was mich an der Insel begeistert 
             hat, ist, dass die Menschen hier noch sehr einfach Leben und die Natur noch sehr ursprünglich ist
-            und es auf der Insel keine Autos gibt, sondern Eseltaxen rumfahren.
+            und es auf der Insel keine Autos gibt, sondern Pferde- und Eseltaxen rumfahren. Zudem stehen Kirchen und Moscheen diret beieinander und die Menschen 
+            leben friedlich miteinander.
+            <p>
+              Hier habe ich insgesamt 3 Tage verbracht. Ich habe eine Bootstour durch das Delta gemacht, bin durch die Insel gewandert und habe mir unterschiedliche Dörfer angeguckt.
+              Alles in allem, ein wirklich sehr ruhiger und idyllischer Ort.
+            </p>
           </p>
           <br/>
           <ImageGallery
@@ -139,7 +148,7 @@ export default function Senegal() {
               { src: "/senegal/sine-saloum/taxiBoot.jpg", alt: "So bewegt man sich zwischen den Inseln" },
               { src: "/senegal/sine-saloum/booking.jpg", alt: "Unterkunft" },
               { src: "/senegal/sine-saloum/eseltaxi.jpg", alt: "Auf der Insel gab es keine Autos. Nur Pferde und Eseltaxen" },
-              { src: "/senegal/sine-saloum/kinder.jpg", alt: "Es gibt super viele Kinder auf der Insel" },
+              { src: "/senegal/sine-saloum/kinder.jpg", alt: "Mein Lieblingsfoto. Es gibt super viele Kinder auf der Insel" },
              
             ]}
           />
@@ -147,12 +156,44 @@ export default function Senegal() {
 
         {/* Abschnitt 6 */}
 
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Die Einreise nach Gambia</h2>
+          <p>
+           Von Mar Lodj aus bin ich mit unterschiedlichen Sammeltaxen weiter nach Gambia gefahren. 
+           Die Einreise war relativ einfach, aber  die Reise an sich war schon hart anstrengend.
+           Zum einen wegen der Sprachbariere, zum anderen weil man bei 30 Grad, Schulter an Schulter, den Schlaglöchern mit der größe eines Smarts, 
+           ausweichend, mit anderen Leuten in einem Sammeltaxi ausm 18 Jahrhundert sitzt 
+            (zumindest vom Zustand des Wagens),und ohne Klimaanlage (logisch).
+          </p>
+          <p>
+          Das Sammeltaxi hat mich an der Greze rausgelassen und ist dann zurück gefahren. Nach der Immigration
+          stehen da dann schon die nächsten Sammeltaxen, die dich weiter nach Gambia bringen. Aber nicht bis nach Banjul, sondern 
+          bis zur Fähre. Nach der Fähre sollte man sich ein Taxi suche, welches dich dann in die Hauptstadt bringt.) 
+          Lustige Geschichte: kaum bist du über die grenze, sprechen alle auf einmal Englisch. Und das Sammeltaxi von der Grenze
+          bis in die nächste Stadt hat 50 Dalasi gekostet. Aufgrund des Dialekts, habe ich 50 Dollar(s) verstanden, und war schon ganz enttäuscht, dass man an der Grenze so abgezogen wird.
+          Aber egal wen ich gefragt habe, alle haben bestätigt, dass es 50 Dollar/Dallas sind. Zum Glück habe ich dann irgendwann gecheckt, dass es 50 Dalasi sind, 
+          was umgerechnet aktuell nicht mal 70 Cent sind. Der Taxifahrer hat sich sehr gefreut, als ich ihm 100 Dalasi gegeben habe
+          und hat mir erklärt wo es zur Fähre geht, wo man Tickets kauft und hat mir ein Taxi organisiert, (noch vor der Fähre) welches mich dann in die Hauptstadt gebracht hat.
+          
+          </p>
+          
+          <br/> 
+          <ImageGallery
+            images={[
+              { src: "/senegal/motorrad.jpg", alt: "Mit dem Gerät sind wir los" },
+              { src: "/senegal/trip.jpg", alt: "Helm gab es nur für den Fahrer" },
+              { src: "/senegal/straße.jpg", alt: "Oft sahen die Straßen so aus" },
+            ]}
+          />
+        </section>
+
       </article>
 
       {/* Footer-Bereich */}
       <footer className="text-center mt-12">
         <p className="text-gray-500">
-          Dieser Reisebericht basiert auf meinen persönlichen Erfahrungen und Recherchen. Ich hoffe, er inspiriert dich dazu, den Senegal selbst zu entdecken!
+          Dieser Reisebericht basiert auf meinen persönlichen Erfahrungen. 
+          Ich hoffe, er inspiriert dich dazu, den Senegal selbst zu entdecken!
         </p>
       </footer>
     </div>
