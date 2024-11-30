@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "contentful": "^11.2.5",
+    "contentful-management": "^11.40.0",
     "firebase": "^11.0.2",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
