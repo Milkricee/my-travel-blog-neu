@@ -34,8 +34,8 @@ export default function Senegal() {
           </div>
           <ImageGallery
             images={[
-              { src: "/senegal/dakar1.jpg", alt: "Der Blick von meiner Unterkunft" },
-              { src: "/senegal/dakar2.jpg", alt: "Straßen in Dakar" },
+              { src: "/senegal/start/dakar1.jpg", alt: "Der Blick von meiner Unterkunft" },
+              { src: "/senegal/start/dakar2.jpg", alt: "Straßen in Dakar" },
             ]}
           />
         </section>
@@ -56,12 +56,12 @@ export default function Senegal() {
           </div>
           <ImageGallery
             images={[
-              { src: "/senegal/insel1.jpg", alt: "Die Insel der Sklaven" },
-              { src: "/senegal/insel2.jpg", alt: "Historische Gebäude auf der Insel" },
-              { src: "/senegal/insel3.jpg", alt: "Eine Sklavenzelle" },
-              { src: "/senegal/insel4.jpg", alt: "Die Insel wird auch von einigen Einheimischen bewohnt" },
-              { src: "/senegal/insel5.jpg", alt: "Viele Gebäude hatten die Form eines Rumpfes, um die Sklaven schon vorzubereiten.." },
-              { src: "/senegal/insel6.jpg", alt: "Der Geschichte hat ordentlich auf mein Gemüt geschlagen" },
+              { src: "/senegal/start/insel1.jpg", alt: "Die Insel der Sklaven" },
+              { src: "/senegal/start/insel2.jpg", alt: "Historische Gebäude auf der Insel" },
+              { src: "/senegal/start/insel3.jpg", alt: "Eine Sklavenzelle" },
+              { src: "/senegal/start/insel4.jpg", alt: "Die Insel wird auch von einigen Einheimischen bewohnt" },
+              { src: "/senegal/start/insel5.jpg", alt: "Viele Gebäude hatten die Form eines Rumpfes, um die Sklaven schon vorzubereiten.." },
+              { src: "/senegal/start/insel6.jpg", alt: "Der Geschichte hat ordentlich auf mein Gemüt geschlagen" },
             ]}
           />
           <p>Ein traumhaft schöner Ort mit einer sehr traurigen Vergangenheit.</p>
@@ -93,11 +93,11 @@ export default function Senegal() {
           </div>
           <ImageGallery
             images={[
-              { src: "/senegal/fischerei1.jpg", alt: "Hier herrschte ein reges Treiben" },
-              { src: "/senegal/fischerei2.jpg", alt: "Der Geruch war auch dementsprechend" },
-              { src: "/senegal/fischerei3.jpg", alt: "Aber dennoch ein sehr interessanter Einblick in deren Leben" },
-              { src: "/senegal/reparatur1.jpg", alt: "Da standen wir.. einer repariert, der andere leuchtet und der Dritte läuft nervös auf und ab" },
-              { src: "/senegal/reparatur2.jpg", alt: "Da issa - der Vergaser. Hab mich leider nicht getraut, während der Reparatur mehr Fotos zu machen." },
+              { src: "/senegal/start/fischerei1.jpg", alt: "Hier herrschte ein reges Treiben" },
+              { src: "/senegal/start/fischerei2.jpg", alt: "Der Geruch war auch dementsprechend" },
+              { src: "/senegal/start/fischerei3.jpg", alt: "Aber dennoch ein sehr interessanter Einblick in deren Leben" },
+              { src: "/senegal/start/reparatur1.jpg", alt: "Da standen wir.. einer repariert, der andere leuchtet und der Dritte läuft nervös auf und ab" },
+              { src: "/senegal/start/reparatur2.jpg", alt: "Da issa - der Vergaser. Hab mich leider nicht getraut, während der Reparatur mehr Fotos zu machen." },
             ]}
           />
         </section>
@@ -119,9 +119,9 @@ export default function Senegal() {
           </div>
           <ImageGallery
             images={[
-              { src: "/senegal/motorrad.jpg", alt: "Mit dem Gerät sind wir los" },
-              { src: "/senegal/trip.jpg", alt: "Helm gab es nur für den Fahrer" },
-              { src: "/senegal/straße.jpg", alt: "Oft sahen die Straßen so aus" },
+              { src: "/senegal/start/motorrad.jpg", alt: "Mit dem Gerät sind wir los" },
+              { src: "/senegal/start/trip.jpg", alt: "Helm gab es nur für den Fahrer" },
+              { src: "/senegal/start/straße.jpg", alt: "Oft sahen die Straßen so aus" },
             ]}
           />
         </section>
@@ -184,11 +184,13 @@ export default function Senegal() {
           </p>
           
           </div>
-            <ImageGallery
-            images={[
-              { src: "/senegal/taxi1.jpg", alt: "Vollgestopft bei 30 Grad." },
-            ]}
-          />
+          <ImageGallery
+          images={[
+            { src: "/senegal/sine-saloum/taxi.jpg", alt: "Schulter an Schulter bei 30 Grad." },
+            { src: "/senegal/sine-saloum/taxi2.jpg", alt: "Die Fortbewegung war immer recht anstrengend" },
+           ]}
+            />
+
         </section>
 
 
@@ -198,11 +200,20 @@ export default function Senegal() {
           <div>
             <p>
             Banjul ist die Hauptstadt von Gambia. Ich habe mich hier 3 Tage aufgehalten.
+            Hier gibt es nicht viel zu berichten, außer, dass 3 Tage natürlich viel zu wenig sind.
+            Ich hatte ein Hotel direkt am Strand. Das war ganz angenehm. Einziges manko, die Leitung hatte zu 
+            wenig Druck, sodass nicht wirklich Wasser aus der Dusche kam. Ich habe mich dann einfach im Zimmer eingeseift und
+            bin dann ins Meer gewatschelt mich abzuspülen.
+            Außerdem habe ich eine einheimische kennengelernt und sie hat mir die Stadt gezeigt und auch ihr zu Hause, wie ihre Familie lebt. 
+            Das war wirklich sehr interressant und hat mir einen guten Einblick in das Leben in Gambia gegeben.
+            Das Essen in Gambia ist etwas günstiger als in Senegal. Obwohl es noch so viel mehr zu sehen gab(nicht nur die Hauptstadt), musste ich leider 
+            weiter reisen, da ich nur 16 Tage Zeit hatte.
+            
           </p>
           </div>
             <ImageGallery
             images={[
-              { src: "/senegal/taxi1.jpg", alt: "Vollgestopft bei 30 Grad." },
+              { src: "/senegal/dakar/img.jpg", alt: "Bilder von Dakar" },
             ]}
           />
         </section>
