@@ -1,11 +1,29 @@
 "use client";
 
+import NavbarWithButton from "@/app/components/NavbarWithButton";
+import Comments from "@/app/components/comments";
 import ImageGallery from "@/app/components/ImageGallery";
+// import SenegalRoute from "@/app/maps/senegal"; 
 
 export default function Senegal() {
   return (
     <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8" style={{ paddingTop: "var(--header-height)" }}>
       {/* Header-Bereich */}
+      <NavbarWithButton
+    links={[
+        { href: "#dakar", label: "Die Hauptstadt Dakar" },
+        { href: "#insel", label: "Insel der Sklaven" },
+        { href: "#mbour", label: "Nächster Stopp M'bour" },
+        { href: "#saloum", label: "Das Saloum Delta" },
+        { href: "#gambia", label: "Die Einreise nach Gambia" },
+        { href: "#banjul", label: "Banjul" },
+        { href: "#bordercrossing", label: "Bordercrossing Gambia" },
+        { href: "#cap-skirring", label: "Cap Skirring" },
+        { href:"#comments", label: "Kommentare"},
+        // { href:"#route", label: "Route" },
+    ]}
+/>
+
       <header className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-4">Entdecke den Senegal</h1>
         <p className="text-gray-600">
@@ -17,7 +35,7 @@ export default function Senegal() {
       {/* Artikel-Inhalt */}
       <article className="space-y-8">
         {/* Abschnitt 1 */}
-        <section>
+        <section id="dakar">
           <h2 className="text-2xl font-semibold mb-4">Die Hauptstadt Dakar</h2>
           <div>
           <p>
@@ -41,7 +59,7 @@ export default function Senegal() {
         </section>
 
         {/* Abschnitt 2 */}
-        <section>
+        <section id="insel">
           <h2 className="text-2xl font-semibold mb-4">Insel der Sklaven</h2>
         <div>
             <p>
@@ -68,7 +86,7 @@ export default function Senegal() {
         </section>
 
         {/* Abschnitt 3 */}
-        <section>
+        <section id="mbour">
           <h2 className="text-2xl font-semibold mb-4">Nächster Stopp M&apos;bour</h2>
          <div>
           <p>
@@ -103,7 +121,7 @@ export default function Senegal() {
         </section>
 
         {/* Abschnitt 4 */}
-        <section>
+        <section id="saloum">
           <h2 className="text-2xl font-semibold mb-4">Die Weiterfahrt</h2>
          
          <div>
@@ -127,7 +145,7 @@ export default function Senegal() {
         </section>
           
           {/* Abschnitt 5 */}
-          <section>
+          <section id="gambia">
           <h2 className="text-2xl font-semibold mb-4">Das Saloum Delta</h2>
          
          <div>
@@ -164,21 +182,21 @@ export default function Senegal() {
         </section>
 
         {/* Abschnitt 6 */}
-        <section>
+        <section id="gambia">
           <h2 className="text-2xl font-semibold mb-4">Die Einreise nach Gambia</h2>
           <div>
             <p>
            Von Mar Lodj aus bin ich mit unterschiedlichen Sammeltaxen weiter nach Gambia gefahren. 
            Die Einreise war relativ einfach, aber  die Reise an sich war schon hart anstrengend.
-           Zum einen wegen der Sprachbariere, zum anderen weil man bei 30 Grad, Schulter an Schulter, den Schlaglöchern mit der größe eines Smarts, 
-           ausweichend, mit anderen Leuten in einem Sammeltaxi ausm 18 Jahrhundert sitzt 
-            (zumindest vom Zustand des Wagens),und ohne Klimaanlage (logisch).
-          Das Sammeltaxi hat mich an der Greze rausgelassen und ist dann zurück gefahren. Nach der Immigration
+           Zum einen wegen der Sprachbariere, zum anderen, weil man bei 30 Grad, Schulter an Schulter, den Schlaglöchern mit der größe eines Smarts, 
+           ausweichend, in einem Sammeltaxi ausm 18 Jahrhundert sitzt 
+            (zumindest vom Zustand des Wagens),und das alles natürlich ohne Klima (logisch).
+          Der Collectivo hat mich an der Greze rausgelassen und ist dann zurück gefahren. Nach der Immigration
           stehen da dann schon die nächsten Sammeltaxen, die dich weiter nach Gambia bringen. Aber nicht bis nach Banjul, sondern 
           bis zur Fähre. Nach der Fähre sollte man sich ein Taxi suche, welches dich dann in die Hauptstadt bringt.) 
           Lustige Geschichte: kaum bist du über die grenze, sprechen alle auf einmal Englisch. Und das Sammeltaxi von der Grenze
           bis in die nächste Stadt hat 50 Dalasi gekostet. Aufgrund des Dialekts, habe ich 50 Dollar(s) verstanden, und war schon ganz enttäuscht, dass man an der Grenze so abgezogen wird.
-          Aber egal wen ich gefragt habe, alle haben bestätigt, dass es 50 Dollar/Dallas sind. Zum Glück habe ich dann irgendwann gecheckt, dass es 50 Dalasi sind, 
+          Aber egal wen ich gefragt habe, alle haben bestätigt, dass es 50 &quot;Dollars&quot; sind. Zum Glück habe ich dann irgendwann gecheckt, dass es 50 Dalasi sind, 
           was umgerechnet aktuell nicht mal 70 Cent sind. Der Taxifahrer hat sich sehr gefreut, als ich ihm 100 Dalasi gegeben habe
           und hat mir erklärt wo es zur Fähre geht, wo man Tickets kauft und hat mir ein Taxi organisiert, (noch vor der Fähre) welches mich dann in die Hauptstadt gebracht hat.
           </p>
@@ -195,17 +213,18 @@ export default function Senegal() {
 
 
         {/* Abschnitt 7 */}
-        <section>
+        <section id="banjul">
           <h2 className="text-2xl font-semibold mb-4">Banjul</h2>
           <div>
             <p>
             Banjul ist die Hauptstadt von Gambia. Ich habe mich hier 3 Tage aufgehalten.
             Hier gibt es nicht viel zu berichten, außer, dass 3 Tage natürlich viel zu wenig sind.
-            Ich hatte ein Hotel direkt am Strand. Das war ganz angenehm. Einziges manko, die Leitung hatte zu 
-            wenig Druck, sodass nicht wirklich Wasser aus der Dusche kam. Ich habe mich dann einfach im Zimmer eingeseift und
-            bin dann ins Meer gewatschelt mich abzuspülen.
+            Ich hatte ein Hotel direkt am Strand. Das war ganz angenehm. Einziges Manko, die Leitung hatte zu 
+            wenig Druck, sodass nicht wirklich Wasser aus der Dusche kam. Ich habe mich dann einfach im Badezimmer eingeseift und
+            bin dann ins Meer gewatschelt, mich abzuspülen.
+            <br/>
             Außerdem habe ich eine einheimische kennengelernt und sie hat mir die Stadt gezeigt und auch ihr zu Hause, wie ihre Familie lebt. 
-            Das war wirklich sehr interressant und hat mir einen guten Einblick in das Leben in Gambia gegeben.
+            Das war wirklich sehr interressant und hat mir einen kleinen Einblick in das Leben in Gambia gegeben.
             Das Essen in Gambia ist etwas günstiger als in Senegal. Obwohl es noch so viel mehr zu sehen gab(nicht nur die Hauptstadt), musste ich leider 
             weiter reisen, da ich nur 16 Tage Zeit hatte.
             
@@ -217,8 +236,55 @@ export default function Senegal() {
             ]}
           />
         </section>
-      </article>
 
+                {/* Abschnitt 8 */}
+                <section id="bordercrossing">
+          <h2 className="text-2xl font-semibold mb-4">Bordercrossing Gambia</h2>
+          <div>
+            <p>
+           Von Banjul gab es ein Sammeltaxi nach Kartong. Dort gibt es einen super kleinen Grenzübergang, den du mit dem Boot erreichst.
+           Keine sorge, es ist wirklich ein sehr kleines Flüsschen.
+           Nicht vergessen seine Stempel seine Stempel zu holen. Das konnte man alles
+           problemlos vor Ort. Nach dem Grenzübertritt stand da schon ein Sammeltaxi und viele Motorräder.
+           Ich habe mich für das Motorrad entschieden, da ich nicht warten wollte, bis das Taxi voll ist.
+
+            <br/>
+           Die Fahrt hat ca. 40 Minuten gedauert und ging viel durch den Djungel, mit riesen großen alten Bäumen.
+           Ich weiß ehrlich gesagt nicht mehr, wo ich rausgelassen worden bin. Aber von dort habe ich mich in ein Sammeltaxi gesetzt,
+           welches mich bis Zigunchor gebracht hat. Von dort bin ich mit einem anderen Collectivo
+           zu meinem letzten Stoppp gefahren- Cap Skirring.
+
+          </p>
+          </div>
+            <ImageGallery
+            images={[
+              { src: "/senegal/dakar/img.jpg", alt: "Bilder vom Bordercrossing" },
+            ]}
+          />
+        </section>
+
+        {/* Abschnitt 9 */}
+        <section id="cap-skirring">
+          <h2 className="text-2xl font-semibold mb-4">Cap Skirring</h2>
+          <div>
+            <p>
+           In Cap Skirring habe ich mich einfach von der ganzen Reise erholt.
+           Habe vor Ort einige Einheimische kennengelernt und mit ihnen die Zeit verbracht.
+           Ne Koversation mit Händen und Füßen führend, war schon dezent anstrengend.
+            <br/>
+           Letztendlich bin ich von dort aus zurück nach Dakar geflogen und dann zurück nach Deutschland.
+            
+          </p>
+          </div>
+            <ImageGallery
+            images={[
+              { src: "/senegal/dakar/img.jpg", alt: "Bilder von Dakar" },
+            ]}
+          />
+        </section>
+      </article>
+<Comments/>
+{/* <SenegalRoute/> */}
       {/* Footer-Bereich */}
       <footer className="text-center mt-12">
         <p className="text-gray-500">
