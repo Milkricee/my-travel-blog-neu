@@ -39,8 +39,8 @@ export default function Senegal() {
       <article>
         {/* Abschnitt 1 */}
         <section id="dakar">
-          <h2>Die Hauptstadt Dakar</h2>
-          <p>
+          <h2 className="container-style">Die Hauptstadt Dakar</h2>
+          <p >
             So wie ich, wirst du höchstwahrscheinlich in Dakar starten. Vom Flughafen ist es ein bisschen Pain in the Ass
             zur Stadt zu kommen (wenn man nicht bereit ist 50€ für ein Taxi zu zahlen).
           </p>
@@ -64,7 +64,7 @@ export default function Senegal() {
         {/* Abschnitt 2 */}
         <section id="insel">
           <h2>Insel der Sklaven</h2>
-          <p>
+          <p className="text-4xl font-bold mb-4">
             Wenn man sich schon in Dakar aufhält, ist der Besuch der Insel ein absoluter Muss. Man erreicht die Insel recht einfach vom Hafen aus.
           </p>
           <p>
