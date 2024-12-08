@@ -50,14 +50,14 @@ export default function About() {
                         Auch bei weiteren Fragen zu spezifischen Reisezielen stehe ich sehr gerne zur Verfügung.
                     </p>
                     <p className="text-lg">
-  Falls jemand spannende Projekte hat, bei denen ich mitwirken kann, bin ich gerne dabei.
+  Falls jemand spannende Projekte hat, bei denen ich mitwirken kann
   <br />
   <strong>
     <a
       href="mailto:jnr.daniil@gmail.com"
       className="text-blue-500 underline hover:text-blue-700"
     >
-      Do not hesitate to contact me.
+      do not hesitate to contact me.
     </a>
   </strong>
 </p>
