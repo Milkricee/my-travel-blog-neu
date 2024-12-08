@@ -1,9 +1,12 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useState } from "react";
 import Image from "next/image";
-import Comments from "../components/comments";
-import NavbarWithButton from "@/app/components/NavbarWithButton";
+
+
+const NavbarWithButton = dynamic(() => import("../components/NavbarWithButton"), { ssr: false });
+const Comments = dynamic(() => import("../components/comments"), { ssr: false });
 
 export default function Marokko() {
     const [isModalOpen, setModalOpen] = useState(false);
