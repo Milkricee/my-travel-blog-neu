@@ -36,9 +36,9 @@ export default function Senegal() {
       </header>
 
       {/* Artikel-Inhalt */}
-      <article>
+      <article className="container-style" >
         {/* Abschnitt 1 */}
-        <section className="container-style" id="dakar">
+        <section id="dakar">
           <h2 >Die Hauptstadt Dakar</h2>
           <p >
             So wie ich, wirst du höchstwahrscheinlich in Dakar starten. Vom Flughafen ist es ein bisschen Pain in the Ass
