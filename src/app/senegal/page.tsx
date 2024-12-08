@@ -39,7 +39,7 @@ export default function Senegal() {
       <article className="space-y-8">
         {/* Abschnitt 1 */}
         <section id="dakar">
-          <h2 className="text-2xl text-gray-600 font-semibold mb-4">Die Hauptstadt Dakar</h2>
+          <h2 className="text-2xl text-red-800 font-semibold mb-4">Die Hauptstadt Dakar</h2>
           <div>
           <p>
             So wie ich, wirst du höchstwahrscheinlich in Dakar starten. Vom Flughafen ist es ein bisschen Pain in the Ass zur Stadt zu kommen (wenn man nicht bereit ist 50€ für ein Taxi zu zahlen).
