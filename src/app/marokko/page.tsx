@@ -42,7 +42,7 @@ export default function Marokko() {
     };
 
     return (
-        <div className="p-8 bg-gray-100 relative">
+        <div className="container-style">
          {/* Inhaltsverzeichnis mit allgemeiner Komponente */}
          <NavbarWithButton
                 links={[
