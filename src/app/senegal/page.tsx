@@ -269,8 +269,9 @@ export default function Senegal() {
           <div>
             <p>
            In Cap Skirring habe ich mich einfach von der ganzen Reise erholt.
-           Habe vor Ort einige Einheimische kennengelernt und mit ihnen die Zeit verbracht.
-           Ne Koversation mit Händen und Füßen führend, war schon dezent anstrengend.
+          Ich habe vor Ort einige Einheimische kennengelernt und mit ihnen die Zeit verbracht.
+           Die ganze Zeit sich mit Händen und Füßen, war schon dezent anstrengend. Wer französisch spricht, macht sich das ganze deutlich einfacher.
+           Es ist ein schönes kleines Örtchen mit wunderschönen Stränden. Hier habe ich meine restliche zeit verbracht, bis es wieder zurück ging.
             <br/>
            Letztendlich bin ich von dort aus zurück nach Dakar geflogen und dann zurück nach Deutschland.
             

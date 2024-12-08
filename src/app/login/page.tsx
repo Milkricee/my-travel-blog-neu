@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { auth } from "@/app/firebaseConfig";
 import {
   GoogleAuthProvider,
@@ -11,10 +11,10 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 
-export default function Login() {
+function LoginForm() {
   const [error, setError] = useState<string | null>(null);
   const router = useRouter();
-  const searchParams = useSearchParams();
+  const searchParams = useSearchParams(); // Suspense-sensitive Hook
 
   // Google Provider
   const googleProvider = new GoogleAuthProvider();
@@ -85,5 +85,13 @@ export default function Login() {
         </button>
       </div>
     </div>
+  );
+}
+
+export default function Login() {
+  return (
+    <Suspense fallback={<div className="text-center mt-6">Lädt...</div>}>
+      <LoginForm />
+    </Suspense>
   );
 }
