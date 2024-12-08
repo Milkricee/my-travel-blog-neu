@@ -26,7 +26,7 @@ export default function NavbarWithButton({
             {/* Inhaltsverzeichnis Button */}
             <button
                 onClick={toggleNav}
-                className="fixed left-0 bg-gray-500 text-white rounded-r-lg z-50 shadow-md"
+                className="fixed left-0 bg-gray-400 text-white rounded-r-lg z-50 shadow-md"
                 style={{
                     top: buttonTop,
                     width: buttonSize,

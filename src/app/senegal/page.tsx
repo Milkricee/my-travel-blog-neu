@@ -22,7 +22,7 @@ export default function Senegal() {
           { href: "#banjul", label: "Banjul" },
           { href: "#bordercrossing", label: "Bordercrossing Gambia" },
           { href: "#cap-skirring", label: "Cap Skirring" },
-          { href: "#route", label: "Route anzeigen" },
+          { href: "#map-senegal", label: "Route" },
           { href: "#comments", label: "Kommentare" },
         ]}
       />
