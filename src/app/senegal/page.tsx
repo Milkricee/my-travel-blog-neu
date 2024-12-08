@@ -216,18 +216,18 @@ export default function Senegal() {
             Hier gibt es nicht viel zu berichten, außer, dass 3 Tage natürlich viel zu wenig sind.
             Ich hatte ein Hotel direkt am Strand. Das war ganz angenehm. Einziges Manko, die Leitung hatte zu 
             wenig Druck, sodass nicht wirklich Wasser aus der Dusche kam. Ich habe mich dann einfach im Badezimmer eingeseift und
-            bin dann ins Meer gewatschelt, mich abzuspülen.
+            bin dann ins Meer gewatschelt, mich abzuspülen. Ich habe mir einen Scooter gemietet und die Stadt und Umgebung erkundet. 
             <br/>
             Außerdem habe ich eine einheimische kennengelernt und sie hat mir die Stadt gezeigt und auch ihr zu Hause, wie ihre Familie lebt. 
             Das war wirklich sehr interressant und hat mir einen kleinen Einblick in das Leben in Gambia gegeben.
-            Das Essen in Gambia ist etwas günstiger als in Senegal. Obwohl es noch so viel mehr zu sehen gab(nicht nur die Hauptstadt), musste ich leider 
+            Das Essen in Gambia ist etwas günstiger als in Senegal. Obwohl es noch so viel mehr zu sehen gab (nicht nur die Hauptstadt), musste ich leider 
             weiter reisen, da ich nur 16 Tage Zeit hatte.
             
           </p>
           </div>
             <ImageGallery
             images={[
-              { src: "/senegal/dakar/img.jpg", alt: "Bilder von Dakar" },
+              { src: "/senegal/banjul/img.jpg", alt: "Bilder von Dakar" },
             ]}
           />
         </section>
@@ -253,7 +253,7 @@ export default function Senegal() {
           </div>
             <ImageGallery
             images={[
-              { src: "/senegal/dakar/img.jpg", alt: "Bilder vom Bordercrossing" },
+              { src: "/senegal/border/img.jpg", alt: "Bilder vom Bordercrossing" },
             ]}
           />
         </section>
@@ -267,8 +267,17 @@ export default function Senegal() {
           Ich habe vor Ort einige Einheimische kennengelernt und mit ihnen die Zeit verbracht.
            Die ganze Zeit sich mit Händen und Füßen, war schon dezent anstrengend. Wer französisch spricht, macht sich das ganze deutlich einfacher.
            Es ist ein schönes kleines Örtchen mit wunderschönen Stränden. Hier habe ich meine restliche zeit verbracht, bis es wieder zurück ging.
+           Auch hier habe ich mir ein Raptor Quad gemietet, statt 50$ auf 25 runtergehandelt, das war schon gut günstig. Leider war der Reifen so abgenutzt, dass es ein richtiger Rennslick war.
+           Bevor ich den Quad abgegeben habe, musse ich ihm am Straßenrand flicken lassen (es waren ca 5 unterschiedliche Löcher drin). Shops zum Reifenflicken gibts in Senegal an jeder Ecke. 
+           Das Loch wird vergrößert und dann wird ein Stück Schlauch reingesteckt. Voila, schon kann man weitere KM schrubben.
             <br/>
            Letztendlich bin ich von dort aus zurück nach Dakar geflogen und dann zurück nach Deutschland.
+           Als ich zum Flughafen gelaufen bin, haben ein paar Feuerwehrmänner angehalte und mich in ihrem Pickup n kleines Stück mitgenommen.
+           Der Flughafen ist sehr klein und übersichtlich. Mit einer alten Propellermaschine ging es dann zurück.
+           In Dakar hatte ich einen vollen Tag Zeit, den ich am Retba See (Lac Rose) vernrachte. Angeblich ist der See rosa, davon hab ich vom Ufer aber nicht so viel gesehen.
+           Die Natur drum herum war aber schön.
+           So, das wars meinerseits. Ich hoffe euch hat der Bericht gefallen, lasst gerne ein paar Kommentare da, ich würde mich freuen.
+           Ciao Kakao und bis zum nächsten Mal.
             
           </p>
           </div>

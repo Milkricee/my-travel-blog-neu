@@ -60,3 +60,22 @@ section {
   color: var(--foreground); /* Gleicher Textfarbe wie im Root */
 }
 
+/* Karten-Container für einheitliches Design */
+.map-container {
+  width: 100%;
+  height: 500px;
+  border: 2px solid #ddd; /* Einheitlicher Rahmen */
+  border-radius: 10px; /* Abgerundete Ecken */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für mehr Tiefe */
+  overflow: hidden; /* Verhindert überlaufende Inhalte */
+}
+
+/* Mobilansicht für Karten */
+@media (max-width: 768px) {
+  .map-container {
+    height: 300px; /* Reduzierte Höhe für kleinere Bildschirme */
+    margin: 0 auto; /* Zentrierung */
+  }
+}
+
+
