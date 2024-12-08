@@ -38,8 +38,8 @@ export default function Senegal() {
       {/* Artikel-Inhalt */}
       <article>
         {/* Abschnitt 1 */}
-        <section id="dakar">
-          <h2 className="container-style">Die Hauptstadt Dakar</h2>
+        <section className="container-style" id="dakar">
+          <h2 >Die Hauptstadt Dakar</h2>
           <p >
             So wie ich, wirst du höchstwahrscheinlich in Dakar starten. Vom Flughafen ist es ein bisschen Pain in the Ass
             zur Stadt zu kommen (wenn man nicht bereit ist 50€ für ein Taxi zu zahlen).
