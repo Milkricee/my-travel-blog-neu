@@ -36,30 +36,31 @@ export default function Senegal() {
       </header>
 
       {/* Artikel-Inhalt */}
-      <article className="space-y-8">
-        {/* Abschnitt 1 */}
-        <section id="dakar">
-          <h2 className="text-2xl text-red-800 font-semibold mb-4">Die Hauptstadt Dakar</h2>
-          <div>
-          <p>
-            So wie ich, wirst du höchstwahrscheinlich in Dakar starten. Vom Flughafen ist es ein bisschen Pain in the Ass zur Stadt zu kommen (wenn man nicht bereit ist 50€ für ein Taxi zu zahlen).
-          </p>
-          <p>
-            Aber es gibt Collectivos (Sammeltaxen), die dich relativ günstig in die Stadt bringen.
-            Die Hauptstadt sieht noch relativ &quot;europäisch&quot; aus, aber das ändert sich schnell, sobald du dich außerhalb der Stadt begibst.
-          </p>
-          <p>
-            Ich hatte eine Unterkunft direkt am Wasser, etwas außerhalb des Zentrums. In der Stadt bekommst du recht günstig eine SIM-Karte mit Internet.
-            Zur Fortbewegung in der Stadt kannst du Taxen nehmen. Einfach ein bisschen verhandeln vorher, bis dich der Preis zufriedenstellt.
-          </p>
-          </div>
-          <ImageGallery
-            images={[
-              { src: "/senegal/start/dakar1.jpg", alt: "Der Blick von meiner Unterkunft" },
-              { src: "/senegal/start/dakar2.jpg", alt: "Straßen in Dakar" },
-            ]}
-          />
-        </section>
+{/* Artikel-Inhalt */}
+<article className="space-y-8">
+  {/* Abschnitt 1 */}
+  <section id="dakar">
+    <h2>Die Hauptstadt Dakar</h2>
+    <p>
+      So wie ich, wirst du höchstwahrscheinlich in Dakar starten. Vom Flughafen ist es ein bisschen Pain in the Ass zur Stadt zu kommen (wenn man nicht bereit ist 50€ für ein Taxi zu zahlen).
+    </p>
+    <p>
+      Aber es gibt Collectivos (Sammeltaxen), die dich relativ günstig in die Stadt bringen.
+      Die Hauptstadt sieht noch relativ &quot;europäisch&quot; aus, aber das ändert sich schnell, sobald du dich außerhalb der Stadt begibst.
+    </p>
+    <p>
+      Ich hatte eine Unterkunft direkt am Wasser, etwas außerhalb des Zentrums. In der Stadt bekommst du recht günstig eine SIM-Karte mit Internet.
+      Zur Fortbewegung in der Stadt kannst du Taxen nehmen. Einfach ein bisschen verhandeln vorher, bis dich der Preis zufriedenstellt.
+    </p>
+
+    {/* Bildgalerie */}
+    <ImageGallery
+      images={[
+        { src: "/senegal/start/dakar1.jpg", alt: "Der Blick von meiner Unterkunft" },
+        { src: "/senegal/start/dakar2.jpg", alt: "Straßen in Dakar" },
+      ]}
+    />
+  </section>
 
         {/* Abschnitt 2 */}
         <section id="insel">

@@ -43,3 +43,34 @@ body {
 main {
   padding-top: var(--header-height, 60px);
 }
+
+/* Globale CSS für den spezifischen Container */
+.container-style > * {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--foreground); /* Gleicher Textfarbe wie im Root */
+}
+
+/* Globale CSS für den spezifischen Container */
+section {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--foreground); /* Gleicher Textfarbe wie im Root */
+}
+
+section > h2 {
+  color: #171717; /* Überschriftenfarbe */
+  font-weight: 700; /* Fettgedruckte Überschriften */
+}
+
+section > p {
+  margin-bottom: 1rem; /* Abstände zwischen Absätzen */
+}
+
+section > div {
+  margin-top: 1rem; /* Optional: Abstand nach div-Blöcken */
+}
+
+
