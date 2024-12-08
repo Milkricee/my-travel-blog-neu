@@ -1,125 +1,114 @@
 "use client";
 
 import dynamic from "next/dynamic";
+
 // Dynamische Importe
 const NavbarWithButton = dynamic(() => import("../components/NavbarWithButton"), { ssr: false });
 const Comments = dynamic(() => import("../components/comments"), { ssr: false });
 const ImageGallery = dynamic(() => import("../components/ImageGallery"), { ssr: false });
-// const SenegalRoute = dynamic(() => import("../maps/senegal"), { ssr: false });
-
 
 export default function Senegal() {
   return (
     <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8" style={{ paddingTop: "var(--header-height)" }}>
       {/* Header-Bereich */}
       <NavbarWithButton
-    links={[
-        { href: "#dakar", label: "Die Hauptstadt Dakar" },
-        { href: "#insel", label: "Insel der Sklaven" },
-        { href: "#mbour", label: "Nächster Stopp M'bour" },
-        { href: "#saloum", label: "Das Saloum Delta" },
-        { href: "#gambia", label: "Die Einreise nach Gambia" },
-        { href: "#banjul", label: "Banjul" },
-        { href: "#bordercrossing", label: "Bordercrossing Gambia" },
-        { href: "#cap-skirring", label: "Cap Skirring" },
-        { href:"#comments", label: "Kommentare"},
-        // { href:"#route", label: "Route" },
-    ]}
-/>
+        links={[
+          { href: "#dakar", label: "Die Hauptstadt Dakar" },
+          { href: "#insel", label: "Insel der Sklaven" },
+          { href: "#mbour", label: "Nächster Stopp M'bour" },
+          { href: "#saloum", label: "Das Saloum Delta" },
+          { href: "#gambia", label: "Die Einreise nach Gambia" },
+          { href: "#banjul", label: "Banjul" },
+          { href: "#bordercrossing", label: "Bordercrossing Gambia" },
+          { href: "#cap-skirring", label: "Cap Skirring" },
+          { href: "#comments", label: "Kommentare" },
+        ]}
+      />
 
       <header className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-4">Entdecke den Senegal</h1>
-        <p className="text-gray-600">
-          Ich berichte von meinem 16-Tägigen Solotrip nach Senegal und gebe generelle Tipps und meine Reiseroute, aber keine konkreten Reiseempfehlungen. Lass dich von diesem Bericht inspirieren und gucke, wo die Reise hingeht ;)
-          Der Trip ist vom 15. Okt. 2021. Es war der erste Monat, nachdem wieder Touristen ins Land gelassen worden sind (Corona). Deshalb können sich meine Reiseerlebnisse etwas von deinen unterscheiden.
+        <p>
+          Ich berichte von meinem 16-Tägigen Solotrip nach Senegal und gebe generelle Tipps und meine Reiseroute,
+          aber keine konkreten Reiseempfehlungen. Lass dich von diesem Bericht inspirieren und gucke, wo die Reise hingeht ;)
+          Der Trip ist vom 15. Okt. 2021. Es war der erste Monat, nachdem wieder Touristen ins Land gelassen worden sind (Corona).
+          Deshalb können sich meine Reiseerlebnisse etwas von deinen unterscheiden.
         </p>
       </header>
 
       {/* Artikel-Inhalt */}
-{/* Artikel-Inhalt */}
-<article className="space-y-8">
-  {/* Abschnitt 1 */}
-  <section id="dakar">
-    <h2>Die Hauptstadt Dakar</h2>
-    <p>
-      So wie ich, wirst du höchstwahrscheinlich in Dakar starten. Vom Flughafen ist es ein bisschen Pain in the Ass zur Stadt zu kommen (wenn man nicht bereit ist 50€ für ein Taxi zu zahlen).
-    </p>
-    <p>
-      Aber es gibt Collectivos (Sammeltaxen), die dich relativ günstig in die Stadt bringen.
-      Die Hauptstadt sieht noch relativ &quot;europäisch&quot; aus, aber das ändert sich schnell, sobald du dich außerhalb der Stadt begibst.
-    </p>
-    <p>
-      Ich hatte eine Unterkunft direkt am Wasser, etwas außerhalb des Zentrums. In der Stadt bekommst du recht günstig eine SIM-Karte mit Internet.
-      Zur Fortbewegung in der Stadt kannst du Taxen nehmen. Einfach ein bisschen verhandeln vorher, bis dich der Preis zufriedenstellt.
-    </p>
+      <article>
+        {/* Abschnitt 1 */}
+        <section id="dakar">
+          <h2>Die Hauptstadt Dakar</h2>
+          <p>
+            So wie ich, wirst du höchstwahrscheinlich in Dakar starten. Vom Flughafen ist es ein bisschen Pain in the Ass
+            zur Stadt zu kommen (wenn man nicht bereit ist 50€ für ein Taxi zu zahlen).
+          </p>
+          <p>
+            Aber es gibt Collectivos (Sammeltaxen), die dich relativ günstig in die Stadt bringen. Die Hauptstadt sieht noch relativ
+            &quot;europäisch&quot; aus, aber das ändert sich schnell, sobald du dich außerhalb der Stadt begibst.
+          </p>
+          <p>
+            Ich hatte eine Unterkunft direkt am Wasser, etwas außerhalb des Zentrums. In der Stadt bekommst du recht günstig eine SIM-Karte mit Internet.
+            Zur Fortbewegung in der Stadt kannst du Taxen nehmen. Einfach ein bisschen verhandeln vorher, bis dich der Preis zufriedenstellt.
+          </p>
 
-    {/* Bildgalerie */}
-    <ImageGallery
-      images={[
-        { src: "/senegal/start/dakar1.jpg", alt: "Der Blick von meiner Unterkunft" },
-        { src: "/senegal/start/dakar2.jpg", alt: "Straßen in Dakar" },
-      ]}
-    />
-  </section>
+          <ImageGallery
+            images={[
+              { src: "/senegal/start/dakar1.jpg", alt: "Der Blick von meiner Unterkunft" },
+              { src: "/senegal/start/dakar2.jpg", alt: "Straßen in Dakar" },
+            ]}
+          />
+        </section>
 
         {/* Abschnitt 2 */}
         <section id="insel">
-          <h2 className="text-2xl font-semibold mb-4">Insel der Sklaven</h2>
-        <div>
-            <p>
+          <h2>Insel der Sklaven</h2>
+          <p>
             Wenn man sich schon in Dakar aufhält, ist der Besuch der Insel ein absoluter Muss. Man erreicht die Insel recht einfach vom Hafen aus.
           </p>
           <p>
-            Wenn ihr etwas mehr über die Geschichte der Insel erfahren wollt, holt euch einen Reiseführer, den man vor Ort easy finden kann. Verhandelt den Preis <strong>vorher</strong> und lasst euch nicht abzocken.
+            Wenn ihr etwas mehr über die Geschichte der Insel erfahren wollt, holt euch einen Reiseführer, den man vor Ort easy finden kann.
+            Verhandelt den Preis <strong>vorher</strong> und lasst euch nicht abzocken.
           </p>
           <p>
-            Mich hat ein Reiseführer begleitet, der mir anschließend 50$ abknöpfen wollte, die nicht abgemacht waren. Nachdem ich ihm 15$ getippt habe (er hat schon ganz gut erzählt), habe ich ihn nicht wieder gesehen.
+            Mich hat ein Reiseführer begleitet, der mir anschließend 50$ abknöpfen wollte, die nicht abgemacht waren.
+            Nachdem ich ihm 15$ getippt habe (er hat schon ganz gut erzählt), habe ich ihn nicht wieder gesehen.
           </p>
-          </div>
+
           <ImageGallery
             images={[
               { src: "/senegal/start/insel1.jpg", alt: "Die Insel der Sklaven" },
               { src: "/senegal/start/insel2.jpg", alt: "Historische Gebäude auf der Insel" },
               { src: "/senegal/start/insel3.jpg", alt: "Eine Sklavenzelle" },
               { src: "/senegal/start/insel4.jpg", alt: "Die Insel wird auch von einigen Einheimischen bewohnt" },
-              { src: "/senegal/start/insel5.jpg", alt: "Viele Gebäude hatten die Form eines Rumpfes, um die Sklaven schon vorzubereiten.." },
-              { src: "/senegal/start/insel6.jpg", alt: "Der Geschichte hat ordentlich auf mein Gemüt geschlagen" },
             ]}
           />
-          <p>Ein traumhaft schöner Ort mit einer sehr traurigen Vergangenheit.</p>
         </section>
 
         {/* Abschnitt 3 */}
         <section id="mbour">
-          <h2 className="text-2xl font-semibold mb-4">Nächster Stopp M&apos;bour</h2>
-         <div>
+          <h2>Nächster Stopp M&apos;bour</h2>
           <p>
             Puh, die Trips zwischen den Städten waren immer ein Erlebnis und ohne Sprachkenntnisse auch nicht immer einfach.
           </p>
           <p>
-            Gott sei Dank hatte ich eine SIM-Karte mit Internet und konnte einen Übersetzer nutzen, der mir so halbwegs weitergeholfen hat. (Aktuell würde ich ChatGPT als Übersetzer nutzen.)
+            Gott sei Dank hatte ich eine SIM-Karte mit Internet und konnte einen Übersetzer nutzen, der mir so halbwegs weitergeholfen hat.
+            (Aktuell würde ich ChatGPT als Übersetzer nutzen.)
           </p>
           <p>
-            Meist gibt es zwischen den Städten Sammeltaxen, die dich für wenig Geld mitnehmen, aber erst losfahren, wenn sie voll sind.            
+            Meist gibt es zwischen den Städten Sammeltaxen, die dich für wenig Geld mitnehmen, aber erst losfahren, wenn sie voll sind.
           </p>
           <p>
-          In M&apos;bour habe ich mir für 2 Tage einen Scooter gemietet und habe die Umgebung erkundet.
-            Unterwegs habe ich einen Einheimischen mit Motorrad kennengelernt, der mir den Fischereihafen gezeigt hat. Das war das erste Highlight, welches mir vor Augen geführt hat, dass ich verdammt noch mal <strong>in Afrika</strong> bin.
+            In M&apos;bour habe ich mir für 2 Tage einen Scooter gemietet und habe die Umgebung erkundet.
+            Unterwegs habe ich einen Einheimischen mit Motorrad kennengelernt, der mir den Fischereihafen gezeigt hat.
           </p>
-          <p>
-            Während er mir die Gegend gezeigt hat, hat mein Scooter den Geist aufgegeben, natürlich pünktlich zur Dunkelheit. Lange Rede, kurzer Sinn: Er hat einen random Scooterfahrer angehalten, der dann mitten auf der Straße und im Dunkeln, damit eine Stunde beschäftigt war, meinen Scooter zu reparieren.
-          </p>
-          <p>
-            Während ich da dämlich rumstand, hat er meinen ganzen Scooter zerlegt, den Vergaser gereinigt und wieder zusammengebaut. Danach fuhr der Scooter wieder. Ich habe mich mit 10€ bedankt. Hätte er auf einmal keine Lust mehr gehabt, würde ich da stehen, im Dunkeln, mit einem zerlegten Scooter.
-          </p>
-          </div>
+
           <ImageGallery
             images={[
               { src: "/senegal/start/fischerei1.jpg", alt: "Hier herrschte ein reges Treiben" },
               { src: "/senegal/start/fischerei2.jpg", alt: "Der Geruch war auch dementsprechend" },
               { src: "/senegal/start/fischerei3.jpg", alt: "Aber dennoch ein sehr interessanter Einblick in deren Leben" },
-              { src: "/senegal/start/reparatur1.jpg", alt: "Da standen wir.. einer repariert, der andere leuchtet und der Dritte läuft nervös auf und ab" },
-              { src: "/senegal/start/reparatur2.jpg", alt: "Da issa - der Vergaser. Hab mich leider nicht getraut, während der Reparatur mehr Fotos zu machen." },
             ]}
           />
         </section>
