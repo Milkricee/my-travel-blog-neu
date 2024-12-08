@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import SenegalRoute from "../maps/senegal";
 
 // Dynamische Importe
 const NavbarWithButton = dynamic(() => import("../components/NavbarWithButton"), { ssr: false });
@@ -21,6 +22,7 @@ export default function Senegal() {
           { href: "#banjul", label: "Banjul" },
           { href: "#bordercrossing", label: "Bordercrossing Gambia" },
           { href: "#cap-skirring", label: "Cap Skirring" },
+          { href: "#route", label: "Route anzeigen" },
           { href: "#comments", label: "Kommentare" },
         ]}
       />
@@ -277,8 +279,9 @@ export default function Senegal() {
           />
         </section>
       </article>
-<Comments/>
-{/* <SenegalRoute/> */}
+
+      <SenegalRoute/>
+      <Comments/>
       {/* Footer-Bereich */}
       <footer className="text-center mt-12">
         <p className="text-gray-500">
