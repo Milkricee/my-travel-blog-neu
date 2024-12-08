@@ -55,8 +55,9 @@ export default function Marokko() {
 
 
             {/* Einführung */}
+            <article className="container-style" >
             <div id="intro">
-                <h1 className="text-4xl font-bold text-center mb-8">Mein Marokko-Urlaub</h1>
+                <h1 className="text-4xl font-bold text-center mb-8 mt-9">Mein Marokko-Urlaub</h1>
                 <p className="text-lg text-center mb-8">
                     Marokko ist eines meiner Lieblingsreiseziele. Die Vielfalt des Landes ist einfach unglaublich. <br />
                     Es ist nicht so weit weg, es hat eine erstaunlich krasse Vielfalt an Kultur und Landschaft und es ist auch recht günstig. 
@@ -65,6 +66,7 @@ export default function Marokko() {
                     Zum 1. Trip geht&apos;s <a href="/1-trip" className="text-blue-500 underline hover:text-blue-700">hier lang</a>.
                 </p>
             </div>
+           
 
             {/* Pro und Contra */}
             <div id="pro-contra" className="border border-gray-300 bg-white p-6 rounded-lg shadow-sm mb-8">
@@ -157,7 +159,11 @@ export default function Marokko() {
                     <li className="mb-2">Abenteuerliche Fahrten durch die Wüste und Nächte unter den Sternen.</li>
                 </ul>
             </div>
+            </article>
             <Comments />
         </div>
+        
     );
+
 }
+
