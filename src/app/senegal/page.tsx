@@ -1,9 +1,12 @@
 "use client";
 
-import NavbarWithButton from "@/app/components/NavbarWithButton";
-import Comments from "@/app/components/comments";
-import ImageGallery from "@/app/components/ImageGallery";
-// import SenegalRoute from "@/app/maps/senegal"; 
+import dynamic from "next/dynamic";
+// Dynamische Importe
+const NavbarWithButton = dynamic(() => import("../components/NavbarWithButton"), { ssr: false });
+const Comments = dynamic(() => import("../components/comments"), { ssr: false });
+const ImageGallery = dynamic(() => import("../components/ImageGallery"), { ssr: false });
+// const SenegalRoute = dynamic(() => import("../maps/senegal"), { ssr: false });
+
 
 export default function Senegal() {
   return (
