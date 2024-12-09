@@ -4,12 +4,13 @@
 
 :root {
   --foreground: #000000;
+  --background: white;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a; /* Kann entfernt werden, da nicht genutzt */
-    --foreground: #ffffff;
+    --background: black;
+    --foreground: white;
   }
 }
 
@@ -57,7 +58,7 @@ section {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--foreground); /* Gleicher Textfarbe wie im Root */
+  color: red; /* Gleicher Textfarbe wie im Root */
 }
 
 h2 {                /* Überschrift */
