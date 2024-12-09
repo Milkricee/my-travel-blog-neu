@@ -60,6 +60,7 @@ export default function Senegal() {
             images={[
               { src: "/senegal/start/dakar1.jpg", alt: "Der Blick von meiner Unterkunft" },
               { src: "/senegal/start/dakar2.jpg", alt: "Straßen in Dakar" },
+              { src: "/senegal/start/verkehr.jpg", alt: "Straße auf einer Nahegelegenen Stadt" },
             ]}
           />
         </section>
@@ -136,6 +137,8 @@ export default function Senegal() {
               { src: "/senegal/start/motorrad.jpg", alt: "Mit dem Gerät sind wir los" },
               { src: "/senegal/start/trip.jpg", alt: "Helm gab es nur für den Fahrer" },
               { src: "/senegal/start/straße.jpg", alt: "Oft sahen die Straßen so aus" },
+              { src: "/senegal/sine-saloum/kaffeestand.jpg", alt: "Solche Kaffeestände gibt es an jeder Ecke, wo man sich sehr sehr günstig n kleinen Espresso kaufen konnte" },
+              { src: "/senegal/sine-saloum/einkaufsladen.jpg", alt: "So sieht ein Typischer Kiosk aus, wo man so allerlei kaufen kann. Sie sind recht gut verbreitet in Senegal" },
             ]}
           />
         </section>
@@ -165,14 +168,14 @@ export default function Senegal() {
           <ImageGallery
             images={[
               { src: "/senegal/sine-saloum/taxiBoot.jpg", alt: "So bewegt man sich zwischen den Inseln" },
-              { src: "/senegal/sine-saloum/booking.jpg", alt: "Unterkunft" },
+              { src: "/senegal/sine-saloum/booking.jpg", alt: "Die Unterkunft" },
               { src: "/senegal/sine-saloum/eseltaxi.jpg", alt: "Auf der Insel gab es keine Autos. Nur Pferde und Eseltaxen" },
               { src: "/senegal/sine-saloum/kinder.jpg", alt: "Mein Lieblingsfoto. Es gibt super viele Kinder auf der Insel" },
               { src: "/senegal/sine-saloum/kinder.jpg", alt: "Mein Lieblingsfoto. Es gibt super viele Kinder auf der Insel" },
-              { src: "/senegal/sine-saloum/sinesaloum4.jpg", alt: "Die Insel war super grün" },
+              { src: "/senegal/sine-saloum/sinesaloum1.jpg", alt: "Die Insel war super grün" },
               { src: "/senegal/sine-saloum/sunset.jpg", alt: "Es gab wunderschöne Sunsets zu beobachten" },
-              { src: "/senegal/sine-saloum/einkaufsladen.jpg", alt: "So sieht ein Typischer Kiosk aus, wo man so allerlei kaufen kann. Sie sind recht gut verbreitet in Senegal" },
-             
+              { src: "/senegal/sine-saloum/reggaebar.jpg", alt: "Auf Mar Lodj gab es eine Reggae Bar, wo sich alle getroffen haben" },
+            
             ]}
           />
         </section>
@@ -202,6 +205,8 @@ export default function Senegal() {
           images={[
             { src: "/senegal/sine-saloum/taxi.jpg", alt: "Schulter an Schulter bei 30 Grad." },
             { src: "/senegal/sine-saloum/taxi2.jpg", alt: "Die Fortbewegung war immer recht anstrengend" },
+            { src: "/senegal/gambia/fähre_g.jpg", alt: "Mit dieser Fähre überquert man den Fluss. Blick aus dem Taxi" },
+            { src: "/senegal/gambia/landschaft_g.jpg", alt: "Unterwegs" },
            ]}
             />
 
@@ -228,7 +233,10 @@ export default function Senegal() {
           </div>
             <ImageGallery
             images={[
-              { src: "/senegal/banjul/img.jpg", alt: "Bilder von Dakar" },
+              { src: "/senegal/gambia/strand2_g.jpg", alt: "Strand" },
+              { src: "/senegal/gambia/strand1_g.jpg", alt: "Kilometerlanger Strand, wo das Auge reicht" },
+              { src: "/senegal/gambia/fischerei_g.jpg", alt: "Bilder von Dakar" },
+              { src: "/senegal/gambia/einheimische_g.jpg", alt: "Sie hat mir die Stadt gezeigt" },
             ]}
           />
         </section>
@@ -254,7 +262,12 @@ export default function Senegal() {
           </div>
             <ImageGallery
             images={[
-              { src: "/senegal/border/img.jpg", alt: "Bilder vom Bordercrossing" },
+              { src: "/senegal/gambia/ziegen_g.jpg", alt: "In der Hauptstadt liefen einfach Ziegen über die Straßen" },
+              { src: "/senegal/gambia/tuktuk.jpg", alt: " Tuktuk" },
+              { src: "/senegal/gambia/essen_g.jpg", alt: " Essen" },
+              { src: "/senegal/gambia/border.jpg", alt: "So sieht es an der Grenze aus. Er wird kaum genutzt" },
+              { src: "/senegal/gambia/bordercrossing_boot.jpg", alt: " Man muss dieses kleine Flüsschen überqueren, um wieder nach Senegal zu kommen" },
+              { src: "/senegal/gambia/bordercrossing_motorrad.jpg", alt: " Von der Grenze ging es dann ca 40 min durch schöne Natur, zur nächstgrößten Stadt mit Busanbindung" },
             ]}
           />
         </section>
