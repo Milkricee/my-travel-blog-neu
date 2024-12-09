@@ -27,9 +27,9 @@ export default function Senegal() {
         ]}
       />
 
-      <header className="text-center mb-8">
+      <header className="text-center mb-8" style={{color:"black"}}>
         <h1 className="text-4xl font-bold mb-4">Entdecke den Senegal</h1>
-        <p>
+        <p >
           Ich berichte von meinem 16-Tägigen Solotrip nach Senegal und gebe generelle Tipps und meine Reiseroute,
           aber keine konkreten Reiseempfehlungen. Lass dich von diesem Bericht inspirieren und gucke, wo die Reise hingeht ;)
           Der Trip ist vom 15. Okt. 2021. Es war der erste Monat, nachdem wieder Touristen ins Land gelassen worden sind (Corona).
