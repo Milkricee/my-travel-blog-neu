@@ -4,9 +4,10 @@ import { useState, useEffect } from "react";
 interface RouteRendererProps {
   origin: google.maps.LatLngLiteral; // Startpunkt der Route
   destination: google.maps.LatLngLiteral; // Zielpunkt der Route
+  waypoints?: { location: google.maps.LatLngLiteral; stopover: boolean }[]; // Optional: Zwischenziele
 }
 
-export default function RouteRenderer({ origin, destination }: RouteRendererProps) {
+export default function RouteRenderer({ origin, destination, waypoints }: RouteRendererProps) {
   const [directions, setDirections] = useState<google.maps.DirectionsResult | null>(null);
 
   const { isLoaded } = useJsApiLoader({
@@ -21,6 +22,7 @@ export default function RouteRenderer({ origin, destination }: RouteRendererProp
         {
           origin,
           destination,
+          waypoints, // Übergib die Zwischenziele an die Directions API
           travelMode: google.maps.TravelMode.DRIVING,
         },
         (result, status) => {
@@ -32,7 +34,7 @@ export default function RouteRenderer({ origin, destination }: RouteRendererProp
         }
       );
     }
-  }, [isLoaded, origin, destination]);
+  }, [isLoaded, origin, destination, waypoints]);
 
   return directions ? <DirectionsRenderer directions={directions} /> : null;
 }
