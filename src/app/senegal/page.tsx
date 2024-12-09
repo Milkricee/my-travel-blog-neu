@@ -290,6 +290,7 @@ export default function Senegal() {
            Der Flughafen ist sehr klein und übersichtlich. Mit einer alten Propellermaschine ging es dann zurück.
            In Dakar hatte ich einen vollen Tag Zeit, den ich am Retba See (Lac Rose) vernrachte. Angeblich ist der See rosa, davon hab ich vom Ufer aber nicht so viel gesehen.
            Die Natur drum herum war aber schön.
+           <br/>
            So, das wars meinerseits. Ich hoffe euch hat der Bericht gefallen, lasst gerne ein paar Kommentare da, ich würde mich freuen.
            Ciao Kakao und bis zum nächsten Mal.
             
@@ -297,7 +298,14 @@ export default function Senegal() {
           </div>
             <ImageGallery
             images={[
-              { src: "/senegal/dakar/img.jpg", alt: "Bilder von Dakar" },
+              { src: "/senegal/cap-skirring/beach_c.jpg", alt: "Bilder von Dakar" },
+              { src: "/senegal/cap-skirring/cap_skirring2.jpg", alt: "Wellhütten direkt neben einem riesen Termitenhügel" },
+              { src: "/senegal/cap-skirring/fischereihütten_c.jpg", alt: "Fischereihütten" },
+              { src: "/senegal/cap-skirring/geier_c.jpg", alt: "Es gab viele Geier am Strand" },
+              { src: "/senegal/cap-skirring/landschaft_c.jpg", alt: "So sahen oft die Straßen aus" },
+              { src: "/senegal/cap-skirring/landschaft2_c.jpg", alt: "Wellhütten direkt neben einem riesen Termitenhügel" },
+              { src: "/senegal/cap-skirring/´feuerwehr.jpg", alt: "Es gab viele Geier am Strand" },
+              { src: "/senegal/cap-skirring/flugzeug.jpg", alt: "Mit dem Propellerflugzeug ging es zurück nach Dakar" },
             ]}
           />
         </section>
