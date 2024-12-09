@@ -172,7 +172,7 @@ export default function Senegal() {
               { src: "/senegal/sine-saloum/eseltaxi.jpg", alt: "Auf der Insel gab es keine Autos. Nur Pferde und Eseltaxen" },
               { src: "/senegal/sine-saloum/kinder.jpg", alt: "Mein Lieblingsfoto. Es gibt super viele Kinder auf der Insel" },
               { src: "/senegal/sine-saloum/kinder.jpg", alt: "Mein Lieblingsfoto. Es gibt super viele Kinder auf der Insel" },
-              { src: "/senegal/sine-saloum/sinesaloum1.jpg", alt: "Die Insel war super grün" },
+              { src: "/senegal/sine-saloum/sinesaloum1.jpg", alt: "Zu der Jahreszeit war es sehr grün in Senegal" },
               { src: "/senegal/sine-saloum/sunset.jpg", alt: "Es gab wunderschöne Sunsets zu beobachten" },
               { src: "/senegal/sine-saloum/reggaebar.jpg", alt: "Auf Mar Lodj gab es eine Reggae Bar, wo sich alle getroffen haben" },
             
@@ -233,10 +233,10 @@ export default function Senegal() {
           </div>
             <ImageGallery
             images={[
-              { src: "/senegal/gambia/strand2_g.jpg", alt: "Strand" },
-              { src: "/senegal/gambia/strand1_g.jpg", alt: "Kilometerlanger Strand, wo das Auge reicht" },
-              { src: "/senegal/gambia/fischerei_g.jpg", alt: "Bilder von Dakar" },
-              { src: "/senegal/gambia/einheimische_g.jpg", alt: "Sie hat mir die Stadt gezeigt" },
+              { src: "/senegal/gambia/strand2_g.jpg", alt: "Schöne Strände" },
+              { src: "/senegal/gambia/strand1_g.jpg", alt: "Kilometerlange Strände laden zum spazieren gehen ein" },
+              { src: "/senegal/gambia/fischerei_g.jpg", alt: "Fischerboote" },
+              { src: "/senegal/gambia/einheimische_g.jpg", alt: "Sie hat mir die Stadt gezeigt und wie ihre Family lebt. Das war ein toller, kleiner Einblick in ihr Leben." },
             ]}
           />
         </section>
@@ -263,9 +263,9 @@ export default function Senegal() {
             <ImageGallery
             images={[
               { src: "/senegal/gambia/ziegen_g.jpg", alt: "In der Hauptstadt liefen einfach Ziegen über die Straßen" },
-              { src: "/senegal/gambia/tuktuk.jpg", alt: " Tuktuk" },
-              { src: "/senegal/gambia/essen_g.jpg", alt: " Essen" },
-              { src: "/senegal/gambia/border.jpg", alt: "So sieht es an der Grenze aus. Er wird kaum genutzt" },
+              { src: "/senegal/gambia/tuktuk.jpg", alt: " Auch hier gibts Tuktuks" },
+              { src: "/senegal/gambia/essen_g.jpg", alt: "Einheimisches Essen hat schon für ein paar Cent bekommen" },
+              { src: "/senegal/gambia/border.jpg", alt: "So sieht es an der Grenze aus. Sie wurde kaum genutzt" },
               { src: "/senegal/gambia/bordercrossing_boot.jpg", alt: " Man muss dieses kleine Flüsschen überqueren, um wieder nach Senegal zu kommen" },
               { src: "/senegal/gambia/bordercrossing_motorrad.jpg", alt: " Von der Grenze ging es dann ca 40 min durch schöne Natur, zur nächstgrößten Stadt mit Busanbindung" },
             ]}
@@ -284,6 +284,10 @@ export default function Senegal() {
            Auch hier habe ich mir ein Raptor Quad gemietet, statt 50$ auf 25 runtergehandelt, das war schon gut günstig. Leider war der Reifen so abgenutzt, dass es ein richtiger Rennslick war.
            Bevor ich den Quad abgegeben habe, musse ich ihm am Straßenrand flicken lassen (es waren ca 5 unterschiedliche Löcher drin). Shops zum Reifenflicken gibts in Senegal an jeder Ecke. 
            Das Loch wird vergrößert und dann wird ein Stück Schlauch reingesteckt. Voila, schon kann man weitere KM schrubben.
+            <br/>
+            Auch hier habe ich ein paar Einheimische getroffen. Ein Musiker hat mich zu sich nach Hause eingeladen haben. Sein ganzes Haus war nur eine 4x4 m große Wellblechhütte. Außer einem Bett und 
+            ein paar Instrumenten war da kein Platz für was anderes. Er hatte nicht mal fließendes Wasser. Aber er war sooo glücklich, dass ich mich gefragt habe, wie man glücklicher sein kann als ich, und das
+            obwohl ICH im Urlaub bin.
             <br/>
            Letztendlich bin ich von dort aus zurück nach Dakar geflogen und dann zurück nach Deutschland.
            Als ich zum Flughafen gelaufen bin, haben ein paar Feuerwehrmänner angehalte und mich in ihrem Pickup n kleines Stück mitgenommen.
@@ -304,7 +308,8 @@ export default function Senegal() {
               { src: "/senegal/cap-skirring/geier_c.jpg", alt: "Es gab viele Geier am Strand" },
               { src: "/senegal/cap-skirring/landschaft_c.jpg", alt: "So sahen oft die Straßen aus" },
               { src: "/senegal/cap-skirring/landschaft2_c.jpg", alt: "Wellhütten direkt neben einem riesen Termitenhügel" },
-              { src: "/senegal/cap-skirring/´feuerwehr.jpg", alt: "Es gab viele Geier am Strand" },
+              { src: "/senegal/cap-skirring/fufana.jpg", alt: "Fufana mir die Gegend und seine Unterkunft gezeigt" },
+              { src: "/senegal/cap-skirring/feuerwehr.jpg", alt: "Die Feuerwehrleute haben mich ein kurzes Stück mitgenommen" },
               { src: "/senegal/cap-skirring/flugzeug.jpg", alt: "Mit dem Propellerflugzeug ging es zurück nach Dakar" },
             ]}
           />
