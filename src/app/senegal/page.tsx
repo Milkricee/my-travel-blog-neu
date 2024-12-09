@@ -14,6 +14,7 @@ export default function Senegal() {
       {/* Header-Bereich */}
       <NavbarWithButton
         links={[
+          { href: "#map-senegal", label: "Route" },
           { href: "#dakar", label: "Die Hauptstadt Dakar" },
           { href: "#insel", label: "Insel der Sklaven" },
           { href: "#mbour", label: "Nächster Stopp M'bour" },
@@ -22,7 +23,6 @@ export default function Senegal() {
           { href: "#banjul", label: "Banjul" },
           { href: "#bordercrossing", label: "Bordercrossing Gambia" },
           { href: "#cap-skirring", label: "Cap Skirring" },
-          { href: "#map-senegal", label: "Route" },
           { href: "#comments", label: "Kommentare" },
         ]}
       />

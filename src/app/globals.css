@@ -62,7 +62,12 @@ section {
 
 h2 {                /* Überschrift */
   font-size: 30px; /* Schriftgröße */
-  color: purple; /* Farbe */
+  color: blue; /* Farbe */
   font-weight: bold; /* Optional: Schriftstil */
   margin-bottom: 1rem; /* Optional: Abstand nach unten */
+}
+/* Globale CSS */
+#map-senegal {
+  margin-bottom: 30px; /* Kein Abstand unter der Karte */
+  height: 20%; /* Automatische Höhe */
 }
