@@ -33,7 +33,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
       <p className="text-sm text-gray-500 mt-2 text-center">
         {images[currentIndex].alt}
       </p>
-
+      <br/>
       {/* Pfeil links */}
       <button
         onClick={handlePrev}

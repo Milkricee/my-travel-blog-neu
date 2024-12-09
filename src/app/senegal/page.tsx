@@ -66,9 +66,9 @@ export default function Senegal() {
 
         {/* Abschnitt 2 */}
         <section id="insel">
-          <h2>Insel der Sklaven</h2>
+          <h2>Isla de Gore</h2>
           <p>
-            Wenn man sich schon in Dakar aufhält, ist der Besuch der Insel ein absoluter Muss. Man erreicht die Insel recht einfach vom Hafen aus.
+            Wenn man sich schon in Dakar aufhält, ist der Besuch der ehemaligen Sklaveninsel ein absoluter Muss. Man erreicht die Insel recht einfach vom Hafen aus.
           </p>
           <p>
             Wenn ihr etwas mehr über die Geschichte der Insel erfahren wollt, holt euch einen Reiseführer, den man vor Ort easy finden kann.
