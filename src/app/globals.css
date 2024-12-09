@@ -47,7 +47,7 @@ main {
 /* Globale CSS für den spezifischen Container */
 .container-style > * {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   color: var(--foreground); /* Gleicher Textfarbe wie im Root */
 }
@@ -60,22 +60,9 @@ section {
   color: var(--foreground); /* Gleicher Textfarbe wie im Root */
 }
 
-/* Karten-Container für einheitliches Design */
-.map-container {
-  width: 100%;
-  height: 500px;
-  border: 2px solid #ddd; /* Einheitlicher Rahmen */
-  border-radius: 10px; /* Abgerundete Ecken */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für mehr Tiefe */
-  overflow: hidden; /* Verhindert überlaufende Inhalte */
+h2 {                /* Überschrift */
+  font-size: 30px; /* Schriftgröße */
+  color: purple; /* Farbe */
+  font-weight: bold; /* Optional: Schriftstil */
+  margin-bottom: 1rem; /* Optional: Abstand nach unten */
 }
-
-/* Mobilansicht für Karten */
-@media (max-width: 768px) {
-  .map-container {
-    height: 300px; /* Reduzierte Höhe für kleinere Bildschirme */
-    margin: 0 auto; /* Zentrierung */
-  }
-}
-
-

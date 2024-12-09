@@ -36,6 +36,7 @@ export default function Senegal() {
           Deshalb können sich meine Reiseerlebnisse etwas von deinen unterscheiden.
         </p>
       </header>
+      <SenegalRoute/>
 
       {/* Artikel-Inhalt */}
       <article className="container-style" >
@@ -66,7 +67,7 @@ export default function Senegal() {
         {/* Abschnitt 2 */}
         <section id="insel">
           <h2>Insel der Sklaven</h2>
-          <p className="text-4xl font-bold mb-4">
+          <p>
             Wenn man sich schon in Dakar aufhält, ist der Besuch der Insel ein absoluter Muss. Man erreicht die Insel recht einfach vom Hafen aus.
           </p>
           <p>
@@ -289,7 +290,6 @@ export default function Senegal() {
         </section>
       </article>
 
-      <SenegalRoute/>
       <Comments/>
       {/* Footer-Bereich */}
       <footer className="text-center mt-12">
