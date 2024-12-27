@@ -100,25 +100,27 @@ export default function Marokko() {
             </div>
 
             {/* Bildergalerie */}
-            <div id="bildergalerie" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                {images.map((image, index) => (
-                    <div
-                        key={index}
-                        className="relative cursor-pointer"
-                        onClick={() => openModal(image, index)}
-                    >
-                        <Image
-                            src={image}
-                            alt={`Bild ${index + 1}`}
-                            width={400}
-                            height={300}
-                            className="rounded-lg shadow-lg"
-                        />
-                        <p className="text-center mt-2 text-sm text-gray-700">{`Bild ${index + 1}`}</p>
-                    </div>
-                ))}
-            </div>
-
+            <div
+  id="bildergalerie"
+  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 justify-items-center"
+>
+  {images.map((image, index) => (
+    <div
+      key={index}
+      className="relative cursor-pointer"
+      onClick={() => openModal(image, index)}
+    >
+      <Image
+        src={image}
+        alt={`Bild ${index + 1}`}
+        width={400}
+        height={300}
+        className="rounded-lg shadow-lg"
+      />
+      <p className="text-center mt-2 text-sm text-gray-700">{`Bild ${index + 1}`}</p>
+    </div>
+  ))}
+</div>
             {/* Modal für Vollbildmodus */}
             {isModalOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
