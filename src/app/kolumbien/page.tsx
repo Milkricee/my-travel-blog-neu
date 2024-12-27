@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Accordion from "@/app/components/Akkordeon";
 
 // Dynamische Importe
 const NavbarWithButton = dynamic(() => import("../components/NavbarWithButton"), { ssr: false });
@@ -41,7 +42,7 @@ export default function Kolumbien() {
         </section>
 
      {/* Abschnitt 2 */}
-<section id="Bogota">
+     <section id="Bogota">
   <h2>Bogota</h2>
   <p>
     Höchstwahrscheinlich startest du in Bogota.
@@ -50,18 +51,32 @@ export default function Kolumbien() {
     <br />
     Hostels gibt es hier schon ab 5€ und die sind nicht mal schlecht. Nach SIM-Karten fragt ihr am besten im Hostel nach und kauft sie vor Ort. Online oder am Flughafen ist deutlich teurer.
     <br />
-    Bogota hat einen gut ausgebauten Nahverkehr. Google Maps auf dem Handy hilft euch gut weiter, in der Stadt von A nach B zu kommen. Generell heißt es, dass Bogota keine ganz so sichere Stadt sein soll, allerdings habe ich in den 9 Tagen, die ich hier verbracht habe, keine schlechten Erfahrungen gemacht. Wie in den meisten Städten in Südamerika heißt es: nicht alleine betrunken irgendwo herumlaufen, nicht mit dem Handy in der Hand spazieren gehen und ein bisschen auf die Umgebung achten.
+    Bogota hat einen gut ausgebauten Nahverkehr. Google Maps auf dem Handy hilft euch gut weiter, in der Stadt von A nach B zu kommen. Generell heißt es, dass Bogota keine ganz so sichere Stadt sein soll, allerdings habe ich in den 9 Tagen, die ich hier verbracht habe, keine schlechten Erfahrungen gemacht. Wie in den meisten Städten in Südamerika heißt es: nicht alleine betrunken irgendwo herumtorkeln, nicht mit dem Handy in der Hand spazieren gehen und ein bisschen auf die Umgebung achten.
   </p>
 
   <hr className="my-4 border-t border-gray-300" />
 
   <h2 className="text-xl font-semibold mt-4">Must Sees:</h2>
-  <ul className="list-disc pl-6">
-    <li>Plaza de Bolívar</li>
-    <li>Viewpoint Monserate</li>
-    <li>La Candelaria</li>
-    <li>Goldmuseum (Museo del Oro)</li>
-  </ul>
+  <Accordion title="Plaza de Bolívar">
+    <p>
+      Der Plaza de Bolívar ist das historische Zentrum von Bogota und beherbergt wichtige Gebäude wie den Kongress und die Kathedrale.
+    </p>
+  </Accordion>
+  <Accordion title="Viewpoint Monserrate">
+    <p>
+      Ein berühmter Aussichtspunkt, der mit einer Seilbahn oder zu Fuß erreicht werden kann. Von hier aus hast du eine atemberaubende Aussicht über die Stadt.
+    </p>
+  </Accordion>
+  <Accordion title="La Candelaria">
+    <p>
+      Das kulturelle Herz der Stadt mit kolonialen Gebäuden, bunten Straßen und Museen.
+    </p>
+  </Accordion>
+  <Accordion title="Goldmuseum (Museo del Oro)">
+    <p>
+      Eines der wichtigsten Museen in Bogota, das eine beeindruckende Sammlung von präkolumbianischem Goldschmuck zeigt.
+    </p>
+  </Accordion>
 
   <ImageGallery
     images={[
