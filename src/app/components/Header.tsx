@@ -59,23 +59,24 @@ export default function Header() {
 >
 
   
-      {/* Linke Seite: Logo und Titel */}
-      <div className="flex items-center gap-4">
-        <Image src="/imgs/cat.png" alt="Logo" width={60} height={60} />
-        <h1 className="text-2xl font-bold">
-          <Link href="/">Dan&apos;s Travelblog</Link>
-        </h1>
-      </div>
+{/* Linke Seite: Logo und Titel */}
+<div className="flex items-center gap-4 flex-shrink-0">
+  <Image src="/imgs/cat.png" alt="Logo" width={60} height={60} />
+  <h1 className="text-2xl font-bold whitespace-nowrap">
+    <Link href="/">Dan&apos;s Travelblog</Link>
+  </h1>
+</div>
 
-      {/* Navigation: Dynamisch anzeigen/verstecken */}
-      <nav
-        className={`${
-          isMenuOpen ? "block" : "hidden"
-        } md:flex flex-wrap md:flex-nowrap gap-4 md:gap-8 items-center mt-4 md:mt-0`}
-      >
-        <Link href="/about" className="hover:underline">
-          About Me
-        </Link>
+{/* Navigation: Dynamisch anzeigen/verstecken */}
+<nav
+  className={`${
+    isMenuOpen ? "block" : "hidden"
+  } md:flex flex-wrap md:flex-nowrap gap-4 md:gap-8 items-center mt-4 md:mt-0 whitespace-nowrap`}
+>
+  <Link href="/about" className="hover:underline">
+    About Me
+  </Link>
+
         <div className="relative group">
           <button className="hover:underline">Afrika</button>
           <ul className="absolute hidden group-hover:block bg-white text-black py-2 rounded shadow-lg">
