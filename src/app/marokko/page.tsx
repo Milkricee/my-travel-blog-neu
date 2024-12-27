@@ -50,6 +50,7 @@ export default function Marokko() {
                     { href: "#pro-contra", label: "Pro & Contra" },
                     { href: "#bildergalerie", label: "Bildergalerie" },
                     { href: "#highlights", label: "Highlights" },
+                    { href: "#comments", label: "Kommentare" },
                 ]}
             />
 
@@ -160,7 +161,8 @@ export default function Marokko() {
                 </ul>
             </div>
             </article>
-            <Comments />
+            <Comments pageId="marokko" />
+
         </div>
         
     );

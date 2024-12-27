@@ -316,7 +316,8 @@ export default function Senegal() {
         </section>
       </article>
 
-      <Comments/>
+      <Comments pageId="senegal" />
+
       {/* Footer-Bereich */}
       <footer className="text-center mt-12">
         <p className="text-gray-500">

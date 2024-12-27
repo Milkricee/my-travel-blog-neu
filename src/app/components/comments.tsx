@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { getFirestore, collection, getDocs, query, orderBy, addDoc, Timestamp } from "firebase/firestore";
+import { useState, useEffect, useCallback } from "react";
+import { getFirestore, collection, getDocs, query, orderBy, addDoc, Timestamp, where } from "firebase/firestore";
 import { auth } from "@/app/firebaseConfig";
 import { onAuthStateChanged } from "firebase/auth";
 
@@ -12,7 +12,7 @@ function obfuscateEmail(email: string): string {
   return `${user[0]}***@${domain}`;
 }
 
-export default function Comments() {
+export default function Comments({ pageId }: { pageId: string }) {
   interface Comment {
     id: string;
     user: string;
@@ -41,10 +41,14 @@ export default function Comments() {
   }, []);
 
   // Kommentare abrufen
-  const fetchComments = async () => {
+  const fetchComments = useCallback(async () => {
     try {
       setLoading(true);
-      const q = query(collection(db, "comments"), orderBy("timestamp", "desc"));
+      const q = query(
+        collection(db, "comments"),
+        where("pageId", "==", pageId), // Filtere nach der spezifischen pageId
+        orderBy("timestamp", "desc") // Sortiere nach Zeitstempel
+      );
       const querySnapshot = await getDocs(q);
       const commentsData = querySnapshot.docs.map((doc) => {
         const data = doc.data();
@@ -61,18 +65,18 @@ export default function Comments() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [pageId]);
 
   // Kommentar speichern
   const handleAddComment = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!newComment.trim()) return;
-
     try {
       await addDoc(collection(db, "comments"), {
         user: obfuscateEmail(user?.email || "Anonym"),
         text: newComment.trim(),
         timestamp: Timestamp.now(),
+        pageId, // Speichere die spezifische pageId
       });
       setNewComment("");
       fetchComments(); // Kommentare nach dem Hinzufügen erneut abrufen
@@ -84,7 +88,7 @@ export default function Comments() {
   // Kommentare beim Laden der Komponente abrufen
   useEffect(() => {
     fetchComments();
-  }, []);
+  }, [fetchComments]);
 
   return (
     <div id="comments" className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg">
@@ -109,14 +113,14 @@ export default function Comments() {
         </form>
       ) : (
         <p className="text-red-500 mb-4">
-  <a
-    href={`/login?redirect=${encodeURIComponent(window.location.pathname)}`}
-    className="underline text-blue-500 hover:text-blue-700"
-  >
-    Melde dich an
-  </a>, um einen Kommentar zu hinterlassen.
-</p>
-
+          <a
+            href={`/login?redirect=${encodeURIComponent(window.location.pathname)}`}
+            className="underline text-blue-500 hover:text-blue-700"
+          >
+            Melde dich an
+          </a>
+          , um einen Kommentar zu hinterlassen.
+        </p>
       )}
 
       {/* Kommentare anzeigen */}
