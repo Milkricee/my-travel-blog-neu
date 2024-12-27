@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { getFirestore, collection, getDocs, query, orderBy, addDoc, Timestamp, where } from "firebase/firestore";
+import { getFirestore, collection, getDocs, query, orderBy, addDoc, Timestamp, where, deleteDoc, doc } from "firebase/firestore";
 import { auth } from "@/app/firebaseConfig";
 import { onAuthStateChanged } from "firebase/auth";
 
@@ -85,6 +85,17 @@ export default function Comments({ pageId }: { pageId: string }) {
     }
   };
 
+  // Kommentar löschen
+const handleDeleteComment = async (commentId: string) => {
+  try {
+    await deleteDoc(doc(db, "comments", commentId)); // Löscht den Kommentar
+    fetchComments(); // Aktualisiert die Kommentare nach dem Löschen
+  } catch (error) {
+    console.error("Fehler beim Löschen des Kommentars:", error);
+  }
+};
+
+
   // Kommentare beim Laden der Komponente abrufen
   useEffect(() => {
     fetchComments();
@@ -128,18 +139,27 @@ export default function Comments({ pageId }: { pageId: string }) {
         <p className="text-center text-gray-500">Lade Kommentare...</p>
       ) : (
         <ul className="space-y-6">
-          {comments.map((comment) => (
-            <li key={comment.id} className="p-4 border rounded-lg shadow-md">
-              <div className="flex items-center justify-between mb-2">
-                <p className="text-sm font-medium text-gray-700">Von: {comment.user}</p>
-                <p className="text-xs text-gray-400">
-                  {new Date(comment.timestamp?.seconds * 1000).toLocaleString()}
-                </p>
-              </div>
-              <p className="text-gray-800">{comment.text}</p>
-            </li>
-          ))}
-        </ul>
+        {comments.map((comment) => (
+          <li key={comment.id} className="p-4 border rounded-lg shadow-md">
+            <div className="flex items-center justify-between mb-2">
+              <p className="text-sm font-medium text-gray-700">Von: {comment.user}</p>
+              <p className="text-xs text-gray-400">
+                {new Date(comment.timestamp?.seconds * 1000).toLocaleString()}
+              </p>
+            </div>
+            <p className="text-gray-800">{comment.text}</p>
+            {/* Lösch-Button anzeigen, wenn der aktuelle Benutzer der Autor ist */}
+            {user?.email && obfuscateEmail(user.email) === comment.user && (
+              <button
+                onClick={() => handleDeleteComment(comment.id)}
+                className="text-red-500 text-sm mt-2 hover:underline"
+              >
+                Kommentar löschen
+              </button>
+            )}
+          </li>
+        ))}
+      </ul>
       )}
     </div>
   );
