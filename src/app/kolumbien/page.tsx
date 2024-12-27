@@ -26,10 +26,13 @@ export default function Kolumbien() {
       <header className="text-center mb-8" style={{ color: "black" }}>
         <h1 className="text-4xl font-bold mb-4">Entdecke Kolumbien</h1>
         <p>
-            Kolumbien ist eines meiner absoluten Lieblingsländer. Ähnlich divers wie Marokko. Von karibischen Stränden, über Regenwälder, bis hin zu Wüsten und Hochgebirgen.
+            Kolumbien ist eines meiner absoluten Lieblingsländer. Von karibischen Stränden, über Regenwälder, bis hin zu Wüsten und Hochgebirgen.
         <br />
          Hier habe ich 2,5 Monate verbracht (Juli-Sept. 2022), deshalb würde es den Rahmen sprengen von allen meinen Erlebnissen zu berichten.
          Ich werde hier nur allgemein zu sehensewerten Locations berichten und einige Ratschläge teilen.
+         Generell lässt sich Kolumbien in 7 Regionen einteilen: Karibikküste, Pazifikküste, Bogotaregion, Amazonas, Kafeteriaarea, Medellin und die Inseln. 
+         Der bericht ist nach den Regionen sortiert in welcher Reihenfolge ich gereist bin. Das ist aber keine generelle Reiseempfehlung. Kolumbien ist riesig
+         und die Inlandflüge sind super günstig (meist nie mehr als 50€). Ich würde empfehlen die Reise nach den Flugpreisen und den Regionen, die man besichtigen möchte, zu planen.
         </p>
       </header>
 
