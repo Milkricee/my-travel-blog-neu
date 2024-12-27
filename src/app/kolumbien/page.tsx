@@ -16,7 +16,7 @@ export default function Kolumbien() {
         links={[
           { href: "#map-kolumbien", label: "Route" },
           { href: "#Bogota", label: "Bogota" },
-          { href: "#stadt2", label: "Zweite Stadt" },
+          { href: "#sanandres", label: "San Andres" },
           { href: "#stadt3", label: "Dritte Stadt" },
           { href: "#highlights", label: "Highlights" },
           { href: "#comments", label: "Kommentare" },
@@ -97,12 +97,17 @@ export default function Kolumbien() {
         {/* Abschnitt 3 */}
         <section id="sanandres">
           <h2>San Andres</h2>
-          <p>Kolumbiens Karibikparadis vor der Küste von Nicaragua.</p>
+          <p>Mit dem Flugzeug ging es von Bogota direkt in Kolumbiens Karibikparadis vor der Küste von Nicaragua.
+            Hier gibt es nicht viel zu berichten, aber um so mehr zu erkunden. Die Insel ist so klein, dass man in 1,5 Std einmal um die Insel fahren kann.
+            Man kann sich relativ günstig überall Scooter leihen, was ich wärmstens Empfehle. Nur Helme findest du hier keine. Alle fahren Helmlos und das ist völlig normal/legal.
+          </p>
           <ImageGallery
             images={[
-              { src: "/kolumbien/andres/bild1.jpg", alt: "Bild 1" },
-              { src: "/kolumbien/andres/bild1.jpg", alt: "Bild 1" },
-              { src: "/kolumbien/andres/bild1.jpg", alt: "Bild 1" },
+              { src: "/kolumbien/andres/plane.jpg", alt: "Blick aus dem Flieger" },
+              { src: "/kolumbien/andres/strand.jpg", alt: "Überall karibisches Flair und traumhafte Strände" },
+              { src: "/kolumbien/andres/karibik.jpg", alt: "Gebäude in klassischem karibischen Kolonialstil sieht man überall auf der Insel" },
+              { src: "/kolumbien/andres/krab.jpg", alt: "Nachts laufen solche Krabben auf den Straßen" },
+              { src: "/kolumbien/andres/aligator2.jpg", alt: "In der Mitte der Insel gibts einen See mit kleinen Krokodilen (oder Alligatoren kp.)" },
             ]}
           />
         </section>
