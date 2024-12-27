@@ -60,7 +60,7 @@ export default function Header() {
 
   
 {/* Linke Seite: Logo und Titel */}
-<div className="flex items-center gap-4 flex-shrink-0">
+<div className="flex items-center gap-6 flex-shrink-0">
   <Image src="/imgs/cat.png" alt="Logo" width={60} height={60} />
   <h1 className="text-2xl font-bold whitespace-nowrap">
     <Link href="/">Dan&apos;s Travelblog</Link>
