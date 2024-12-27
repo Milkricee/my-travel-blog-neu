@@ -49,7 +49,9 @@ export default function Kolumbien() {
     <br />
     Bogota liegt 2600m über dem Meeresspiegel und ist die Hauptstadt Kolumbiens. Es ist etwas kühler aufgrund der Höhe, doch darf man die Sonne nicht unterschätzen. Schön eincremen und eher im Schatten sein, sonst ist ein Sonnenbrand oder sogar ein Sonnenstich garantiert. Ich war ein paar Stunden Fahrrad fahren bei 20 Grad und das hat für einen Sonnenstich gereicht. Bogota ist übrigens eine der am besten für Fahrräder ausgebauten Städte in Südamerika.
     <br />
-    Hostels gibt es hier schon ab 5€ und die sind nicht mal schlecht. Nach SIM-Karten fragt ihr am besten im Hostel nach und kauft sie vor Ort. Online oder am Flughafen ist deutlich teurer.
+    Hostels gibt es hier schon ab 5€ und die sind nicht mal schlecht. Streetfood gibt es auch schon ab 1€.
+    <br/>
+    Nach SIM-Karten fragt ihr am besten im Hostel nach und kauft sie vor Ort. Online oder am Flughafen ist meist deutlich teurer.
     <br />
     Bogota hat einen gut ausgebauten Nahverkehr. Google Maps auf dem Handy hilft euch gut weiter, in der Stadt von A nach B zu kommen. Generell heißt es, dass Bogota keine ganz so sichere Stadt sein soll, allerdings habe ich in den 9 Tagen, die ich hier verbracht habe, keine schlechten Erfahrungen gemacht. Wie in den meisten Städten in Südamerika heißt es: nicht alleine betrunken irgendwo herumtorkeln, nicht mit dem Handy in der Hand spazieren gehen und ein bisschen auf die Umgebung achten.
   </p>
@@ -80,9 +82,10 @@ export default function Kolumbien() {
 
   <ImageGallery
     images={[
-      { src: "/kolumbien/stadt1/bild1.jpg", alt: "Bild 1" },
-      { src: "/kolumbien/stadt1/bild2.jpg", alt: "Bild 2" },
-      { src: "/kolumbien/stadt1/bild3.jpg", alt: "Bild 3" },
+      { src: "/kolumbien/bogota/bolivar.jpg", alt: "Plaza de Bolívar" },
+      { src: "/kolumbien/bogota/monserate.jpg", alt: "Aussicht vom Berg Monserate" },
+      { src: "/kolumbien/bogota/arepa.jpg", alt: "Das dürfte eine Arepa sein. Ein lokales Gericht, welches du für lau an jeder Straßenecke kriegst" },
+      { src: "/kolumbien/bogota/slums.jpg", alt: "Eine Aussicht auf die Slums im Südwesten der Stadt. Es Fährt eine Gondel hin. Die Gegend zählt als nicht Sicher, aber die Aussicht ist schön" },
     ]}
   />
 </section>
