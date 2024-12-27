@@ -11,11 +11,11 @@ export default function Custom404() {
       <p className="text-lg text-gray-700 mb-6">
         Diese Seite befindet sich vermutlich in Bearbeitung. Bitte noch etwas Geduld!
       </p>
-      {/* GIF mit einheitlichem Container */}
+      {/* GIF mit deaktivierter Interaktion */}
       <div className="relative w-full max-w-md aspect-square mb-8">
         <iframe
           src="https://giphy.com/embed/vR1dPIYzQmkRzLZk2w"
-          className="w-full h-full border-none rounded-lg"
+          className="w-full h-full border-none rounded-lg pointer-events-none"
           allowFullScreen
         ></iframe>
       </div>
