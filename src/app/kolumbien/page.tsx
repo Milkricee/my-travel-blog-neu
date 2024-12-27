@@ -95,14 +95,14 @@ export default function Kolumbien() {
 
 
         {/* Abschnitt 3 */}
-        <section id="stadt2">
-          <h2>Zweite Stadt</h2>
-          <p>Beschreibung zur zweiten Stadt.</p>
+        <section id="sanandres">
+          <h2>San Andres</h2>
+          <p>Kolumbiens Karibikparadis vor der Küste von Nicaragua.</p>
           <ImageGallery
             images={[
-              { src: "/kolumbien/stadt2/bild1.jpg", alt: "Bild 1" },
-              { src: "/kolumbien/stadt2/bild2.jpg", alt: "Bild 2" },
-              { src: "/kolumbien/stadt2/bild3.jpg", alt: "Bild 3" },
+              { src: "/kolumbien/andres/bild1.jpg", alt: "Bild 1" },
+              { src: "/kolumbien/andres/bild1.jpg", alt: "Bild 1" },
+              { src: "/kolumbien/andres/bild1.jpg", alt: "Bild 1" },
             ]}
           />
         </section>
