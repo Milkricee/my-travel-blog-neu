@@ -17,7 +17,7 @@ export default function Kolumbien() {
           { href: "#map-kolumbien", label: "Route" },
           { href: "#Bogota", label: "Bogota" },
           { href: "#sanandres", label: "San Andres" },
-          { href: "#stadt3", label: "Dritte Stadt" },
+          { href: "#carthagena", label: "Carthagena" },
           { href: "#highlights", label: "Highlights" },
           { href: "#comments", label: "Kommentare" },
         ]}
@@ -99,13 +99,14 @@ export default function Kolumbien() {
           <h2>San Andres</h2>
           <p>Mit dem Flugzeug ging es von Bogota direkt in Kolumbiens Karibikparadis vor der Küste von Nicaragua.
             Hier gibt es nicht viel zu berichten, aber um so mehr zu erkunden. Die Insel ist so klein, dass man in 1,5 Std einmal um die Insel fahren kann.
-            Man kann sich relativ günstig überall Scooter leihen, was ich wärmstens Empfehle. Nur Helme findest du hier keine. Alle fahren Helmlos und das ist völlig normal/legal.
+            Man kann sich relativ günstig überall Scooter leihen, was ich wärmstens Empfehle. Nur Helme findest du hier keine. Alle fahren Helmlos und das ist völlig normal.
+            Es gibt leider völlig überlaufene, aber dennoch sehr schöne Tagesausflüge zu den Inseln Johnny Cay und Acuario.
           </p>
           <ImageGallery
             images={[
               { src: "/kolumbien/andres/plane.jpg", alt: "Blick aus dem Flieger" },
               { src: "/kolumbien/andres/strand.jpg", alt: "Überall karibisches Flair und traumhafte Strände" },
-              { src: "/kolumbien/andres/karibik.jpg", alt: "Gebäude in klassischem karibischen Kolonialstil sieht man überall auf der Insel" },
+              { src: "/kolumbien/andres/karibik.jpg", alt: "Gebäude im klassischen, karibischen Kolonialstil sieht man überall auf der Insel" },
               { src: "/kolumbien/andres/krab.jpg", alt: "Nachts laufen solche Krabben auf den Straßen" },
               { src: "/kolumbien/andres/aligator2.jpg", alt: "In der Mitte der Insel gibts einen See mit kleinen Krokodilen (oder Alligatoren kp.)" },
             ]}
@@ -113,9 +114,22 @@ export default function Kolumbien() {
         </section>
 
         {/* Abschnitt 4 */}
-        <section id="stadt3">
-          <h2>Dritte Stadt</h2>
-          <p>Beschreibung zur dritten Stadt.</p>
+        <section id="carthagena">
+          <h2>Nordküste</h2>
+          <p>Als nächsten Stopp ging es für mich weiter an die Nordküste, und zwar nach Carthagena. 
+            Das ist ein guter Ausgansgpunkt um sich die Nordküste anzugucken. Carthagena hat eine schöne Altstadt, deshalb ist der Besuch empfehlenswert. Es gibt auch viele Touren zu einen der vielen
+            Inseln vor Ort, die ich aber nicht gemacht habe. 
+            <br/>
+            Von Carthagena ging es weiter nach Santa Marta, um von dort aus den Tayrona Nationalpark zu besuchen. 
+            <br/>
+            WICHTIG! 
+            Es fahren 2 Arten von Bussen nach Santa Marta. Bei einem kann man ein Ticket nur mit Reisepass kaufen, bei dem anderen nicht.
+            Kauft ausschließlich die Tickets mit Reisepass, da die anderen Busse ab und zu überfallen werden. Ich habe tatsächlich jemanden im späteren Verlauf der Reise kennengelenrt, der auf der Route ausgeraubt wurde.
+            <br/>
+            Santa Marta an sich ist nicht unbedingt sehenswert, aber von hier aus gibt es viele Touren zu den umliegenden Sehenswürdigkeiten. Viele machen eine 3 Tagestour zu den Lost Citys, die ich aber nicht gemacht habe.
+            Stattdessen haben wir uns ein Auto gemietet und sind in den Tyrone Nationalpark und Minca gefahren. Beides sehr schöne Orte und definitiv einen Besuch wert.  
+            
+            </p>
           <ImageGallery
             images={[
               { src: "/kolumbien/stadt3/bild1.jpg", alt: "Bild 1" },
