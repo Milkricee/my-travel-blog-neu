@@ -104,9 +104,9 @@ export default function Kolumbien() {
           </p>
           <ImageGallery
             images={[
+              { src: "/kolumbien/andres/karibik.jpg", alt: "Gebäude im klassischen, karibischen Kolonialstil sieht man überall auf der Insel" },
               { src: "/kolumbien/andres/plane.jpg", alt: "Blick aus dem Flieger" },
               { src: "/kolumbien/andres/strand.jpg", alt: "Überall karibisches Flair und traumhafte Strände" },
-              { src: "/kolumbien/andres/karibik.jpg", alt: "Gebäude im klassischen, karibischen Kolonialstil sieht man überall auf der Insel" },
               { src: "/kolumbien/andres/krab.jpg", alt: "Nachts laufen solche Krabben auf den Straßen" },
               { src: "/kolumbien/andres/aligator2.jpg", alt: "In der Mitte der Insel gibts einen See mit kleinen Krokodilen (oder Alligatoren kp.)" },
             ]}
