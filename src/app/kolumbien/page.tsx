@@ -129,6 +129,7 @@ export default function Kolumbien() {
             Santa Marta an sich ist nicht unbedingt sehenswert, aber von hier aus gibt es viele Touren zu den umliegenden Sehenswürdigkeiten. Viele machen eine 3 Tagestour zur Lost City, die ich aber nicht gemacht habe.
             Stattdessen haben wir uns ein Auto gemietet und sind in den Tyrone Nationalpark und Minca gefahren. Beides sehr schöne Orte und definitiv einen Besuch wert.  
             
+            
             </p>
           <ImageGallery
             images={[
