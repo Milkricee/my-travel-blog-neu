@@ -126,7 +126,7 @@ export default function Kolumbien() {
             Es fahren 2 Arten von Bussen nach Santa Marta. Bei einem kann man ein Ticket nur mit Reisepass kaufen, bei dem anderen nicht.
             Kauft ausschließlich die Tickets mit Reisepass, da die anderen Busse ab und zu überfallen werden. Ich habe tatsächlich jemanden im späteren Verlauf der Reise kennengelenrt, der auf der Route ausgeraubt wurde.
             <br/>
-            Santa Marta an sich ist nicht unbedingt sehenswert, aber von hier aus gibt es viele Touren zu den umliegenden Sehenswürdigkeiten. Viele machen eine 3 Tagestour zu den Lost Citys, die ich aber nicht gemacht habe.
+            Santa Marta an sich ist nicht unbedingt sehenswert, aber von hier aus gibt es viele Touren zu den umliegenden Sehenswürdigkeiten. Viele machen eine 3 Tagestour zur Lost City, die ich aber nicht gemacht habe.
             Stattdessen haben wir uns ein Auto gemietet und sind in den Tyrone Nationalpark und Minca gefahren. Beides sehr schöne Orte und definitiv einen Besuch wert.  
             
             </p>
