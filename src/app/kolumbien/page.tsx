@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import Accordion from "@/app/components/Akkordeon";
+import "./module.css";
 
 // Dynamische Importe
 const NavbarWithButton = dynamic(() => import("../components/NavbarWithButton"), { ssr: false });
@@ -117,8 +118,8 @@ export default function Kolumbien() {
         <section id="carthagena">
           <h2>Nordküste</h2>
           <p>Als nächsten Stopp ging es für mich weiter an die Nordküste, und zwar nach Carthagena. 
-            Das ist ein guter Ausgansgpunkt um sich die Nordküste anzugucken. Carthagena hat eine schöne Altstadt, deshalb ist der Besuch empfehlenswert. Es gibt auch viele Touren zu einen der vielen
-            Inseln vor Ort, die ich aber nicht gemacht habe. 
+            Das ist ein guter Ausgansgpunkt um sich die Nordküste anzugucken. Carthagena hat eine schöne Altstadt, deshalb ist der Besuch empfehlenswert. 
+            Es gibt auch viele Touren den vielen Inseln an der Küste, die ich aber nicht gemacht habe. 
             <br/>
             Von Carthagena ging es weiter nach Santa Marta, um von dort aus den Tayrona Nationalpark zu besuchen. 
             <br/>
@@ -129,8 +130,30 @@ export default function Kolumbien() {
             <br/>
             <br/>
 
-            Santa Marta an sich, ist nicht unbedingt sehenswert, aber von hier aus gibt es viele Touren zu den umliegenden Sehenswürdigkeiten. Viele machen eine 3 Tagestour zur Lost City, die ich aber nicht gemacht habe.
-            Stattdessen haben wir uns ein Auto gemietet und sind in den Tyrona Nationalpark und Minca gefahren. Beides sehr schöne Orte und definitiv einen Besuch wert.  
+            Santa Marta an sich, ist nicht unbedingt sehenswert, aber von hier aus gibt es viele Touren zu den umliegenden Sehenswürdigkeiten.
+             Viele machen eine 3 Tagestour zur Lost City, die ich aber nicht gemacht habe.
+             <p>
+  Stattdessen haben wir uns ein Auto gemietet und sind in den&nbsp;
+  <a 
+    href="https://www.google.com/maps?q=Tayrona+Nationalpark" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="animated-link">
+    Tayrona Nationalpark
+   </a>&nbsp;
+   und nach&nbsp;
+  <a 
+    href="https://www.google.com/maps?q=Minca+Kolumbien" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="animated-link">
+    Minca
+  </a>&nbsp;
+  gefahren. Beides sehr schöne Orte und definitiv einen Besuch wert.
+</p>
+
+Beides sehr schöne Orte und definitiv einen Besuch wert.
+   Beides sehr schöne Orte und definitiv einen Besuch wert.  
             
             
             </p>
@@ -167,5 +190,6 @@ export default function Kolumbien() {
         </p>
       </footer>
     </div>
+    
   );
 }
