@@ -521,8 +521,9 @@ export default function Kolumbien() {
             ]}
           />
           <br />
+          <p className="text-center">Hier weitere Bilder:</p>
 
-          <p>Hier weitere Bilder:</p>
+          <br />
           <ImageGallery
             images={[
               {
@@ -532,10 +533,6 @@ export default function Kolumbien() {
               {
                 src: "/kolumbien/pazifik/wal2.jpg",
                 alt: "Hier sieht man die lange, weiße Flosse des Wals",
-              },
-              {
-                src: "/kolumbien/pazifik/wal1.jpg",
-                alt: "Hier eine gelungene Aufnahme einer Walkuh und ihres Jungen",
               },
               {
                 src: "/kolumbien/pazifik/boote.jpg",
@@ -561,6 +558,10 @@ export default function Kolumbien() {
                 src: "/kolumbien/pazifik/sunset2.jpg",
                 alt: "Traumhafte Kulisse",
               },
+              {
+                src: "/kolumbien/pazifik/dorf9.jpg",
+                alt: "Nuqui",
+              },
             ]}
           />
           <p>
@@ -580,7 +581,41 @@ export default function Kolumbien() {
 
         <section id="leticia">
           <h2>Im Amazonas. Leticia</h2>
-          <p>Text zu Guatapé</p>
+          <p>
+            Von der Pazifischen Küste ging es mit dem Flieger über Medellin und
+            Bogota ganz in den Süden Kolumbiens- in den Amazonas. Auch hier hat
+            es sich wieder wie ein anderes Land angefühlt. Leticia grenzt and
+            Peru und Brasilien und die grenzen sind offen (zumindest am Anfang.
+            Da man ohne Flugzeug oder Boot eh nicht weit kommt). Hier kann man
+            innerhalb von einer Stunde in 3 Ländern gewesen sein. Ich habe mir
+            hier einen Roller gemietet und die gegend erkundet. Von hier aus
+            gibt es viele mehrtägige Touren in den Amazonas. Vergleicht die
+            Preise der Unterschiedlichen Anbieter und vergesst nicht zu
+            verhandeln.
+            <br />
+            Von Leticia aus, kann man mit dem Boot, entweder nach Brasilien
+            rein, oder nach Peru. Ich habe mich für Peru entschieden, da ich
+            nicht mehr so viel Zeit hatte.
+            <br />
+            Nach Peru fahren 2 Arten von Boote. Ein Speedbot, welches dich
+            innerhalb von einigen Stunden nach Iquitos bringt (die größe nicht
+            mit Land angebundene Stadt). Oder ein Slowboat, was meist die Lokals
+            nutzen. Es ist etwas günstiger, aber dafür ist man auch 3 Tage
+            unterwegs.
+            <br />
+            Ich habe mich für das Slowboat entschiede. Ich war der einzige
+            Tourist. Das Boot macht zwischendurch viele Stopps auf den
+            entlegenen Dörfern, um Waren ein- und auszuladen. Das hat mir einen
+            guten Einblick in deren Leben gegeben.
+            <br />
+            Bevor ihr euch entscheidet mit einem der 2 Boote zu fahren, vergesst
+            nicht die Immigrationcontroll durchzuführen und holt euch eure
+            Stempel ab.
+            <br />
+            Achso, und falls ihr euch entscheidet mit dem Slowboat zu fahren
+            nicht eine Hängematte zu besorgen, denn das wird für die nächsten 3
+            Tage euer Bett.
+          </p>
         </section>
         <section id="macarena">
           <h2>Mesetas. La Macarena Nationalpark</h2>
