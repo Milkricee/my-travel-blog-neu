@@ -483,82 +483,107 @@ export default function Kolumbien() {
           <ImageGallery
             images={[
               {
-                src: "/kolumbien/pacifik/flugzeug.jpg",
+                src: "/kolumbien/pazifik/flugzeug.jpg",
                 alt: "Mit diesem Flugzeug ging es los",
               },
               {
-                src: "/kolumbien/pacifik/flughafen.jpg",
+                src: "/kolumbien/pazifik/flughafen.jpg",
                 alt: "So sah der Miniflughafen in Bahia Solano aus",
               },
               {
-                src: "/kolumbien/pacifik/start.jpg",
+                src: "/kolumbien/pazifik/start.jpg",
                 alt: "So empfängt dich die Region. Sehr feucht und grün. Ein ganz anderes Klima.",
               },
               {
-                src: "/kolumbien/pacifik/strand2.jpg",
+                src: "/kolumbien/pazifik/strand2.jpg",
                 alt: "Eine menge unberührter Strände",
               },
               {
-                src: "/kolumbien/pacifik/strand5.jpg",
+                src: "/kolumbien/pazifik/strand5.jpg",
                 alt: "Strand und Dschungel",
               },
               {
-                src: "/kolumbien/pacifik/dorf.jpg",
+                src: "/kolumbien/pazifik/dorf.jpg",
                 alt: "So und ähnlich sehen die Dörfer aus",
               },
               {
-                src: "/kolumbien/pacifik/dorf2.jpg",
+                src: "/kolumbien/pazifik/dorf2.jpg",
                 alt: "Dörfer",
               },
               {
-                src: "/kolumbien/pacifik/dorf3.jpg",
-                alt: "Und Weitere Dörfer",
+                src: "/kolumbien/pazifik/dorf3.jpg",
+                alt: "Bei Ebbe liegen die Boote auf dem Trockenen",
               },
               {
-                src: "/kolumbien/pacifik/friedhof.jpg",
-                alt: "Beim gegend entdecken bin ich auf diesen Friedhof gestoßen",
+                src: "/kolumbien/pazifik/friedhof.jpg",
+                alt: "Beim Gegend entdecken bin ich auf diesen Friedhof gestoßen",
               },
             ]}
           />
           <br />
 
-          <p>Hier weiter Bilder:</p>
+          <p>Hier weitere Bilder:</p>
           <ImageGallery
             images={[
               {
-                src: "/kolumbien/pacifik/wal1.jpg",
+                src: "/kolumbien/pazifik/wal1.jpg",
                 alt: "Hier eine gelungene Aufnahme einer Walkuh und ihres Jungen",
               },
               {
-                src: "/kolumbien/pacifik/wal2.jpg",
+                src: "/kolumbien/pazifik/wal2.jpg",
                 alt: "Hier sieht man die lange, weiße Flosse des Wals",
               },
               {
-                src: "/kolumbien/pacifik/wal1.jpg",
+                src: "/kolumbien/pazifik/wal1.jpg",
                 alt: "Hier eine gelungene Aufnahme einer Walkuh und ihres Jungen",
               },
               {
-                src: "/kolumbien/pacifik/boote.jpg",
+                src: "/kolumbien/pazifik/boote.jpg",
                 alt: "Mit solchen Booten bewegt man sich zwischen den Dörfern fort",
               },
               {
-                src: "/kolumbien/pacifik/transfer.jpg",
+                src: "/kolumbien/pazifik/transfer.jpg",
                 alt: "Die transfere waren sehr aufregend. Die Boote sind immer vollbepackt mit Menschen und Gepäck. Ein wasserfester Beutel ist sehr zu empfehlen.",
               },
               {
-                src: "/kolumbien/pacifik/dorf11.jpg",
+                src: "/kolumbien/pazifik/dorf11.jpg",
                 alt: "View auf ein Dorf",
+              },
+              {
+                src: "/kolumbien/pazifik/strand7.jpg",
+                alt: "Hier habe ich die krassesten Ebbe und Flut Unterschiede erlebt. Bei Ebbe konnte man um diese Insel komplet drumherum laufen",
+              },
+              {
+                src: "/kolumbien/pazifik/sunse1.jpg",
+                alt: "Auch Sonnenuntergänge sind hier einfach ein Traum",
+              },
+              {
+                src: "/kolumbien/pazifik/sunset2.jpg",
+                alt: "Traumhafte Kulisse",
               },
             ]}
           />
+          <p>
+            Ich habe noch unzählige weiter Bilder aus der Region, aber das würde
+            den Rahmen sprengen. Falls ihr Zeit habt und authentische Natur,
+            abseits vom Massentourismus sucht, seid ihr hier genau richtig.
+            <br />
+            Wichtig!
+            <br />
+            Nehmt für euren Trip hierher genug Bargeld mit, da es in den kleinen
+            Dörfern keine Bankautomaten gibt. In Bahia Solano gab es eine Bank.
+            Aber das sie immer funktioniert, würde ich mich nicht drauf
+            verlassen.
+          </p>
+          <br />
         </section>
 
         <section id="leticia">
-          <h2>Im Amazonasdjungle. Leticia</h2>
+          <h2>Im Amazonas. Leticia</h2>
           <p>Text zu Guatapé</p>
         </section>
         <section id="macarena">
-          <h2>Area la Macarena</h2>
+          <h2>Mesetas. La Macarena Nationalpark</h2>
           <p>Text zu Macarena</p>
         </section>
       </article>
