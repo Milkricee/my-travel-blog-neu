@@ -61,7 +61,6 @@ export default function Kolumbien() {
           <h2>Route</h2>
           <p>Hier wird eine Karte oder Beschreibung der Route eingefügt.</p>
         </section>
-
         {/* Abschnitt 2 */}
         <section id="Bogota">
           <h2>Bogota</h2>
@@ -139,7 +138,6 @@ export default function Kolumbien() {
             ]}
           />
         </section>
-
         {/* Abschnitt 3 */}
         <section id="sanandres">
           <h2>San Andres</h2>
@@ -178,7 +176,6 @@ export default function Kolumbien() {
             ]}
           />
         </section>
-
         {/* Abschnitt 4 */}
         <section id="carthagena">
           <h2>Nordküste</h2>
@@ -272,19 +269,102 @@ export default function Kolumbien() {
             ]}
           />
         </section>
-
         {/* Abschnitt 5 */}
         <section id="medellin">
-          <h2>Medellin und Guatapé </h2>
-          <p>Von Santa Marta ging es mit dem Flieger weiter nach Medellin</p>
+          <h2>Medellin und Guatapé</h2>
+          <p>
+            Von Santa Marta ging es mit dem Flieger weiter nach Medellin. Die
+            meisten mögen Medellin mehr als Bogota, ich persönlich mochte
+            Medellin nicht so. Hier eine kleine Liste von Sehenswürdigkeiten in
+            Medellin:
+          </p>
+
+          <Accordion title="Comuna 13">
+            <p>
+              Ein ehemaliges Problemviertel, das heute für seine beeindruckenden
+              Graffitis, Kunstinstallationen und Straßenmusik bekannt ist.
+              Geführte Touren zeigen die kulturelle Transformation des Viertels.
+            </p>
+          </Accordion>
+          <Accordion title="Plaza Botero">
+            <p>
+              Ein zentraler Platz mit 23 Skulpturen des berühmten Künstlers
+              Fernando Botero. Ideal für Kunstliebhaber und Fotografie.
+            </p>
+          </Accordion>
+          <Accordion title="Museo de Antioquia">
+            <p>
+              Direkt am Plaza Botero gelegen. Es zeigt eine große Sammlung von
+              Boteros Werken und andere Ausstellungen kolumbianischer Kunst.
+            </p>
+          </Accordion>
+          <Accordion title="Metrocable und Parque Arví">
+            <p>
+              Die Seilbahn bietet atemberaubende Ausblicke auf die Stadt und
+              führt zum grünen Naturpark Parque Arví, der ideal für Wanderungen
+              und Picknicks ist.
+            </p>
+          </Accordion>
+          <Accordion title="Jardín Botánico">
+            <p>
+              Ein wunderschöner botanischer Garten mit Orchideen,
+              Schmetterlingen und einem großen See. Ein ruhiger Ort zum
+              Entspannen inmitten der Stadt.
+            </p>
+          </Accordion>
+          <Accordion title="Pueblito Paisa">
+            <p>
+              Eine Nachbildung eines traditionellen Dorfes auf dem Cerro
+              Nutibara. Von hier aus hat man einen großartigen Panoramablick
+              über Medellín.
+            </p>
+          </Accordion>
+          <Accordion title="Parque Explora">
+            <p>
+              Ein interaktives Wissenschafts- und Technologiezentrum mit einem
+              beeindruckenden Aquarium und vielen Aktivitäten für Kinder und
+              Erwachsene.
+            </p>
+          </Accordion>
+          <Accordion title="El Castillo Museum und Gärten">
+            <p>
+              Ein Schloss im gotischen Stil mit wunderschönen Gärten und
+              Kunstsammlungen.
+            </p>
+          </Accordion>
+          <Accordion title="Cerro El Volador">
+            <p>
+              Ein Naturpark und Aussichtspunkt, perfekt für Wanderungen und um
+              eine Pause vom Stadtleben zu genießen.
+            </p>
+          </Accordion>
+          <Accordion title="Parque Lleras">
+            <p>
+              Das Herz des Ausgehviertels El Poblado, bekannt für Restaurants,
+              Bars und Nachtleben.
+            </p>
+          </Accordion>
+
           <ImageGallery
             images={[
               { src: "/kolumbien/medellin/1.jpg", alt: "Highlight 1" },
-              { src: "/kolumbien/medellin/1.jpg", alt: "Highlight 1" },
-              { src: "/kolumbien/medellin/1.jpg", alt: "Highlight 1" },
-              { src: "/kolumbien/medellin/1.jpg", alt: "Highlight 1" },
+              { src: "/kolumbien/medellin/2.jpg", alt: "Highlight 2" },
+              { src: "/kolumbien/medellin/3.jpg", alt: "Highlight 3" },
+              { src: "/kolumbien/medellin/4.jpg", alt: "Highlight 4" },
             ]}
           />
+        </section>
+        <section id="pacific">
+          <h2>Pazifische Küste</h2>
+          <p>Text zu Pacifico</p>
+        </section>
+        <section id="pacific">
+          <h2>Guatapé</h2>
+          <p>Text zu Guatapé</p>
+        </section>
+        <section id="macarena">
+          <h2>Area la Macarena</h2>
+          <p>Text zu Macarena</p>
         </section>
       </article>
 
