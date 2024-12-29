@@ -418,7 +418,36 @@ export default function Kolumbien() {
         </section>
         <section id="pacific">
           <h2>Pazifische Küste</h2>
-          <p>Text zu Pacifico</p>
+          <p>
+            Die pazifische Küste kolumbiens war eins der Highlights meiner
+            Reise. Die Region ist noch sehr unberührt und außer 2 Städten im
+            Süden, wo es 2 Hauptstraßen vom &quot;Festland&quot; zur Küste gibt,
+            nur per Flugzeug zu erreichen. Aufgrund der Infrastruktur zum Wasser
+            gibt es in der Region viele Machtkämpfe zwischen den Gangs. (Aber
+            nicht da, wo ich war)
+            <br />
+            <br />
+            Ich bin von Medellin nach Bahia Solano geflogen und bin dann über el
+            Valle nach Nuqui weitergereist. Die Region ist bekannt für seine
+            Wale, die von Juni bis Oktober hier ihre Jungen bekommen. Ich war im
+            September hier und habe hier einige Wale gesehen. Die Region ist
+            auch bekannt für seine heißen Quellen und Wasserfälle. Ich habe hier
+            insgesammt 8 Tage verbracht. Die Region ist sehr sicher und die
+            Leute sehr freundlich. Es fühlt sich an wie ein anderes Land, durch
+            das Klima, die Natur und die Einheimischen. Selbst die Sprache hat
+            hier einen ganz besonderen Dialekt. Die Inlandsflüge hierher waren
+            aber verglichen mit dem rest Kolumbiens recht teuer. Pro Flug habe
+            ich ca 110€ bezahlt. (Lustige Story: Das Wetter in der Region ist
+            sehr wechselhaft und verregnet. Durch die schlechte Sicht konnte
+            unser Flugzeug nicht landen und wir sind nach Medellin umgekehrt und
+            konnten erst am nächsten Tag fliegen.)
+            <br />
+            Zwischen den Dörfern reist man übers Wasser mit kleinen Speedbooten,
+            da es einfach keine Infrastruktur durch den Djungel gibt. Es gibt
+            viele naturbelassene Strände, die förmlich zum Wandern einladen.
+            Habe ich bereits erwähnt, dass es eins der Highlights meiner Reise
+            war?
+          </p>
         </section>
         <section id="pacific">
           <h2>Guatapé</h2>
