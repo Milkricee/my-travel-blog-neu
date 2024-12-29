@@ -484,7 +484,39 @@ export default function Kolumbien() {
             images={[
               {
                 src: "/kolumbien/pacifik/flugzeug.jpg",
-                alt: "1",
+                alt: "Mit diesem Flugzeug ging es los",
+              },
+              {
+                src: "/kolumbien/pacifik/flughafen.jpg",
+                alt: "So sah der Miniflughafen in Bahia Solano aus",
+              },
+              {
+                src: "/kolumbien/pacifik/start.jpg",
+                alt: "So empfängt dich die Region. Sehr feucht und grün. Ein ganz anderes Klima.",
+              },
+              {
+                src: "/kolumbien/pacifik/strand2.jpg",
+                alt: "Eine menge unberührter Strände",
+              },
+              {
+                src: "/kolumbien/pacifik/strand5.jpg",
+                alt: "Strand und Dschungel",
+              },
+              {
+                src: "/kolumbien/pacifik/dorf.jpg",
+                alt: "So und ähnlich sehen die Dörfer aus",
+              },
+              {
+                src: "/kolumbien/pacifik/dorf2.jpg",
+                alt: "Dörfer",
+              },
+              {
+                src: "/kolumbien/pacifik/dorf3.jpg",
+                alt: "Und Weitere Dörfer",
+              },
+              {
+                src: "/kolumbien/pacifik/friedhof.jpg",
+                alt: "Beim gegend entdecken bin ich auf diesen Friedhof gestoßen",
               },
             ]}
           />
@@ -494,8 +526,28 @@ export default function Kolumbien() {
           <ImageGallery
             images={[
               {
-                src: "/kolumbien/pacifik/view.jpg",
-                alt: "1",
+                src: "/kolumbien/pacifik/wal1.jpg",
+                alt: "Hier eine gelungene Aufnahme einer Walkuh und ihres Jungen",
+              },
+              {
+                src: "/kolumbien/pacifik/wal2.jpg",
+                alt: "Hier sieht man die lange, weiße Flosse des Wals",
+              },
+              {
+                src: "/kolumbien/pacifik/wal1.jpg",
+                alt: "Hier eine gelungene Aufnahme einer Walkuh und ihres Jungen",
+              },
+              {
+                src: "/kolumbien/pacifik/boote.jpg",
+                alt: "Mit solchen Booten bewegt man sich zwischen den Dörfern fort",
+              },
+              {
+                src: "/kolumbien/pacifik/transfer.jpg",
+                alt: "Die transfere waren sehr aufregend. Die Boote sind immer vollbepackt mit Menschen und Gepäck. Ein wasserfester Beutel ist sehr zu empfehlen.",
+              },
+              {
+                src: "/kolumbien/pacifik/dorf11.jpg",
+                alt: "View auf ein Dorf",
               },
             ]}
           />
