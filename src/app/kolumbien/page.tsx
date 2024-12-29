@@ -275,8 +275,15 @@ export default function Kolumbien() {
           <p>
             Von Santa Marta ging es mit dem Flieger weiter nach Medellin. Die
             meisten mögen Medellin mehr als Bogota, ich persönlich mochte
-            Medellin nicht so. Hier eine kleine Liste von Sehenswürdigkeiten in
-            Medellin:
+            Medellin nicht so. In Bogota waren die Hostels deutlich günstiger
+            und in der Ganzen Stadt verteilt, und in Medellin waren Sie alle in
+            einem Viertel zentriert. Deshalb zieht es alle Bettler und
+            Touristenabzocker in dieses Viertel , und da erschien mir der
+            Kontrast zwischen Arm und Reich besonders krass und heuchlerisch.
+            Auch hier zeigt dir Googlemaps gute Routen mit dem öffentlichen
+            Nahverkehr.
+            <br />
+            Hier eine kleine Liste von Sehenswürdigkeiten in Medellin:
           </p>
 
           <Accordion title="Comuna 13">
@@ -319,19 +326,6 @@ export default function Kolumbien() {
               über Medellín.
             </p>
           </Accordion>
-          <Accordion title="Parque Explora">
-            <p>
-              Ein interaktives Wissenschafts- und Technologiezentrum mit einem
-              beeindruckenden Aquarium und vielen Aktivitäten für Kinder und
-              Erwachsene.
-            </p>
-          </Accordion>
-          <Accordion title="El Castillo Museum und Gärten">
-            <p>
-              Ein Schloss im gotischen Stil mit wunderschönen Gärten und
-              Kunstsammlungen.
-            </p>
-          </Accordion>
           <Accordion title="Cerro El Volador">
             <p>
               Ein Naturpark und Aussichtspunkt, perfekt für Wanderungen und um
@@ -352,6 +346,33 @@ export default function Kolumbien() {
               { src: "/kolumbien/medellin/3.jpg", alt: "Highlight 3" },
               { src: "/kolumbien/medellin/4.jpg", alt: "Highlight 4" },
             ]}
+          />
+          <h2>Guatape</h2>
+          <p>
+            <a
+              href="https://www.google.com/maps?q=Guatapé"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="animated-link"
+            >
+              Guatapé
+            </a>
+            , etwa zwei Stunden mit dem Bus von Medellín entfernt, ist ein
+            absolutes Highlight in der Region. Man kann eine Tagestour von
+            Medellin machen, oder auch vor Ort übernachten. Der Ort besticht
+            durch seine farbenfrohen Häuser und malerischen Gassen, die von der
+            Kunst und Kultur der Region erzählen. Der nahegelegene Stausee lädt
+            zu Bootstouren oder entspannten Spaziergängen ein. Das Highlight ist
+            jedoch La Piedra del Peñol, ein 220 Meter hoher Monolith mit über
+            700 Treppenstufen, die zu einer spektakulären Aussicht führen. Von
+            oben eröffnet sich ein unvergesslicher Blick auf das Labyrinth aus
+            Wasser und Bergen, das die Region prägt. Ein Besuch in Guatape
+            verbindet Natur, Kultur und Abenteuer - ideal für eine Auszeit vom
+            Stadtleben Medellíns.
+          </p>
+
+          <ImageGallery
+            images={[{ src: "/kolumbien/guatape/1.jpg", alt: "Highlight 1" }]}
           />
         </section>
         <section id="pacific">
