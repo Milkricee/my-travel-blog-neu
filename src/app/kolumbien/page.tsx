@@ -341,10 +341,22 @@ export default function Kolumbien() {
 
           <ImageGallery
             images={[
-              { src: "/kolumbien/medellin/1.jpg", alt: "Highlight 1" },
-              { src: "/kolumbien/medellin/2.jpg", alt: "Highlight 2" },
-              { src: "/kolumbien/medellin/3.jpg", alt: "Highlight 3" },
-              { src: "/kolumbien/medellin/4.jpg", alt: "Highlight 4" },
+              {
+                src: "/kolumbien/medellin/pano.jpg",
+                alt: "Vor 10-12 Jahren eine absolute no go Area, heute ein Touristenmagnet",
+              },
+              {
+                src: "/kolumbien/medellin/basketball.jpg",
+                alt: "Hier sind jeden Tag tausende touristen und ist sehr sicher",
+              },
+              {
+                src: "/kolumbien/medellin/2.jpg",
+                alt: "Es gibt viele authentische Touren, von Bewohnern geführt",
+              },
+              {
+                src: "/kolumbien/medellin/close.jpg",
+                alt: "Communa 13 ist ein wahres Labyrint",
+              },
             ]}
           />
           <h2>Guatape</h2>
@@ -372,7 +384,36 @@ export default function Kolumbien() {
           </p>
 
           <ImageGallery
-            images={[{ src: "/kolumbien/guatape/1.jpg", alt: "Highlight 1" }]}
+            images={[
+              {
+                src: "/kolumbien/guatape/view.jpg",
+                alt: "Aussicht vom Felsen",
+              },
+              {
+                src: "/kolumbien/guatape/stairs.jpg",
+                alt: "ca 700 Stufen hoch und genau so wieder runter",
+              },
+              {
+                src: "/kolumbien/guatape/streets.jpg",
+                alt: "Bunte Straßen in Guatape",
+              },
+              {
+                src: "/kolumbien/guatape/boats.jpg",
+                alt: "Von hier aus kann man sich erschwingliche Bootsrouren buchen",
+              },
+              {
+                src: "/kolumbien/guatape/rock.jpg",
+                alt: "So sieht der Felsen von weiten aus",
+              },
+              {
+                src: "/kolumbien/guatape/villa.jpg",
+                alt: "Die Region ist der Rückzugsort der schönen und reichen",
+              },
+              {
+                src: "/kolumbien/guatape/pablo.jpg",
+                alt: "Selbst Pablo Escobar hatte hier eine Villa stehen. Mittlerweile ist sie abgebrannt und verlassen",
+              },
+            ]}
           />
         </section>
         <section id="pacific">
