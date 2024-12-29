@@ -603,7 +603,7 @@ export default function Kolumbien() {
             nutzen. Es ist etwas günstiger, aber dafür ist man auch 3 Tage
             unterwegs.
             <br />
-            Ich habe mich für das Slowboat entschiede. Ich war der einzige
+            Ich habe mich für das Slowboat entschiedenund war der einzige
             Tourist. Das Boot macht zwischendurch viele Stopps auf den
             entlegenen Dörfern, um Waren ein- und auszuladen. Das hat mir einen
             guten Einblick in deren Leben gegeben.
@@ -612,10 +612,47 @@ export default function Kolumbien() {
             nicht die Immigrationcontroll durchzuführen und holt euch eure
             Stempel ab.
             <br />
-            Achso, und falls ihr euch entscheidet mit dem Slowboat zu fahren
-            nicht eine Hängematte zu besorgen, denn das wird für die nächsten 3
-            Tage euer Bett.
+            Achso, und falls ihr euch entscheidet mit dem Slowboat zu fahren,
+            vergesst nicht euch eine Hängematte zu besorgen, denn das wird für
+            die nächsten 3 Tage euer Bett. Auf dem Boot kriegt man zwar Essen,
+            mir hätte es aber nicht gereicht. Aber man macht genug Stopps
+            unterwegs,um sich mit Essen zu versorgen. Außerdem gab es auf dem
+            Boot ein Kiosk, wo man sich Bier und weiteres Kaufen konnte.
           </p>
+          <ImageGallery
+            images={[
+              {
+                src: "/kolumbien/pazifik/wal1.jpg",
+                alt: "Hier eine gelungene Aufnahme einer Walkuh und ihres Jungen",
+              },
+            ]}
+          />
+          <h2> Iquitos</h2>
+          <p>
+            In Iquitos angekommen, habe ich mir ein Hostel gesucht und habe mir
+            die Stadt angeguckt. Die Stadt hat mir zwar nicht so gefallen.Es war
+            recht dreckig, aber hat auch ihren Charme. Hier gibt es viele Touren
+            in den Amazonas. Aus der Peruanischen Seite sollen die Touren etwas
+            günstiger sein, als von Kolumbien aus. Von hier aus habe ich eine 3
+            Tägige Tour in den Amazonas gemacht. Man fährt in eine Entlegene
+            Lodge und macht von dort aus, mit einem erfahrerenen Guide
+            unterschiedliche Tagestripps. Als ich im September da war, war es
+            Dryseason, trotzdessen gab es tausende von Mücken. Ich kann mir gar
+            nicht vorstellen, wie es in der Regensaison sein muss. Aber ich kann
+            die Touren hier trotzdem voll und ganz empfehlen. Wir haben viele
+            unterschiedliche Tiere und Natur gesehen und sogar Piranhas geangelt
+            und anschließend gegessen. Ein kleines Highlight war im Amazonas mit
+            2 unterschiedlichen Delfinarten zu schwimmen. Eine, klassisch graue
+            Delfinart und eine rosa Delfinart, die es nur im Amazonas gibt.
+          </p>
+          <ImageGallery
+            images={[
+              {
+                src: "/kolumbien/pazifik/wal1.jpg",
+                alt: "Hier eine gelungene Aufnahme einer Walkuh und ihres Jungen",
+              },
+            ]}
+          />
         </section>
         <section id="macarena">
           <h2>Mesetas. La Macarena Nationalpark</h2>
