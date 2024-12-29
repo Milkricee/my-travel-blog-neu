@@ -432,15 +432,18 @@ export default function Kolumbien() {
             Wale, die von Juni bis Oktober hier ihre Jungen bekommen. Ich war im
             September hier und habe hier einige Wale gesehen. Die Region ist
             auch bekannt für seine heißen Quellen und Wasserfälle. Ich habe hier
-            insgesammt 8 Tage verbracht. Die Region ist sehr sicher und die
-            Leute sehr freundlich. Es fühlt sich an wie ein anderes Land, durch
-            das Klima, die Natur und die Einheimischen. Selbst die Sprache hat
-            hier einen ganz besonderen Dialekt. Die Inlandsflüge hierher waren
-            aber verglichen mit dem rest Kolumbiens recht teuer. Pro Flug habe
-            ich ca 110€ bezahlt. (Lustige Story: Das Wetter in der Region ist
-            sehr wechselhaft und verregnet. Durch die schlechte Sicht konnte
-            unser Flugzeug nicht landen und wir sind nach Medellin umgekehrt und
-            konnten erst am nächsten Tag fliegen.)
+            insgesammt 8 Tage verbracht.
+            <br />
+            Die Region ist sehr sicher und die Leute sehr freundlich. Es fühlt
+            sich an wie ein anderes Land, durch das Klima, die Natur und die
+            Einheimischen. Selbst die Sprache hat hier einen ganz besonderen
+            Dialekt.
+            <br /> Die Inlandsflüge hierher waren aber verglichen mit dem rest
+            Kolumbiens recht teuer. Pro Flug habe ich ca 110€ bezahlt. (Lustige
+            Story: Das Wetter in der Region ist sehr wechselhaft und feucht.
+            Durch die schlechte Sicht konnte unser Flugzeug nicht landen und wir
+            sind nach Medellin umgekehrt und konnten erst am nächsten Tag den 2.
+            Versuch starten.)
             <br />
             Zwischen den Dörfern reist man übers Wasser mit kleinen Speedbooten,
             da es einfach keine Infrastruktur durch den Djungel gibt. Es gibt
