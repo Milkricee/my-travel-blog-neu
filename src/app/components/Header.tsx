@@ -30,52 +30,51 @@ export default function Header() {
 
   const [isScrolledOutOfView, setIsScrolledOutOfView] = useState(false);
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolledOutOfView(window.scrollY > 200); // Prüfe, ob der Header aus der Sicht ist
     };
-  
+
     const handleMouseMove = (e: MouseEvent) => {
       const isMouseInUpperThird = e.clientY <= window.innerHeight / 3;
       setIsHeaderVisible(isMouseInUpperThird); // Sichtbarkeit basierend auf Mausposition
     };
-  
+
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("mousemove", handleMouseMove);
-  
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-  
 
   return (
-<header
-  className={`bg-gray-800 text-white py-4 px-8 flex flex-col md:flex-row md:items-center md:justify-between z-20 fixed left-0 w-full transition-transform duration-500 ${
-    isHeaderVisible || !isScrolledOutOfView ? "translate-y-0" : "-translate-y-full"
-  }`}
->
+    <header
+      className={`bg-gray-800 text-white py-4 px-8 flex flex-col md:flex-row md:items-center md:justify-between z-20 fixed left-0 w-full transition-transform duration-500 ${
+        isHeaderVisible || !isScrolledOutOfView
+          ? "translate-y-0"
+          : "-translate-y-full"
+      }`}
+    >
+      {/* Linke Seite: Logo und Titel */}
+      <div className="flex items-center gap-6 flex-shrink-0">
+        <Image src="/imgs/cat.png" alt="Logo" width={60} height={60} />
+        <h1 className="text-2xl font-bold whitespace-nowrap">
+          <Link href="/">Dan&apos;s Travelblog</Link>
+        </h1>
+      </div>
 
-  
-{/* Linke Seite: Logo und Titel */}
-<div className="flex items-center gap-6 flex-shrink-0">
-  <Image src="/imgs/cat.png" alt="Logo" width={60} height={60} />
-  <h1 className="text-2xl font-bold whitespace-nowrap">
-    <Link href="/">Dan&apos;s Travelblog</Link>
-  </h1>
-</div>
-
-{/* Navigation: Dynamisch anzeigen/verstecken */}
-<nav
-  className={`${
-    isMenuOpen ? "block" : "hidden"
-  } md:flex flex-wrap md:flex-nowrap gap-4 md:gap-8 items-center mt-4 md:mt-0 whitespace-nowrap`}
->
-  <Link href="/about" className="hover:underline">
-    About Me
-  </Link>
+      {/* Navigation: Dynamisch anzeigen/verstecken */}
+      <nav
+        className={`${
+          isMenuOpen ? "block" : "hidden"
+        } md:flex flex-wrap md:flex-nowrap gap-4 md:gap-8 items-center mt-4 md:mt-0 whitespace-nowrap`}
+      >
+        <Link href="/about" className="hover:underline">
+          About Me
+        </Link>
 
         <div className="relative group">
           <button className="hover:underline">Afrika</button>
@@ -91,9 +90,6 @@ export default function Header() {
         <div className="relative group">
           <button className="hover:underline">Asien</button>
           <ul className="absolute hidden group-hover:block bg-white text-black py-2 rounded shadow-lg">
-            <li className="px-4 py-1 hover:bg-gray-200">
-              <Link href="/philippinen">Philippinen</Link>
-            </li>
             <li className="px-4 py-1 hover:bg-gray-200">
               <Link href="/vietnam">Vietnam</Link>
             </li>

@@ -29,7 +29,7 @@ export default function Kolumbien() {
           { href: "#Bogota", label: "Bogota" },
           { href: "#sanandres", label: "San Andres" },
           { href: "#carthagena", label: "Carthagena" },
-          { href: "#highlights", label: "Highlights" },
+          { href: "#medellin", label: "Medellin/Guatape" },
           { href: "#comments", label: "Kommentare" },
         ]}
       />
@@ -204,29 +204,28 @@ export default function Kolumbien() {
             Santa Marta an sich, ist nicht unbedingt sehenswert, aber von hier
             aus gibt es viele Touren zu den umliegenden Sehenswürdigkeiten.
             Viele machen eine 3 Tagestour zur Lost City, die ich aber nicht
-            gemacht habe.
-            <p>
-              Stattdessen haben wir uns ein Auto gemietet und sind in den&nbsp;
-              <a
-                href="https://www.google.com/maps?q=Tayrona+Nationalpark"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="animated-link"
-              >
-                Tayrona Nationalpark
-              </a>
-              &nbsp; und nach&nbsp;
-              <a
-                href="https://www.google.com/maps?q=Minca+Kolumbien"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="animated-link"
-              >
-                Minca
-              </a>
-              &nbsp; gefahren. Beides sehr schöne Orte und definitiv einen
-              Besuch wert.
-            </p>
+            gemacht habe. Stattdessen haben wir uns ein Auto gemietet und sind
+            in den&nbsp;
+            <a
+              href="https://www.google.com/maps?q=Tayrona+Nationalpark"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="animated-link"
+            >
+              Tayrona Nationalpark
+            </a>
+            &nbsp; und nach&nbsp;
+            <a
+              href="https://www.google.com/maps?q=Minca+Kolumbien"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="animated-link"
+            >
+              Minca
+            </a>
+            &nbsp; gefahren. Beides sehr schöne Orte und definitiv einen Besuch
+            wert.
+            <br />
             Beides sehr schöne Orte und definitiv einen Besuch wert. Beides sehr
             schöne Orte und definitiv einen Besuch wert. Von Minca und Tyrona
             kommt man gut weiter nach Palomino. Ein kleines Hippiörtchen. Leider
@@ -277,7 +276,7 @@ export default function Kolumbien() {
         {/* Abschnitt 5 */}
         <section id="medellin">
           <h2>Medellin und Guatapé </h2>
-          <p>Von Santa Marta ging es mit dem Flieger weiter nach Medellin^ </p>
+          <p>Von Santa Marta ging es mit dem Flieger weiter nach Medellin</p>
           <ImageGallery
             images={[
               { src: "/kolumbien/medellin/1.jpg", alt: "Highlight 1" },

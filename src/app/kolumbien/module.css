@@ -1,32 +1,32 @@
 .animated-link {
-    color: blue;
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-    animation: shake 1s infinite ease-in-out;
-    animation-delay: 50s; /* Wartezeit zwischen den Animationen */
+  color: blue;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  animation: shake 1s infinite ease-in-out;
+  animation-delay: 50s; /* Wartezeit zwischen den Animationen */
+}
+
+.animated-link:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
   }
-  
-  .animated-link:hover {
-    color: green;
-    text-decoration: underline;
+  20% {
+    transform: translate(-2px, 2px) rotate(-2deg);
   }
-  
-  @keyframes shake {
-    0%, 100% {
-      transform: translate(0, 0) rotate(0deg);
-    }
-    20% {
-      transform: translate(-2px, 2px) rotate(-2deg);
-    }
-    40% {
-      transform: translate(2px, -2px) rotate(2deg);
-    }
-    60% {
-      transform: translate(-2px, 2px) rotate(-2deg);
-    }
-    80% {
-      transform: translate(2px, -2px) rotate(2deg);
-    }
+  40% {
+    transform: translate(2px, -2px) rotate(2deg);
   }
-  
+  60% {
+    transform: translate(-2px, 2px) rotate(-2deg);
+  }
+  80% {
+    transform: translate(2px, -2px) rotate(2deg);
+  }
+}
