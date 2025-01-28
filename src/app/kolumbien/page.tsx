@@ -427,7 +427,7 @@ export default function Kolumbien() {
             nicht da, wo ich war)
             <br />
             <br />
-            Ich bin von Medellin nach
+            Ich bin von Medellin nach&nbsp;
             <a
               href="https://www.google.com/maps?q=Bahia+Solano"
               target="_blank"
@@ -436,7 +436,7 @@ export default function Kolumbien() {
             >
               Bahia Solano
             </a>
-            geflogen und bin dann über
+            &nbsp;geflogen und bin dann über &nbsp;
             <a
               href="https://www.google.com/maps?q=El+Valle+Choco"
               target="_blank"
@@ -445,7 +445,7 @@ export default function Kolumbien() {
             >
               El Valle
             </a>
-            nach
+            &nbsp;nach&nbsp;
             <a
               href="https://www.google.com/maps?q=Nuqui"
               target="_blank"
@@ -454,10 +454,10 @@ export default function Kolumbien() {
             >
               Nuqui
             </a>
-            weitergereist. Die Region ist bekannt für ihre Wale, die von Juni
-            bis Oktober hier ihre Jungen bekommen. Ich war im September hier und
-            habe einige Wale gesehen. Die Region ist auch bekannt für ihre
-            heißen Quellen und Wasserfälle. Ich habe hier insgesamt 8 Tage
+            &nbsp;weitergereist. Die Region ist bekannt für ihre Wale, die von
+            Juni bis Oktober hier ihre Jungen bekommen. Ich war im September
+            hier und habe einige Wale gesehen. Die Region ist auch bekannt für
+            ihre heißen Quellen und Wasserfälle. Ich habe hier insgesamt 8 Tage
             verbracht.
             <br />
             Die Region ist sehr sicher und die Leute sehr freundlich. Es fühlt
@@ -469,7 +469,7 @@ export default function Kolumbien() {
             Story: Das Wetter in der Region ist sehr wechselhaft und feucht.
             Durch die schlechte Sicht konnte unser Flugzeug nicht landen und wir
             sind nach Medellin umgekehrt und konnten erst am nächsten Tag den 2.
-            Versuch starten.)
+            Versuch starten. Das ist scheinbar gar nicht so unüblich)
             <br />
             Zwischen den Dörfern reist man übers Wasser mit kleinen Speedbooten,
             da es einfach keine Infrastruktur durch den Dschungel gibt. Es gibt
@@ -478,7 +478,7 @@ export default function Kolumbien() {
             war?
             <br />
             Hier habe ich super Viele Fotos gemacht, die euch einen guten
-            einblick in die Region geben.
+            Einblick in die Region geben.
           </p>
           <ImageGallery
             images={[
@@ -595,11 +595,11 @@ export default function Kolumbien() {
             </a>
             &nbsp;grenzt an Peru und Brasilien und die Grenzen sind offen
             (zumindest am Anfang. Da man ohne Flugzeug oder Boot eh nicht weit
-            kommt). Hier kann man innerhalb von einer Stunde in 3 Ländern
-            gewesen sein. Ich habe mir hier einen Roller gemietet und die Gegend
-            erkundet. Von hier aus gibt es viele mehrtägige Touren in den
-            Amazonas. Vergleicht die Preise der unterschiedlichen Anbieter und
-            vergesst nicht zu verhandeln.
+            kommt). Hier kann man innerhalb von einer Stunde 3 Ländern besuchen.
+            Ich habe mir hier einen Roller gemietet und die Gegend erkundet. Von
+            hier aus gibt es viele mehrtägige Touren in den Amazonas. Vergleicht
+            die Preise der unterschiedlichen Anbieter und vergesst nicht zu
+            verhandeln.
             <br />
             Von Leticia aus, kann man mit dem Boot, entweder nach Brasilien
             rein, oder nach Peru. Ich habe mich für Peru entschieden, da ich
@@ -612,19 +612,19 @@ export default function Kolumbien() {
             <br />
             Ich habe mich für das Slowboat entschiedenund war der einzige
             Tourist an Board. Das Boot macht zwischendurch viele Stopps auf den
-            entlegenen Dörfern, um Waren ein- und auszuladen. Das hat mir einen
-            guten Einblick in deren Leben gegeben.
+            entlegenen Dörfern, um Menschen und Waren ein- und auszuladen. Das
+            hat mir einen guten Einblick in deren Leben gegeben.
             <br />
             Bevor ihr euch entscheidet mit einem der 2 Boote zu fahren, vergesst
             nicht die Immigrationcontroll durchzuführen und holt euch eure
             Stempel ab.
             <br />
             Achso, und falls ihr euch entscheidet mit dem Slowboat zu fahren,
-            vergesst nicht euch eine Hängematte zu besorgen, denn das wird für
-            die nächsten 3 Tage euer Bett. Auf dem Boot kriegt man zwar Essen,
-            mir hätte es aber nicht gereicht. Aber man macht genug Stopps
-            unterwegs, um sich mit Essen zu versorgen. Außerdem gab es auf dem
-            Boot ein Kiosk, wo man sich Bier und Essen Kaufen konnte.
+            solltet ihr euch eine Hängematte zu besorgen, denn das wird für die
+            nächsten 3 Tage euer Bett. Auf dem Boot kriegt man zwar Essen, mir
+            hätte es aber nicht gereicht. Aber man macht genug Stopps unterwegs,
+            um sich mit Essen zu versorgen. Außerdem gab es auf dem Boot ein
+            Kiosk, wo man sich Bier und Essen Kaufen konnte.
           </p>
           <h2> Kleine Einblicke in Leticia</h2>
           <ImageGallery
@@ -799,12 +799,14 @@ export default function Kolumbien() {
             - diese Region ist kaum erschlossen, und die wenigen Touristen die
             man hier trifft, sind alle Kolumbianer. Diese Region war ein kleiner
             Geheimtipp meines Couchsurfing Hosts. Man fährt ca. 6 Stunden von
-            Bogota hin. Hier gibt es viele unterschiedliche Touren zu recht
-            akzeptablen Preisen. Ich habe 2 unterschiedliche Tagestouren für je
-            50€ gemacht. Einmal Rafting und einmal mit dem Auto und ein bisschen
-            laufen durch Teile des riesigen Nationalparks zu unterschiedlichen
-            Wasserfällen. In der Region gibt es über 90 unterschiedliche
-            Wasserfälle.
+            Bogota aus über die Berge hin. Die Busse waren übrigens sehr
+            komfortabel.
+            <br />
+            Hier gibt es viele unterschiedliche Touren zu recht akzeptablen
+            Preisen. Ich habe 2 unterschiedliche Tagestouren für je 50€ gemacht.
+            Einmal Rafting und einmal mit dem Auto und ein bisschen laufen durch
+            Teile des riesigen Nationalparks zu unterschiedlichen Wasserfällen.
+            In der Region gibt es über 90 unterschiedliche Wasserfälle.
             <br />
             Da es kaum ausländische Touristen gibt, ist man hier auf ein
             bisschen Spanischwissen angewiesen. Aber selbst mit meinen kaum
