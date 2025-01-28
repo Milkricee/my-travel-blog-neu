@@ -690,6 +690,32 @@ export default function Kolumbien() {
             klassisch graue Delfinart und eine rosa Delfinart, die es nur im
             Amazonas gibt (die sieht by the way echt ugly aus).
           </p>
+          <h2>Iquitos</h2>
+          <ImageGallery
+            images={[
+              {
+                src: "/kolumbien/iquitos/straßen.jpg",
+                alt: "War schon ein bisschen dreckig",
+              },
+              {
+                src: "/kolumbien/iquitos/landschaft.jpg",
+                alt: "Aber auch hier gab es schöne Landschaften",
+              },
+              {
+                src: "/kolumbien/iquitos/müll.jpg",
+                alt: "Aber auch sowas gab es",
+              },
+              {
+                src: "/kolumbien/iquitos/gebäude.jpg",
+                alt: "Es gab auch schöne Gebäude",
+              },
+              {
+                src: "/kolumbien/iquitos/hostel.jpg",
+                alt: "In dem Hostel habe ich übernachtet",
+              },
+            ]}
+          />
+          <h2>Djungeltour</h2>
           <ImageGallery
             images={[
               {
