@@ -719,7 +719,7 @@ export default function Kolumbien() {
           <ImageGallery
             images={[
               {
-                src: "/kolumbien/pazifik/wal1.jpg",
+                src: "/kolumbien/amazonas/wal1.jpg",
                 alt: "Hier eine gelungene Aufnahme einer Walkuh und ihres Jungen",
               },
             ]}
