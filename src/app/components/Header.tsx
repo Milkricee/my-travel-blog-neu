@@ -93,6 +93,9 @@ export default function Header() {
             <li className="px-4 py-1 hover:bg-gray-200">
               <Link href="/vietnam">Vietnam</Link>
             </li>
+            <li className="px-4 py-1 hover:bg-gray-200">
+              <Link href="/pakistan">Pakistan</Link>
+            </li>
           </ul>
         </div>
         <div className="relative group">

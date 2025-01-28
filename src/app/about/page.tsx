@@ -43,9 +43,9 @@ export default function About() {
           </p>
           <p className="text-lg mb-4">
             In meiner Freizeit programmiere ich gerne und habe mir gedacht, ich
-            erstelle mal einen kleine Travelblog, damit andere von meinen
+            erstelle mal einen kleinen Travelblog, damit andere von meinen
             Erfahrungen profitieren können. Selbst wenn ich damit nur ein Paar
-            Menschen weiterhelfen konnte, hat sich der Aufwand gelohnt.
+            Menschen weiterhelfen konnte, hat sich der Aufwand für mich gelohnt.
           </p>
           <p className="text-lg">
             Ich freue mich über Kommentare oder konstruktives Feedback. Auch bei
