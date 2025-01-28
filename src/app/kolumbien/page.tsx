@@ -698,17 +698,17 @@ export default function Kolumbien() {
             Touren in den Amazonas. Aus der peruanischen Seite sollen die Touren
             etwas günstiger sein, als von Kolumbien aus. Von hier aus habe ich
             eine 3 Tägige Tour in den Amazonas gemacht (Preis weiß ich nicht
-            mehr, dürften zwischen 90 und 140 Dollar gewesen sein). Man fährt in
-            eine Entlegene Lodge und macht von dort aus, mit einem erfahrerenen
-            Guide unterschiedliche Tagestripps. Als ich im September da war, war
-            es Dryseason, trotzdessen gab es tausende von Mücken. Ich kann mir
-            gar nicht vorstellen, wie es in der Regensaison sein muss. Aber ich
-            kann die Touren hier trotzdem voll und ganz empfehlen. Wir haben
-            viele unterschiedliche Tiere und Natur gesehen und sogar Piranhas
-            geangelt und anschließend gegessen. Ein kleines Highlight war im
-            Amazonas mit 2 unterschiedlichen Delfinarten zu schwimmen. Eine,
-            klassisch graue Delfinart und eine rosa Delfinart, die es nur im
-            Amazonas gibt (die sieht by the way echt ugly aus).
+            mehr, dürften grob zwischen 90 und 140 Dollar gewesen sein). Man
+            fährt in eine entlegene Lodge und macht von dort aus, mit einem
+            erfahrenen Guide unterschiedliche Tagestripps. Als ich im September
+            da war, war es Dryseason, trotzdessen gab es tausende von Mücken.
+            Ich kann mir gar nicht vorstellen, wie es in der Regensaison sein
+            muss. Aber ich kann die Touren hier trotzdem voll und ganz
+            empfehlen. Wir haben viele unterschiedliche Tiere und Natur gesehen
+            und sogar Piranhas geangelt und anschließend gegessen. Ein kleines
+            Highlight war im Amazonas mit 2 unterschiedlichen Delfinarten zu
+            schwimmen. Eine klassisch grauer Delfin und eine rosa Delfinart, die
+            es nur im Amazonas gibt (die sehen by the way echt ugly aus).
           </p>
           <h2>Iquitos</h2>
           <ImageGallery
