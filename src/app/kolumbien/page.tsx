@@ -613,13 +613,60 @@ export default function Kolumbien() {
             die nächsten 3 Tage euer Bett. Auf dem Boot kriegt man zwar Essen,
             mir hätte es aber nicht gereicht. Aber man macht genug Stopps
             unterwegs,um sich mit Essen zu versorgen. Außerdem gab es auf dem
-            Boot ein Kiosk, wo man sich Bier und weiteres Kaufen konnte.
+            Boot ein Kiosk, wo man sich Bier und Essen Kaufen konnte.
           </p>
+          <h2> Kleine Einblicke in Leticia</h2>
           <ImageGallery
             images={[
               {
-                src: "/kolumbien/pazifik/wal1.jpg",
-                alt: "Hier eine gelungene Aufnahme einer Walkuh und ihres Jungen",
+                src: "/kolumbien/leticia/view1.jpg",
+                alt: "Von diesem Turm, hat man diese Aussicht..",
+              },
+              {
+                src: "/kolumbien/leticia/view.jpg",
+                alt: "Man sieht fast ganz Leticia von hier aus",
+              },
+              {
+                src: "/kolumbien/leticia/leticia2.jpg",
+                alt: "Mit diesen Booten kommt man auf die Peruanische Seite",
+              },
+              {
+                src: "/kolumbien/leticia/leticia.jpg",
+                alt: "Kleiner einblick in die Seitenstraßen",
+              },
+            ]}
+          />
+
+          <h2> Die Fahrt auf dem Amazonas</h2>
+          <ImageGallery
+            images={[
+              {
+                src: "/kolumbien/river/slowboat.jpg",
+                alt: "Ich bin nicht mit dem Boot gefahren, aber mit einem ähnlichen",
+              },
+              {
+                src: "/kolumbien/river/oben.jpg",
+                alt: "Das war mein Zuhause für die nächsten 3 Tage. Das obere Deck war erste Klasse,",
+              },
+              {
+                src: "/kolumbien/river/unten.jpg",
+                alt: "Das untere Deck war viel vollgepackter",
+              },
+              {
+                src: "/kolumbien/river/view.jpg",
+                alt: "So sah die Aussicht die meiste Zeit aus",
+              },
+              {
+                src: "/kolumbien/river/bett.jpg",
+                alt: "Das war mein Bett und so habe ich die meiste Zeit, mein Buch lesen verbracht",
+              },
+              {
+                src: "/kolumbien/river/dorf.jpg",
+                alt: "So sieht ein kleines peruanisches Dorf aus",
+              },
+              {
+                src: "/kolumbien/river/dorf2.jpg",
+                alt: "Oder so. Durch die ganzen Stopps entlag der Route, hat man einen schönen Einblick bekommen, wie man in den entlegenen Dörfern lebt",
               },
             ]}
           />
