@@ -90,9 +90,7 @@ export default function Kolumbien() {
             herumtorkeln, nicht mit dem Handy in der Hand spazieren gehen und
             ein bisschen auf die Umgebung achten.
           </p>
-
           <hr className="my-4 border-t border-gray-300" />
-
           <h2 className="text-xl font-semibold mt-4">Must Sees:</h2>
           <Accordion title="Plaza de Bolívar">
             <p>
@@ -119,7 +117,6 @@ export default function Kolumbien() {
               Sammlung von präkolumbianischem Goldschmuck zeigt.
             </p>
           </Accordion>
-
           <ImageGallery
             images={[
               { src: "/kolumbien/bogota/bolivar.jpg", alt: "Plaza de Bolívar" },
@@ -220,14 +217,13 @@ export default function Kolumbien() {
             >
               Minca
             </a>
-            &nbsp; gefahren. Beides sehr schöne Orte und definitiv einen Besuch
-            wert.
+            &nbsp; gefahren.
             <br />
-            Beides sehr schöne Orte und definitiv einen Besuch wert. Beides sehr
-            schöne Orte und definitiv einen Besuch wert. Von Minca und Tyrona
-            kommt man gut weiter nach Palomino. Ein kleines Hippiörtchen. Leider
-            haben wir hier nur eine Nacht verbracht, und mussten am Mittag das
-            Auto in Santa Marta zurückgeben. Für die KiteSurfer unter uns bietet
+            Beides sehr schöne Orte und definitiv einen Besuch wert. Von Minca
+            und Tyrona kommt man gut weiter nach Palomino. Ein kleines
+            Hippiörtchen. Leider haben wir hier nur eine Nacht verbracht, und
+            mussten am Mittag das Auto in Santa Marta zurückgeben. Für die
+            KiteSurfer unter uns bietet
             <a
               href="https://www.google.com/maps?q=Cabo+de+la+Vela"
               target="_blank"
@@ -631,19 +627,21 @@ export default function Kolumbien() {
           <p>
             In Iquitos angekommen, habe ich mir ein Hostel gesucht und habe mir
             die Stadt angeguckt. Die Stadt hat mir zwar nicht so gefallen.Es war
-            recht dreckig, aber hat auch ihren Charme. Hier gibt es viele Touren
-            in den Amazonas. Aus der Peruanischen Seite sollen die Touren etwas
-            günstiger sein, als von Kolumbien aus. Von hier aus habe ich eine 3
-            Tägige Tour in den Amazonas gemacht. Man fährt in eine Entlegene
-            Lodge und macht von dort aus, mit einem erfahrerenen Guide
-            unterschiedliche Tagestripps. Als ich im September da war, war es
-            Dryseason, trotzdessen gab es tausende von Mücken. Ich kann mir gar
-            nicht vorstellen, wie es in der Regensaison sein muss. Aber ich kann
-            die Touren hier trotzdem voll und ganz empfehlen. Wir haben viele
-            unterschiedliche Tiere und Natur gesehen und sogar Piranhas geangelt
-            und anschließend gegessen. Ein kleines Highlight war im Amazonas mit
-            2 unterschiedlichen Delfinarten zu schwimmen. Eine, klassisch graue
-            Delfinart und eine rosa Delfinart, die es nur im Amazonas gibt.
+            recht dreckig, aber das hat auch seinen Charme. Hier gibt es viele
+            Touren in den Amazonas. Aus der peruanischen Seite sollen die Touren
+            etwas günstiger sein, als von Kolumbien aus. Von hier aus habe ich
+            eine 3 Tägige Tour in den Amazonas gemacht (Preis weiß ich nicht
+            mehr, dürften aber um die 90-100 Dollar gewesen sein). Man fährt in
+            eine Entlegene Lodge und macht von dort aus, mit einem erfahrerenen
+            Guide unterschiedliche Tagestripps. Als ich im September da war, war
+            es Dryseason, trotzdessen gab es tausende von Mücken. Ich kann mir
+            gar nicht vorstellen, wie es in der Regensaison sein muss. Aber ich
+            kann die Touren hier trotzdem voll und ganz empfehlen. Wir haben
+            viele unterschiedliche Tiere und Natur gesehen und sogar Piranhas
+            geangelt und anschließend gegessen. Ein kleines Highlight war im
+            Amazonas mit 2 unterschiedlichen Delfinarten zu schwimmen. Eine,
+            klassisch graue Delfinart und eine rosa Delfinart, die es nur im
+            Amazonas gibt (die sieht by the way echt ugly aus).
           </p>
           <ImageGallery
             images={[
@@ -656,7 +654,47 @@ export default function Kolumbien() {
         </section>
         <section id="macarena">
           <h2>Mesetas. La Macarena Nationalpark</h2>
-          <p>Text zu Macarena</p>
+          <p>
+            Mesetas. Diese Region ist kaum erschlossen, und die wenigen
+            Touristen die man hier trifft sind alle Kolumbianer. Diese Region
+            war ein kleiner Geheimtipp meines Couchsurfing Hosts. Man fährt ca.
+            6 Stunden von Bogota hin. Hier gibt es viele unterschiedliche
+            Touren, zu recht akzeptablen Preisen. Ich habe 2 unterschiedliche
+            Tagestouren für je 50€ gemacht. Einmal Rafting und einmal mit dem
+            Auto und ein bisschen laufen durch Teile des riesigen Nationalparks
+            zu unterschiedlichen Wasserfällen. In der Region gibt es über 90
+            unterschiedliche Wasserfälle.
+            <br />
+            Da es kaum ausländische Touristen gibt, ist man hier auf ein
+            bisschen Spanischwissen angewiesen. Aber selbst mit meinen kaum
+            vorhandenen Spanischkenntnissen kam gut zurecht. Wenn man eine Tour
+            bucht, wird sich um alles gekümmert und man kann relaxen. Ich fand
+            den Service, den man für das Geld bekommt, echt gut. Mesetas ist ein
+            kleines Dörfchen mit netten Menschen. Man bekommt einen guten
+            Einblick, wie Menschen in den etwas abseits gelegenen Regionen
+            leben.
+            <br />
+            Vor 10-13 Jahren war das Gebiet noch von der FARC besetzt und ein
+            Kriegsgebiet.Aber langsam kommt der Tourismus wieder. Heute ist es
+            sicher und man kann die atemberaubende Natur genießen. Mir wurde
+            erzählt, dass man manchmal Leichen, nach irgenwelchen Kämpfen im
+            Fluss treiben sehen hat. Aber das ist heute nicht mehr der Fall.
+            Also, falls ihr mal in Bogota seid und ein bisschen mehr Zeit habt,
+            kann ich euch die Region nur empfehlen.
+            <br />
+            Auch hier fahren alle ohne Helm, und es war witzig zu sehen, wie ein
+            ca. 12 Jähriger seine Mutter auf nem Scooter rumcoutchiert hat. Ein
+            kleiner Highligt war, als ich eine Horde Affen bei einem Spaziergang
+            durchs Dorf gesehen habe.
+          </p>
+          <ImageGallery
+            images={[
+              {
+                src: "/kolumbien/pazifik/wal1.jpg",
+                alt: "Hier eine gelungene Aufnahme einer Walkuh und ihres Jungen",
+              },
+            ]}
+          />
         </section>
       </article>
 
