@@ -28,8 +28,12 @@ export default function Kolumbien() {
           { href: "#map-kolumbien", label: "Route" },
           { href: "#Bogota", label: "Bogota" },
           { href: "#sanandres", label: "San Andres" },
-          { href: "#carthagena", label: "Carthagena" },
+          { href: "#carthagena", label: "Nordküste" },
           { href: "#medellin", label: "Medellin/Guatape" },
+          { href: "#pacific", label: "Pazifische Küste" },
+          { href: "#leticia", label: "Amazonas (Leticia)" },
+          { href: "#iquitos", label: "Iquitos" },
+          { href: "#macarena", label: "La Macarena Nationalpark" },
           { href: "#comments", label: "Kommentare" },
         ]}
       />
@@ -575,7 +579,7 @@ export default function Kolumbien() {
           <br />
         </section>
 
-        <section id="leticia">
+        <section id="iquitos">
           <h2>Im Amazonas. Leticia</h2>
           <p>
             Von der Pazifischen Küste ging es mit dem Flieger über Medellin und
@@ -752,7 +756,7 @@ export default function Kolumbien() {
               },
               {
                 src: "/kolumbien/amazonas/anakonda.jpg",
-                alt: "Wir hatten extrem Glück und haben eine 2 Meter große Babyanakonda gesehen. Sorry für die Qualli. Es war Nacht und ich hab nicht das beste Handy",
+                alt: "Wir hatten extrem Glück und haben eine schlafende, 2 Meter große Babyanakonda gesehen. Dieses Exemplar war ca. 2 Jahre alt. Ausgewachsene Weibchen können bis zu 9 Meter lang werden",
               },
               {
                 src: "/kolumbien/amazonas/sunset.jpg",
@@ -833,7 +837,7 @@ export default function Kolumbien() {
       <footer className="text-center mt-12">
         <p className="text-gray-500">
           Dieser Artikel basiert auf meinen persönlichen Erfahrungen. Ich hoffe
-          der Bericht hat dir gefallen und er inspiriert dich dazu, Kolumbien
+          der Bericht hat dir gefallen und inspiriert dich dazu, Kolumbien
           selbst zu entdecken! Viel Spaß!
         </p>
       </footer>
