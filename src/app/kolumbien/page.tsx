@@ -531,8 +531,8 @@ export default function Kolumbien() {
                 alt: "Hier sieht man die lange, weiße Flosse des Wals",
               },
               {
-                src: "/kolumbien/pazifik/boote.jpg",
-                alt: "Mit solchen Booten bewegt man sich zwischen den Dörfern fort",
+                src: "/kolumbien/pazifik/käfer.jpg",
+                alt: "Diesen riesen Käfer habe ich auf einem Spaziergang entdeckt",
               },
               {
                 src: "/kolumbien/pazifik/transfer.jpg",
@@ -690,8 +690,24 @@ export default function Kolumbien() {
           <ImageGallery
             images={[
               {
-                src: "/kolumbien/pazifik/wal1.jpg",
-                alt: "Hier eine gelungene Aufnahme einer Walkuh und ihres Jungen",
+                src: "/kolumbien/makarena/1.jpg",
+                alt: "Wunderschöne wilde Natur",
+              },
+              {
+                src: "/kolumbien/makarena/2.jpg",
+                alt: "Abseits vom jeglichen Massentourismus",
+              },
+              {
+                src: "/kolumbien/makarena/3.jpg",
+                alt: "Sowas gibts auch, aber ich glaube die wurde nicht mehr genutzt",
+              },
+              {
+                src: "/kolumbien/makarena/4.jpg",
+                alt: "Nur einer von vielen vielen Wasserfällen. Nach dem Nationalpark sind die meisten anderen Wasserfälle die ich zu gesicht bekommen habe, eher uninteressant geworden",
+              },
+              {
+                src: "/kolumbien/makarena/5.jpg",
+                alt: "Stille, Ruhe und Natur",
               },
             ]}
           />
