@@ -620,11 +620,11 @@ export default function Kolumbien() {
             images={[
               {
                 src: "/kolumbien/leticia/view1.jpg",
-                alt: "Von diesem Turm, hat man diese Aussicht..",
+                alt: "Von diesem Kirchturm, hat man diese Aussicht..",
               },
               {
                 src: "/kolumbien/leticia/view.jpg",
-                alt: "Man sieht fast ganz Leticia von hier aus",
+                alt: "Man sieht fast ganz Leticia von hier aus. Das Klima war hier ganz anders und man hat viele Vögel sehr sehr laut zwitschern Hören",
               },
               {
                 src: "/kolumbien/leticia/leticia2.jpg",
@@ -678,7 +678,7 @@ export default function Kolumbien() {
             Touren in den Amazonas. Aus der peruanischen Seite sollen die Touren
             etwas günstiger sein, als von Kolumbien aus. Von hier aus habe ich
             eine 3 Tägige Tour in den Amazonas gemacht (Preis weiß ich nicht
-            mehr, dürften aber um die 90-100 Dollar gewesen sein). Man fährt in
+            mehr, dürften zwischen 90 und 140 Dollar gewesen sein). Man fährt in
             eine Entlegene Lodge und macht von dort aus, mit einem erfahrerenen
             Guide unterschiedliche Tagestripps. Als ich im September da war, war
             es Dryseason, trotzdessen gab es tausende von Mücken. Ich kann mir
@@ -715,12 +715,52 @@ export default function Kolumbien() {
               },
             ]}
           />
-          <h2>Djungeltour</h2>
+          <h2>Dschungeltour</h2>
           <ImageGallery
             images={[
               {
-                src: "/kolumbien/amazonas/wal1.jpg",
-                alt: "Hier eine gelungene Aufnahme einer Walkuh und ihres Jungen",
+                src: "/kolumbien/amazonas/dorf.jpg",
+                alt: "Wenn man eine Dschungeltour macht, kommt man nicht drum herum sich dieses Dorf anzusehen.",
+              },
+              {
+                src: "/kolumbien/amazonas/dorffest.jpg",
+                alt: "Wir haben Glück gehabt und ein Dorffest miterlebt. Es gab viel Bier und tanzende Menschen",
+              },
+              {
+                src: "/kolumbien/amazonas/faultier.jpg",
+                alt: "Das Dorf zieht einen verlassenes, junges Faultier auf. Ich war sehr happy es mal auf den Arm nehmen zu dürfen",
+              },
+              {
+                src: "/kolumbien/amazonas/boot.jpg",
+                alt: "Mit dem Boot ging es in die entlegensten Ecken des Amazonas",
+              },
+              {
+                src: "/kolumbien/amazonas/wanderung.jpg",
+                alt: "Es war Trockensaison, normalerweise steht hier alles unter Wasser. Deshalb sind die Häuser hier auf Stelzen",
+              },
+              {
+                src: "/kolumbien/amazonas/baum.jpg",
+                alt: "Wir haben unangefassten Dschungel und riesige Bäume gesehen",
+              },
+              {
+                src: "/kolumbien/amazonas/baum2.jpg",
+                alt: "Auch hier. Beeindruckende Bäume",
+              },
+              {
+                src: "/kolumbien/amazonas/tarantel.jpg",
+                alt: "Bei einer Nachtwanderung haben wir viele unterschiedliche Tiere gesehen. Aber ohne unseren erfahrenen Guide, hätte ich kein einziges Tier entdeckt",
+              },
+              {
+                src: "/kolumbien/amazonas/anakonda.jpg",
+                alt: "Wir hatten extrem Glück und haben eine 2 Meter große Babyanakonda gesehen. Sorry für die Qualli. Es war Nacht und ich hab nicht das beste Handy",
+              },
+              {
+                src: "/kolumbien/amazonas/sunset.jpg",
+                alt: "Wir haben atemberaubende Sonnenuntergänge gesehen. Auch 2 unterschiedliche Delfinarten, aber ich glaube ich habe kein Foto mit denen erwischt",
+              },
+              {
+                src: "/kolumbien/amazonas/view.jpg",
+                alt: "So sieht es meist aus, wenn man mit dem Boot durch kleine zuflüsse des Amazonas fährt. Sogar wilde Affen haben wir gesehen.",
               },
             ]}
           />
@@ -728,7 +768,7 @@ export default function Kolumbien() {
         <section id="macarena">
           <h2>Mesetas. La Macarena Nationalpark</h2>
           <p>
-            Mesetas. Diese Region ist kaum erschlossen, und die wenigen
+            Mesetas- diese Region ist kaum erschlossen, und die wenigen
             Touristen die man hier trifft sind alle Kolumbianer. Diese Region
             war ein kleiner Geheimtipp meines Couchsurfing Hosts. Man fährt ca.
             6 Stunden von Bogota hin. Hier gibt es viele unterschiedliche
@@ -740,23 +780,23 @@ export default function Kolumbien() {
             <br />
             Da es kaum ausländische Touristen gibt, ist man hier auf ein
             bisschen Spanischwissen angewiesen. Aber selbst mit meinen kaum
-            vorhandenen Spanischkenntnissen kam gut zurecht. Wenn man eine Tour
-            bucht, wird sich um alles gekümmert und man kann relaxen. Ich fand
-            den Service, den man für das Geld bekommt, echt gut. Mesetas ist ein
-            kleines Dörfchen mit netten Menschen. Man bekommt einen guten
+            vorhandenen Spanischkenntnissen kam ich gut zurecht. Wenn man eine
+            Tour bucht, wird sich um alles gekümmert und man kann relaxen. Ich
+            fand den Service, den man für das Geld bekommt echt gut. Mesetas ist
+            ein kleines Dörfchen mit netten Menschen. Man bekommt einen guten
             Einblick, wie Menschen in den etwas abseits gelegenen Regionen
             leben.
             <br />
-            Vor 10-13 Jahren war das Gebiet noch von der FARC besetzt und ein
-            Kriegsgebiet.Aber langsam kommt der Tourismus wieder. Heute ist es
-            sicher und man kann die atemberaubende Natur genießen. Mir wurde
-            erzählt, dass man manchmal Leichen, nach irgenwelchen Kämpfen im
-            Fluss treiben sehen hat. Aber das ist heute nicht mehr der Fall.
-            Also, falls ihr mal in Bogota seid und ein bisschen mehr Zeit habt,
-            kann ich euch die Region nur empfehlen.
+            Vor ca. 10-15 Jahren war das Gebiet noch von der FARC besetzt und
+            ein Kriegsgebiet. Aber langsam kommt der Tourismus wieder. Heute ist
+            es sicher und man kann die atemberaubende Natur genießen. Mir wurde
+            erzählt, dass man manchmal Leichen, nach Kämpfen im Fluss treiben
+            sehen hat. Aber das ist heute nicht mehr der Fall. Also, falls ihr
+            mal in Bogota seid und ein bisschen mehr Zeit habt, kann ich euch
+            die Region nur empfehlen.
             <br />
             Auch hier fahren alle ohne Helm, und es war witzig zu sehen, wie ein
-            ca. 12 Jähriger seine Mutter auf nem Scooter rumcoutchiert hat. Ein
+            ca. 12 Jähriger seine Mutter auf nem Motorrad rumcoutchiert hat. Ein
             kleiner Highligt war, als ich eine Horde Affen bei einem Spaziergang
             durchs Dorf gesehen habe.
           </p>
@@ -764,7 +804,7 @@ export default function Kolumbien() {
             images={[
               {
                 src: "/kolumbien/makarena/1.jpg",
-                alt: "Wunderschöne wilde Natur",
+                alt: "Wunderschöne, wilde Natur",
               },
               {
                 src: "/kolumbien/makarena/2.jpg",
@@ -772,15 +812,15 @@ export default function Kolumbien() {
               },
               {
                 src: "/kolumbien/makarena/3.jpg",
-                alt: "Sowas gibts auch, aber ich glaube die wurde nicht mehr genutzt",
+                alt: "Ich glaube die wurde nicht mehr genutzt",
               },
               {
                 src: "/kolumbien/makarena/4.jpg",
-                alt: "Nur einer von vielen vielen Wasserfällen. Nach dem Nationalpark sind die meisten anderen Wasserfälle die ich zu gesicht bekommen habe, eher uninteressant geworden",
+                alt: "Nur einer von vielen vielen Wasserfällen. Nach dem Nationalpark sind die meisten anderen Wasserfälle die ich zu Gesicht bekommen habe, eher uninteressant geworden",
               },
               {
                 src: "/kolumbien/makarena/5.jpg",
-                alt: "Stille, Ruhe und Natur",
+                alt: "Stille, Ruhe und Natur laden förmlich zu stundenlangen Spaziergängen ein",
               },
             ]}
           />
@@ -792,8 +832,9 @@ export default function Kolumbien() {
       {/* Footer-Bereich */}
       <footer className="text-center mt-12">
         <p className="text-gray-500">
-          Dieser Reisebericht basiert auf meinen persönlichen Erfahrungen. Ich
-          hoffe, er inspiriert dich dazu, Kolumbien selbst zu entdecken!
+          Dieser Artikel basiert auf meinen persönlichen Erfahrungen. Ich hoffe
+          der Bericht hat dir gefallen und er inspiriert dich dazu, Kolumbien
+          selbst zu entdecken! Viel Spaß!
         </p>
       </footer>
     </div>
