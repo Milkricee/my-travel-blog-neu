@@ -583,28 +583,35 @@ export default function Kolumbien() {
           <h2>Im Amazonas. Leticia</h2>
           <p>
             Von der Pazifischen Küste ging es mit dem Flieger über Medellin und
-            Bogota ganz in den Süden Kolumbiens- in den Amazonas. Auch hier hat
-            es sich wieder wie ein anderes Land angefühlt. Leticia grenzt and
-            Peru und Brasilien und die grenzen sind offen (zumindest am Anfang.
-            Da man ohne Flugzeug oder Boot eh nicht weit kommt). Hier kann man
-            innerhalb von einer Stunde in 3 Ländern gewesen sein. Ich habe mir
-            hier einen Roller gemietet und die gegend erkundet. Von hier aus
-            gibt es viele mehrtägige Touren in den Amazonas. Vergleicht die
-            Preise der Unterschiedlichen Anbieter und vergesst nicht zu
-            verhandeln.
+            Bogota ganz in den Süden Kolumbiens – in den Amazonas. Auch hier hat
+            es sich wieder wie ein anderes Land angefühlt.&nbsp;
+            <a
+              href="https://www.google.com/maps?q=Leticia+Kolumbien"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="animated-link"
+            >
+              Leticia
+            </a>
+            &nbsp;grenzt an Peru und Brasilien und die Grenzen sind offen
+            (zumindest am Anfang. Da man ohne Flugzeug oder Boot eh nicht weit
+            kommt). Hier kann man innerhalb von einer Stunde in 3 Ländern
+            gewesen sein. Ich habe mir hier einen Roller gemietet und die Gegend
+            erkundet. Von hier aus gibt es viele mehrtägige Touren in den
+            Amazonas. Vergleicht die Preise der unterschiedlichen Anbieter und
+            vergesst nicht zu verhandeln.
             <br />
             Von Leticia aus, kann man mit dem Boot, entweder nach Brasilien
             rein, oder nach Peru. Ich habe mich für Peru entschieden, da ich
-            nicht mehr so viel Zeit hatte.
+            leider nicht mehr so viel Zeit hatte.
             <br />
             Nach Peru fahren 2 Arten von Boote. Ein Speedbot, welches dich
             innerhalb von einigen Stunden nach Iquitos bringt (die größe nicht
             mit Land angebundene Stadt). Oder ein Slowboat, was meist die Lokals
-            nutzen. Es ist etwas günstiger, aber dafür ist man auch 3 Tage
-            unterwegs.
+            nutzen. Es ist günstiger, aber dafür ist man auch 3 Tage unterwegs.
             <br />
             Ich habe mich für das Slowboat entschiedenund war der einzige
-            Tourist. Das Boot macht zwischendurch viele Stopps auf den
+            Tourist an Board. Das Boot macht zwischendurch viele Stopps auf den
             entlegenen Dörfern, um Waren ein- und auszuladen. Das hat mir einen
             guten Einblick in deren Leben gegeben.
             <br />
@@ -616,7 +623,7 @@ export default function Kolumbien() {
             vergesst nicht euch eine Hängematte zu besorgen, denn das wird für
             die nächsten 3 Tage euer Bett. Auf dem Boot kriegt man zwar Essen,
             mir hätte es aber nicht gereicht. Aber man macht genug Stopps
-            unterwegs,um sich mit Essen zu versorgen. Außerdem gab es auf dem
+            unterwegs, um sich mit Essen zu versorgen. Außerdem gab es auf dem
             Boot ein Kiosk, wo man sich Bier und Essen Kaufen konnte.
           </p>
           <h2> Kleine Einblicke in Leticia</h2>
@@ -676,8 +683,17 @@ export default function Kolumbien() {
           />
           <h2> Iquitos</h2>
           <p>
-            In Iquitos angekommen, habe ich mir ein Hostel gesucht und habe mir
-            die Stadt angeguckt. Die Stadt hat mir zwar nicht so gefallen.Es war
+            In&nbsp;
+            <a
+              href="https://www.google.com/maps?q=Iquitos+Peru"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="animated-link"
+            >
+              Iquitos
+            </a>
+            &nbsp;angekommen, habe ich mir ein Hostel gesucht und habe mir die
+            Stadt angeguckt. Die Stadt hat mir zwar nicht so gefallen.Es war
             recht dreckig, aber das hat auch seinen Charme. Hier gibt es viele
             Touren in den Amazonas. Aus der peruanischen Seite sollen die Touren
             etwas günstiger sein, als von Kolumbien aus. Von hier aus habe ich
@@ -772,37 +788,45 @@ export default function Kolumbien() {
         <section id="macarena">
           <h2>Mesetas. La Macarena Nationalpark</h2>
           <p>
-            Mesetas- diese Region ist kaum erschlossen, und die wenigen
-            Touristen die man hier trifft sind alle Kolumbianer. Diese Region
-            war ein kleiner Geheimtipp meines Couchsurfing Hosts. Man fährt ca.
-            6 Stunden von Bogota hin. Hier gibt es viele unterschiedliche
-            Touren, zu recht akzeptablen Preisen. Ich habe 2 unterschiedliche
-            Tagestouren für je 50€ gemacht. Einmal Rafting und einmal mit dem
-            Auto und ein bisschen laufen durch Teile des riesigen Nationalparks
-            zu unterschiedlichen Wasserfällen. In der Region gibt es über 90
-            unterschiedliche Wasserfälle.
+            <a
+              href="https://www.google.com/maps?q=Mesetas+Kolumbien"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="animated-link"
+            >
+              Mesetas
+            </a>
+            - diese Region ist kaum erschlossen, und die wenigen Touristen die
+            man hier trifft, sind alle Kolumbianer. Diese Region war ein kleiner
+            Geheimtipp meines Couchsurfing Hosts. Man fährt ca. 6 Stunden von
+            Bogota hin. Hier gibt es viele unterschiedliche Touren zu recht
+            akzeptablen Preisen. Ich habe 2 unterschiedliche Tagestouren für je
+            50€ gemacht. Einmal Rafting und einmal mit dem Auto und ein bisschen
+            laufen durch Teile des riesigen Nationalparks zu unterschiedlichen
+            Wasserfällen. In der Region gibt es über 90 unterschiedliche
+            Wasserfälle.
             <br />
             Da es kaum ausländische Touristen gibt, ist man hier auf ein
             bisschen Spanischwissen angewiesen. Aber selbst mit meinen kaum
             vorhandenen Spanischkenntnissen kam ich gut zurecht. Wenn man eine
             Tour bucht, wird sich um alles gekümmert und man kann relaxen. Ich
-            fand den Service, den man für das Geld bekommt echt gut. Mesetas ist
-            ein kleines Dörfchen mit netten Menschen. Man bekommt einen guten
+            fand den Service, den man für das Geld bekommt echt gut. ist ein
+            kleines Dörfchen mit netten Menschen. Man bekommt einen guten
             Einblick, wie Menschen in den etwas abseits gelegenen Regionen
             leben.
             <br />
             Vor ca. 10-15 Jahren war das Gebiet noch von der FARC besetzt und
             ein Kriegsgebiet. Aber langsam kommt der Tourismus wieder. Heute ist
             es sicher und man kann die atemberaubende Natur genießen. Mir wurde
-            erzählt, dass man manchmal Leichen, nach Kämpfen im Fluss treiben
+            erzählt, dass man manchmal Leichen nach Kämpfen im Fluss treiben
             sehen hat. Aber das ist heute nicht mehr der Fall. Also, falls ihr
             mal in Bogota seid und ein bisschen mehr Zeit habt, kann ich euch
             die Region nur empfehlen.
             <br />
             Auch hier fahren alle ohne Helm, und es war witzig zu sehen, wie ein
-            ca. 12 Jähriger seine Mutter auf nem Motorrad rumcoutchiert hat. Ein
-            kleiner Highligt war, als ich eine Horde Affen bei einem Spaziergang
-            durchs Dorf gesehen habe.
+            ca. 12-Jähriger seine Mutter auf nem Motorrad rumchauffiert hat. Ein
+            kleines Highlight war, als ich eine Horde Affen bei einem
+            Spaziergang durchs Dorf gesehen habe.
           </p>
           <ImageGallery
             images={[
