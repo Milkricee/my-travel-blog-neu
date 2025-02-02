@@ -158,14 +158,14 @@ export default function Marokko() {
             >
               <Image
                 src={image.src}
-                alt={`Bild ${index + 1}`}
+                alt={image.description}
                 width={400}
                 height={300}
                 className="rounded-lg shadow-lg"
               />
-              <p className="text-center mt-2 text-sm text-gray-700">{`Bild ${
-                index + 1
-              }`}</p>
+              <p className="text-center mt-2 text-sm text-gray-700">
+                {image.description}
+              </p>
             </div>
           ))}
         </div>
@@ -202,7 +202,7 @@ export default function Marokko() {
 
         {/* Meine Route */}
         <div id="highlights" className="mt-12">
-          <h2 className="text-2xl font-bold mb-4">Meine Route</h2>
+          <h2 className="text-2xl font-bold mb-4">Highlights</h2>
           <ul className="list-disc pl-6">
             <li className="mb-2">
               Die geschäftigen Märkte und farbenfrohen Souks in Marrakesch.
