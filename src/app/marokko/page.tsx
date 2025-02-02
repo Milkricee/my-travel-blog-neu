@@ -19,11 +19,27 @@ export default function Marokko() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    "/marokko/atlas1.jpg",
-    "/marokko/dünen.jpg",
-    "/marokko/paradise.jpg",
-    "/marokko/atlas3.jpg",
-    "/marokko/fischereihafen.jpg",
+    {
+      src: "/marokko/atlas1.jpg",
+      description: "Atemberaubende Aussicht im Atlasgebirge",
+    },
+    {
+      src: "/marokko/dacia.jpg",
+      description: "Mit dem Dacia durch Marokkos Landschaft",
+    },
+    { src: "/marokko/dünen.jpg", description: "Dünenlandschaft in der Wüste" },
+    {
+      src: "/marokko/paradise.jpg",
+      description: "Ein paradiesischer Ort zum Entspannen",
+    },
+    {
+      src: "/marokko/atlas3.jpg",
+      description: "Eine weitere beeindruckende Sicht auf das Atlasgebirge",
+    },
+    {
+      src: "/marokko/fischereihafen.jpg",
+      description: "Der geschäftige Fischereihafen von Essaouira",
+    },
   ];
 
   const openModal = (imageSrc: string, index: number) => {
@@ -42,7 +58,7 @@ export default function Marokko() {
         ? (currentIndex + 1) % images.length
         : (currentIndex - 1 + images.length) % images.length;
     setCurrentIndex(newIndex);
-    setModalImage(images[newIndex]);
+    setModalImage(images[newIndex].src);
   };
 
   return (
@@ -57,7 +73,6 @@ export default function Marokko() {
           { href: "#comments", label: "Kommentare" },
         ]}
       />
-      <MarokkoRoute />
       {/* Einführung */}
       <article className="container-style">
         <div id="intro">
@@ -81,6 +96,7 @@ export default function Marokko() {
             .
           </p>
         </div>
+        <MarokkoRoute />
 
         {/* Pro und Contra */}
         <div
@@ -138,10 +154,10 @@ export default function Marokko() {
             <div
               key={index}
               className="relative cursor-pointer"
-              onClick={() => openModal(image, index)}
+              onClick={() => openModal(image.src, index)}
             >
               <Image
-                src={image}
+                src={image.src}
                 alt={`Bild ${index + 1}`}
                 width={400}
                 height={300}
