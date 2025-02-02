@@ -59,22 +59,16 @@ export default function Kolumbien() {
           besichtigen möchte, zu planen.
         </p>
       </header>
-      <KolumbienRoute />
-
+      <div className="map-container">
+        <KolumbienRoute />
+      </div>
       {/* Artikel-Inhalt */}
       <article className="container-style">
         {/* Abschnitt 1.5 */}
-        <section id="zusammenfassung">
+        <section id="zusammenfassung" className="summary-box">
           <h2>Zusammenfassung</h2>
           <p>
             Bevor du den riesen Text durchliest, hier die wichtigsten Punkte:
-          </p>
-          <p>
-            Kolumbien ist eines der vielseitigsten Reiseziele in Südamerika –
-            von karibischen Stränden und dichten Regenwäldern bis hin zu hohen
-            Anden und Wüstenlandschaften. Das Land ist ideal für Backpacker mit
-            einem flexiblen Budget, vielen günstigen Transportmöglichkeiten und
-            einer lebendigen Gastfreundschaft.
           </p>
 
           <h3>Minimale Reisekosten pro Tag</h3>
@@ -133,7 +127,8 @@ export default function Kolumbien() {
             </li>
             <li>
               ✅ <strong>Bargeld nur in Maßen mitnehmen</strong> – viele Orte
-              akzeptieren Kreditkarten.
+              akzeptieren Kreditkarten. (In ländlichen Gegenden würde ich mich
+              aber nicht drauf verlassen)
             </li>
             <li>
               ✅ <strong>Inlandsreisen:</strong> Busse mit offiziellen Anbietern
@@ -161,6 +156,7 @@ export default function Kolumbien() {
             </li>
           </ul>
         </section>
+
         {/* Abschnitt 2 */}
         <section id="Bogota">
           <h2>Bogota</h2>
