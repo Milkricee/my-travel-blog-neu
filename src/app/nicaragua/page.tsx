@@ -58,15 +58,16 @@ export default function Nicaragua() {
       {/* Artikel-Inhalt */}
       <article className="container-style">
         {/* Abschnitt 1 */}
-        <section id="zusammenfassung" className="summary-box ">
+        <section id="zusammenfassung" className="summary-box">
           <h2>Zusammenfassung</h2>
           <p>
             Bevor du den ganzen Bericht durchliest, hier die wichtigsten Punkte:
           </p>
+
           <h3>Minimale Reisekosten pro Tag</h3>
           <ul>
             <li>
-              <strong>Budget-Backpacker:</strong> ab. 30 €
+              <strong>Budget-Backpacker:</strong> ab 30 €
             </li>
             <li>
               <strong>Mittelklasse:</strong> 30-50 €
@@ -75,6 +76,7 @@ export default function Nicaragua() {
               <strong>Komfortabel:</strong> 50+ €
             </li>
           </ul>
+
           <h3>Empfohlene Reisedauer</h3>
           <ul>
             <li>
@@ -90,6 +92,46 @@ export default function Nicaragua() {
               mit Abstechern in den Norden und zur Karibikküste
             </li>
           </ul>
+
+          <h3>Transport in Nicaragua</h3>
+          <p>
+            Die beste Möglichkeit, sich in Nicaragua fortzubewegen, ist das gut
+            ausgebaute Busnetz. Es gibt sowohl günstige lokale Busse als auch
+            komfortablere Langstreckenbusse.
+          </p>
+
+          <h4>🚌 Öffentliche Busse</h4>
+          <ul>
+            <li>
+              🏙 <strong>Stadtverkehr:</strong> In und zwischen Städten fahren
+              meist alte Schulbusse („Chicken Buses“). Sehr günstig und sehr
+              local.
+            </li>
+            <li>
+              🚍 <strong>Langstreckenbusse:</strong> Für längere Strecken gibt
+              es klimatisierte Expressbusse. Zuverlässige Anbieter sind{" "}
+              <strong>Nicabus</strong>, <strong>Tica Bus</strong> und{" "}
+              <strong>King Quality</strong>.
+            </li>
+            <li>
+              🏝 <strong>Boote & Fähren:</strong> Falls du nach Ometepe möchtest,
+              fahren täglich Fähren von San Jorge auf die Insel.
+            </li>
+          </ul>
+
+          <h4>🚖 Taxi- und Ride-Sharing-Apps</h4>
+          <ul>
+            <li>
+              📲 <strong>Taxi-App:</strong> In Managua und Granada wird{" "}
+              <strong>DiDi</strong> empfohlen. Uber gibt es nicht, aber DiDi
+              funktioniert ähnlich und ist sicherer als Straßen-Taxis.
+            </li>
+            <li>
+              🚕 <strong>Normale Taxis:</strong> Immer vorher den Preis
+              verhandeln, da es keine Taxameter gibt.
+            </li>
+          </ul>
+
           <h3>Sicherheit</h3>
           <p>
             Nicaragua hat sich sicher angefühlt, doch einige Sicherheitsregeln,
@@ -98,28 +140,37 @@ export default function Nicaragua() {
           </p>
           <ul>
             <li>
-              ✅ Nachts, vor allem in größeren Städten aufpassen wo man sich
-              rumtreibt
+              ✅ Nachts, vor allem in größeren Städten, aufpassen, wo man sich
+              aufhält
             </li>
             <li>
               ✅ Wertsachen nicht offen tragen oder unbeaufsichtigt lassen
             </li>
-            <li>✅ Als Scooter- Motorradfahrer besonders vorsichtig sein</li>
+            <li>
+              ✅ Als Scooter- oder Motorradfahrer besonders vorsichtig sein
+            </li>
           </ul>
 
           <h3>Weitere Tipps für Backpacker</h3>
           <ul>
             <li>
-              📱 SIM-Karten: Vor Ort kaufen (Claro oder Movistar), gute
+              📱 <strong>SIM-Karten:</strong> Vor Ort kaufen (
+              <strong>Claro</strong> oder <strong>Movistar</strong>), gute
               Netzabdeckung in den meisten Regionen
             </li>
             <li>
-              🏍 Motorrad o. Scooter mieten: recht Preisgünstig und absolut
-              empfehlenswert. (Für Scooter reicht ein Autoführerschein)
+              🏍️<strong>Motorrad oder Scooter mieten:</strong> Preisgünstig und
+              absolut empfehlenswert (für Scooter reicht ein Autoführerschein)
             </li>
             <li>
-              🌊 Beste Reisezeit: Trockenzeit von Dezember - April, aber auch
-              die Regenzeit kann angenehm sein, da besonders wenig Touristen
+              🛵In San Juan del Sur gibt es viele Verleihanbieter. Bei meinem
+              Anbieter hat eine Cross genauso viel wie ein Scooter gekostet
+              (glaube waren so um die 10-15€/Tag)
+            </li>
+            <li>
+              🌊 <strong>Beste Reisezeit:</strong> Trockenzeit von Dezember -
+              April, aber auch die Regenzeit kann angenehm sein, da besonders
+              wenig Touristen
             </li>
           </ul>
         </section>
@@ -148,11 +199,15 @@ export default function Nicaragua() {
           </p>
           <h3>Highlights:</h3>
           <ul>
-            <li>🏄 Playa Maderas: Perfekter Surfspot</li>
-            <li>🌅 Sunset Viewpoints: Epische Sonnenuntergänge</li>
             <li>
-              🌊 🍹 Sunday Funday: Bekanntes Barcrawling. Hat mir persönlich
-              absolut nicht gefallen.
+              🏄 <strong>Playa Maderas:</strong> Perfekter Surfspot
+            </li>
+            <li>
+              🌅 <strong>Sunset Viewpoints:</strong> Epische Sonnenuntergänge
+            </li>
+            <li>
+              🍹 <strong>Sunday Funday:</strong> Bekanntes Barcrawling. Hat mir
+              persönlich absolut nicht gefallen.
               <br />
               Evlt eher was für jüngeres Publikum. Wenn man in einem der 2
               Hostels übernachtet (SOHLA ROOFTOP HOSTEL o. Hostel Pachamama),
