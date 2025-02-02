@@ -26,4 +26,9 @@
     margin: 0 auto;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+.summary-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
 
