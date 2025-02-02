@@ -7,28 +7,26 @@ const mapContainerStyle = {
   height: "500px",
 };
 
-const center = { lat: 4.5709, lng: -74.2973 }; // Zentrum auf Kolumbien setzen
+// Zentrum auf Nicaragua setzen (ungefähre Mitte des Landes)
+const center = { lat: 11.859229, lng: -86.00854259485322 };
 
-// Korrekte Koordinaten für besuchte Orte in Kolumbien
+// Koordinaten für besuchte Orte in Nicaragua
 const locations = [
-  { name: "Bogotá", lat: 4.6097, lng: -74.0817 },
-  { name: "San Andrés", lat: 12.5847, lng: -81.7004 },
-  { name: "Cartagena", lat: 10.3932, lng: -75.4832 },
-  { name: "Santa Marta", lat: 11.2408, lng: -74.199 },
-  { name: "Minca", lat: 11.1433, lng: -74.1144 },
-  { name: "Palomino", lat: 11.2509, lng: -73.5661 },
-  { name: "Medellín", lat: 6.2442, lng: -75.5812 },
-  { name: "Guatapé", lat: 6.2333, lng: -75.1645 },
-  { name: "Mesetas", lat: 3.381995, lng: -74.043801 },
-  { name: "Leticia", lat: -4.2164, lng: -69.9406 },
-  { name: "Iquitos, Peru", lat: -3.7489, lng: -73.2516 },
-  { name: "Bahía Solano", lat: 6.2272, lng: -77.4121 },
-  { name: "El Valle", lat: 6.0482, lng: -77.5027 },
-  { name: "Nuquí", lat: 5.7099, lng: -77.2683 },
-  { name: "Villa de Leyva", lat: 5.636499, lng: -73.527058 },
+  { name: "Managua", lat: 12.1364, lng: -86.251 },
+  { name: "San Juan del Sur", lat: 11.2529, lng: -85.87 },
+  { name: "Ometepe (Moyogalpa)", lat: 11.5385, lng: -85.6963 },
+  { name: "Ometepe (Balgue)", lat: 11.4932, lng: -85.5451 },
+  { name: "Playa Coco", lat: 11.156927148914894, lng: -85.80219044642963 },
+  { name: "Playa Escondida", lat: 11.25, lng: -85.85 },
+  { name: "El Gigante", lat: 11.3792, lng: -86.0375 },
+  { name: "Granada", lat: 11.9299, lng: -85.956 },
+  { name: "Laguna de Apoyo", lat: 11.9224, lng: -86.0297 },
+  { name: "Treehouse Nicaragua", lat: 11.859229, lng: -86.00854259485322 },
+
+  ,
 ];
 
-export default function Nicaraguaroute() {
+export default function NicaraguaRoute() {
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
   });
@@ -36,15 +34,15 @@ export default function Nicaraguaroute() {
   if (!isLoaded) return <div>Loading Map...</div>;
 
   return (
-    <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={5}>
-      {/* Blaue Marker für die Orte */}
+    <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={7}>
+      {/* Marker für alle Orte */}
       {locations.map((loc, index) => (
         <Marker
           key={index}
           position={{ lat: loc.lat, lng: loc.lng }}
           label={{
             text: loc.name,
-            color: "#0000FF", // Blau
+            color: "#0000FF", // Blaue Schriftfarbe
             fontWeight: "bold",
           }}
           icon={{
