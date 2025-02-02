@@ -65,18 +65,18 @@ h2 {                /* Überschrift */
   font-size: 30px; /* Schriftgröße */
   color: blue; /* Farbe */
   font-weight: bold; /* Optional: Schriftstil */
-  margin-top: 1rem; /* Optional: Abstand nach unten */
+  margin-bottom: 1rem; /* Optional: Abstand nach unten */
 }
 
 h3 {
   /* Überschrift */
-  font-size: 20px;
+  font-size: 30px;
   /* Schriftgröße */
   color: green;
   /* Farbe */
   font-weight: bold;
   /* Optional: Schriftstil */
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   /* Optional: Abstand nach unten */
 }
 /* Globale CSS */

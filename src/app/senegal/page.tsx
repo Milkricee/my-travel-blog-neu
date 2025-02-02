@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import SenegalRoute from "../maps/senegal";
+import "./module.css";
 
 // Dynamische Importe
 const NavbarWithButton = dynamic(
@@ -54,7 +55,7 @@ export default function Senegal() {
       {/* Artikel-Inhalt */}
       <article className="container-style">
         {/* Abschnitt 1 */}
-        <section id="dakar">
+        <section id="dakar" className="senegal-box">
           <h2>Die Hauptstadt Dakar</h2>
           <p>
             So wie ich, wirst du höchstwahrscheinlich in Dakar starten. Vom
@@ -134,7 +135,7 @@ export default function Senegal() {
         </section>
 
         {/* Abschnitt 3 */}
-        <section id="mbour">
+        <section id="mbour" className="senegal-box">
           <h2>Nächster Stopp M&apos;bour</h2>
           <p>
             Puh, die Trips zwischen den Städten waren immer ein Erlebnis und
@@ -246,7 +247,7 @@ export default function Senegal() {
         </section>
 
         {/* Abschnitt 5 */}
-        <section id="gambia">
+        <section id="gambia" className="senegal-box">
           <h2 className="text-2xl font-semibold mb-4">Das Saloum Delta</h2>
 
           <div>
@@ -363,7 +364,7 @@ export default function Senegal() {
         </section>
 
         {/* Abschnitt 7 */}
-        <section id="banjul">
+        <section id="banjul" className="senegal-box">
           <h2 className="text-2xl font-semibold mb-4">Banjul</h2>
           <div>
             <p>
@@ -387,15 +388,11 @@ export default function Senegal() {
           </div>
           <ImageGallery
             images={[
+              { src: "/senegal/gambia/fischerei_g.jpg", alt: "Fischerboote" },
               { src: "/senegal/gambia/strand2_g.jpg", alt: "Schöne Strände" },
               {
                 src: "/senegal/gambia/strand1_g.jpg",
                 alt: "Kilometerlange Strände laden zum spazieren gehen ein",
-              },
-              { src: "/senegal/gambia/fischerei_g.jpg", alt: "Fischerboote" },
-              {
-                src: "/senegal/gambia/einheimische_g.jpg",
-                alt: "Sie hat mir die Stadt gezeigt und wie ihre Family lebt. Das war ein toller, kleiner Einblick in ihr Leben.",
               },
             ]}
           />
@@ -453,7 +450,7 @@ export default function Senegal() {
         </section>
 
         {/* Abschnitt 9 */}
-        <section id="cap-skirring">
+        <section id="cap-skirring" className="senegal-box">
           <h2 className="text-2xl font-semibold mb-4">Cap Skirring</h2>
           <div>
             <p>

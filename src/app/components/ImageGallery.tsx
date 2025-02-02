@@ -10,7 +10,7 @@ interface ImageGalleryProps {
 export default function ImageGallery({ images }: ImageGalleryProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [touchStartX, setTouchStartX] = useState<number | null>(null); // Startpunkt der Swipe-Geste
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -36,7 +36,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
     }
   };
 
-  // Touch-Event für Swipe (Mobile)
+  // Touch-Event für Swipe-Geste (Mobile)
   const handleTouchStart = (e: React.TouchEvent) => {
     setTouchStartX(e.touches[0].clientX);
   };
@@ -48,11 +48,9 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
     const diff = touchStartX - touchEndX;
 
     if (diff > 50) {
-      // Swipe nach links → nächstes Bild
       handleNext();
       setTouchStartX(null);
     } else if (diff < -50) {
-      // Swipe nach rechts → vorheriges Bild
       handlePrev();
       setTouchStartX(null);
     }
@@ -61,8 +59,10 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
   useEffect(() => {
     if (isFullscreen) {
       document.addEventListener("keydown", handleKeyPress);
+      document.body.style.overflow = "hidden"; // Scrolling im Hintergrund verhindern
     } else {
       document.removeEventListener("keydown", handleKeyPress);
+      document.body.style.overflow = "auto"; // Scrolling wieder aktivieren
     }
     return () => document.removeEventListener("keydown", handleKeyPress);
   }, [isFullscreen, currentIndex]);
@@ -72,42 +72,44 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
       {/* Vollbildansicht */}
       {isFullscreen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-90 flex flex-col justify-center items-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-[99999] backdrop-blur-md"
           onClick={() => setIsFullscreen(false)}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
         >
+          {/* Pfeil links */}
           <button
             onClick={(e) => {
               e.stopPropagation();
               handlePrev();
             }}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white rounded-full p-2 hover:bg-gray-900"
-            style={{ width: "40px", height: "40px" }}
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white rounded-full p-3 hover:bg-gray-900"
           >
             {"<"}
           </button>
 
-          {/* Bildbeschreibung im Vollbildmodus */}
-          <div className="absolute bottom-8 w-full text-center bg-gray-800 bg-opacity-70 text-white py-2 px-4 rounded-md max-w-lg mx-auto">
+          {/* Bildcontainer: sorgt für exakte Zentrierung */}
+          <div className="relative flex justify-center items-center w-[80vw] h-[80vh]">
+            <Image
+              src={images[currentIndex].src}
+              alt={images[currentIndex].alt}
+              fill
+              className="object-contain w-full h-full scale-95 transition-all duration-300 ease-in-out"
+            />
+          </div>
+
+          {/* Bildbeschreibung AM UNTEREN RAND FEST POSITIONIERT */}
+          <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-gray-900 bg-opacity-80 text-white text-lg px-5 py-3 rounded-lg shadow-lg max-w-[80%] text-center">
             {images[currentIndex].alt}
           </div>
 
-          <Image
-            src={images[currentIndex].src}
-            alt={images[currentIndex].alt}
-            width={1200}
-            height={800}
-            className="rounded-lg shadow-lg object-contain max-w-full max-h-full"
-          />
-
+          {/* Pfeil rechts */}
           <button
             onClick={(e) => {
               e.stopPropagation();
               handleNext();
             }}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white rounded-full p-2 hover:bg-gray-900"
-            style={{ width: "40px", height: "40px" }}
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white rounded-full p-3 hover:bg-gray-900"
           >
             {">"}
           </button>
@@ -126,21 +128,19 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
       <p className="text-sm text-gray-500 mt-2 text-center">
         {images[currentIndex].alt}
       </p>
-      <br />
 
-      {/* Navigationsbuttons */}
+      {/* Pfeil links */}
       <button
         onClick={handlePrev}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white rounded-full p-2 hover:bg-gray-900"
-        style={{ width: "40px", height: "40px" }}
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white rounded-full p-2 hover:bg-gray-900"
       >
         {"<"}
       </button>
 
+      {/* Pfeil rechts */}
       <button
         onClick={handleNext}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white rounded-full p-2 hover:bg-gray-900"
-        style={{ width: "40px", height: "40px" }}
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white rounded-full p-2 hover:bg-gray-900"
       >
         {">"}
       </button>
