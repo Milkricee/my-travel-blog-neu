@@ -9,7 +9,7 @@ interface ImageGalleryProps {
 
 export default function ImageGallery({ images }: ImageGalleryProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isFullscreen, setIsFullscreen] = useState(false); // Vollbildmodus-Status
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -22,16 +22,16 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
   };
 
   const handleImageClick = () => {
-    setIsFullscreen(true); // Vollbildmodus aktivieren
+    setIsFullscreen(true);
   };
 
   const handleKeyPress = (e: KeyboardEvent) => {
     if (e.key === "Escape") {
-      setIsFullscreen(false); // Vollbildmodus schließen
+      setIsFullscreen(false);
     } else if (e.key === "ArrowRight") {
-      handleNext(); // Nächstes Bild
+      handleNext();
     } else if (e.key === "ArrowLeft") {
-      handlePrev(); // Vorheriges Bild
+      handlePrev();
     }
   };
 
@@ -42,15 +42,15 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
       document.removeEventListener("keydown", handleKeyPress);
     }
     return () => document.removeEventListener("keydown", handleKeyPress);
-  }, [isFullscreen, currentIndex]); // Abhängig von `isFullscreen` und `currentIndex`
+  }, [isFullscreen, currentIndex]);
 
   return (
     <div className="relative w-full max-w-3xl mx-auto">
       {/* Vollbildansicht */}
       {isFullscreen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50"
-          onClick={() => setIsFullscreen(false)} // Klick schließt Vollbildmodus
+          className="fixed inset-0 bg-black bg-opacity-90 flex flex-col justify-center items-center z-50"
+          onClick={() => setIsFullscreen(false)}
         >
           <button
             onClick={(e) => {
@@ -62,6 +62,12 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
           >
             {"<"}
           </button>
+
+          {/* Bildbeschreibung im Vollbildmodus */}
+          <div className="absolute bottom-8 w-full text-center bg-gray-800 bg-opacity-70 text-white py-2 px-4 rounded-md max-w-lg mx-auto">
+            {images[currentIndex].alt}
+          </div>
+
           <Image
             src={images[currentIndex].src}
             alt={images[currentIndex].alt}
@@ -69,6 +75,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
             height={800}
             className="rounded-lg shadow-lg object-contain max-w-full max-h-full"
           />
+
           <button
             onClick={(e) => {
               e.stopPropagation();
@@ -82,9 +89,9 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
         </div>
       )}
 
-      {/* Aktuelles Bild */}
+      {/* Standard-Bildanzeige */}
       <Image
-        onClick={handleImageClick} // Klick öffnet Vollbildmodus
+        onClick={handleImageClick}
         src={images[currentIndex].src}
         alt={images[currentIndex].alt}
         width={800}
@@ -95,7 +102,8 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
         {images[currentIndex].alt}
       </p>
       <br />
-      {/* Pfeil links */}
+
+      {/* Navigationsbuttons */}
       <button
         onClick={handlePrev}
         className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white rounded-full p-2 hover:bg-gray-900"
@@ -104,7 +112,6 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
         {"<"}
       </button>
 
-      {/* Pfeil rechts */}
       <button
         onClick={handleNext}
         className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white rounded-full p-2 hover:bg-gray-900"
