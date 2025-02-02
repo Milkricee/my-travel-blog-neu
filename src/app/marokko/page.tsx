@@ -78,15 +78,15 @@ export default function Marokko() {
       <article className="container-style">
         <div id="intro">
           <h1 className="text-4xl font-bold text-center mb-8 mt-9">
-            Mein Marokko-Urlaub
+            Mein Marokko-Trip
           </h1>
           <p className="text-lg text-center mb-8">
             Marokko ist eines meiner Lieblingsreiseziele. Die Vielfalt des
             Landes ist einfach unglaublich. <br />
             Es ist nicht so weit weg, es hat eine erstaunlich krasse Vielfalt an
-            Kultur und Landschaft und es ist auch recht günstig. Und selbst im
+            Kultur und Landschaft und es ist auch sehr günstig. Und selbst im
             Winter ist es dort noch angenehm warm. <br />
-            Das war mein 2. Trip. <br />
+            Das war mein 2. Trip. (Nov. 2024) <br />
             Zum 1. Trip geht&apos;s{" "}
             <a
               href="/1-trip"

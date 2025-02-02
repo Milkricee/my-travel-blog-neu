@@ -276,6 +276,10 @@ export default function Senegal() {
           <ImageGallery
             images={[
               {
+                src: "/senegal/sine-saloum/kinder.jpg",
+                alt: "Mein Lieblingsfoto. Es gibt super viele Kinder auf der Insel",
+              },
+              {
                 src: "/senegal/sine-saloum/taxiBoot.jpg",
                 alt: "So bewegt man sich zwischen den Inseln",
               },
@@ -287,14 +291,7 @@ export default function Senegal() {
                 src: "/senegal/sine-saloum/eseltaxi.jpg",
                 alt: "Auf der Insel gab es keine Autos. Nur Pferde und Eseltaxen",
               },
-              {
-                src: "/senegal/sine-saloum/kinder.jpg",
-                alt: "Mein Lieblingsfoto. Es gibt super viele Kinder auf der Insel",
-              },
-              {
-                src: "/senegal/sine-saloum/kinder.jpg",
-                alt: "Mein Lieblingsfoto. Es gibt super viele Kinder auf der Insel",
-              },
+
               {
                 src: "/senegal/sine-saloum/sinesaloum1.jpg",
                 alt: "Zu der Jahreszeit war es sehr grün in Senegal",
@@ -330,18 +327,20 @@ export default function Senegal() {
               schon die nächsten Sammeltaxen, die dich weiter nach Gambia
               bringen. Aber nicht bis nach Banjul, sondern bis zur Fähre. Nach
               der Fähre sollte man sich ein Taxi suche, welches dich dann in die
-              Hauptstadt bringt.) Lustige Geschichte: kaum bist du über die
-              grenze, sprechen alle auf einmal Englisch. Und das Sammeltaxi von
-              der Grenze bis in die nächste Stadt hat 50 Dalasi gekostet.
-              Aufgrund des Dialekts, habe ich 50 Dollar(s) verstanden, und war
-              schon ganz enttäuscht, dass man an der Grenze so abgezogen wird.
-              Aber egal wen ich gefragt habe, alle haben bestätigt, dass es 50
-              &quot;Dollars&quot; sind. Zum Glück habe ich dann irgendwann
-              gecheckt, dass es 50 Dalasi sind, was umgerechnet aktuell nicht
-              mal 70 Cent sind. Der Taxifahrer hat sich sehr gefreut, als ich
-              ihm 100 Dalasi gegeben habe und hat mir erklärt wo es zur Fähre
-              geht, wo man Tickets kauft und hat mir ein Taxi organisiert, (noch
-              vor der Fähre) welches mich dann in die Hauptstadt gebracht hat.
+              Hauptstadt bringt.)
+              <br />
+              Lustige Geschichte: kaum bist du über die grenze, sprechen alle
+              auf einmal Englisch. Und das Sammeltaxi von der Grenze bis in die
+              nächste Stadt hat 50 Dalasi gekostet. Aufgrund des Dialekts, habe
+              ich 50 Dollar(s) verstanden, und war schon ganz enttäuscht, dass
+              man an der Grenze so abgezogen wird. Aber egal wen ich gefragt
+              habe, alle haben bestätigt, dass es 50 &quot;Dollars&quot; sind.
+              Zum Glück habe ich dann irgendwann gecheckt, dass es 50 Dalasi
+              sind, was umgerechnet aktuell nicht mal 70 Cent sind. Der
+              Taxifahrer hat sich sehr gefreut, als ich ihm 100 Dalasi gegeben
+              habe und hat mir erklärt wo es zur Fähre geht, wo man Tickets
+              kauft und hat mir ein Taxi organisiert, (noch vor der Fähre)
+              welches mich dann in die Hauptstadt gebracht hat.
             </p>
           </div>
           <ImageGallery
