@@ -8,7 +8,7 @@ const mapContainerStyle = {
 };
 
 // Zentrum auf Nicaragua setzen (ungefähre Mitte des Landes)
-const center = { lat: 11.859229, lng: -86.00854259485322 };
+const center = { lat: 11.812051, lng: -86.130901 };
 
 // Koordinaten für besuchte Orte in Nicaragua
 const locations = [
@@ -22,8 +22,9 @@ const locations = [
   { name: "Granada", lat: 11.9299, lng: -85.956 },
   { name: "Laguna de Apoyo", lat: 11.9224, lng: -86.0297 },
   { name: "Treehouse Nicaragua", lat: 11.859229, lng: -86.00854259485322 },
-
-  ,
+  { name: "Leon", lat: 12.435554509980497, lng: -86.88001836631564 },
+  { name: "Puerto Cabezas", lat: 14.038500364398327, lng: -83.391240154144 },
+  { name: "Big Corn Island", lat: 12.172945562885143, lng: -83.05934123223462 },
 ];
 
 export default function NicaraguaRoute() {
@@ -34,7 +35,7 @@ export default function NicaraguaRoute() {
   if (!isLoaded) return <div>Loading Map...</div>;
 
   return (
-    <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={7}>
+    <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={9}>
       {/* Marker für alle Orte */}
       {locations.map((loc, index) => (
         <Marker
