@@ -78,14 +78,14 @@ export default function Senegal() {
           <ImageGallery
             images={[
               {
+                src: "/senegal/start/verkehr.jpg",
+                alt: "Straße auf einer Nahegelegenen Stadt",
+              },
+              {
                 src: "/senegal/start/dakar1.jpg",
                 alt: "Der Blick von meiner Unterkunft",
               },
               { src: "/senegal/start/dakar2.jpg", alt: "Straßen in Dakar" },
-              {
-                src: "/senegal/start/verkehr.jpg",
-                alt: "Straße auf einer Nahegelegenen Stadt",
-              },
             ]}
           />
         </section>
