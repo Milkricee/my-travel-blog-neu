@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import { useState } from "react";
 import Image from "next/image";
 import MarokkoRoute from "../maps/marokko";
+import "./module.css";
 
 const NavbarWithButton = dynamic(
   () => import("../components/NavbarWithButton"),
@@ -34,7 +35,7 @@ export default function Marokko() {
     },
     {
       src: "/marokko/atlas3.jpg",
-      description: "Eine weitere beeindruckende Sicht auf das Atlasgebirge",
+      description: "Eine beeindruckende Sicht auf ein kleines Bergdorf",
     },
     {
       src: "/marokko/fischereihafen.jpg",
@@ -96,56 +97,194 @@ export default function Marokko() {
             .
           </p>
         </div>
-        <MarokkoRoute />
+      </article>
 
-        {/* Pro und Contra */}
-        <div
-          id="pro-contra"
-          className="border border-gray-300 bg-white p-6 rounded-lg shadow-sm mb-8"
-        >
-          <h2 className="text-2xl font-bold text-center mt-12 mb-4">
-            Gründe nach Marokko zu reisen
-          </h2>
-          <div className="border-t border-gray-300 my-6"></div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Pro</h3>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Nicht so weit weg</li>
-                <li>Selbst im Winter warm</li>
-                <li>Sehr günstig</li>
-                <li>
-                  Sicher (ja, Marokko ist tatsächlich ein sehr sicheres
-                  Reiseland)
-                </li>
-                <li>Erstaunlich gute Straßenverhältnisse</li>
-                <li>Gutes Essen</li>
-                <li>Perfekt zum Surfen</li>
-                <li>Sehr gastfreudige Menschen</li>
-                <li>Günstiges Haschisch (ich kiffe leider nicht)</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Contra</h3>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>
-                  Der Verkehr, vor allem in den großen Städten, ist sehr
-                  chaotisch
-                </li>
-                <li>
-                  Sehr großes Land (in 2 Wochen kann man viel sehen, sieht aber
-                  bei weitem nicht alles)
-                </li>
-                <li>
-                  Die Straßenhändler in den touristischen Regionen können sehr
-                  aufdringlich sein
-                </li>
-              </ul>
-            </div>
+      {/* Pro und Contra */}
+      <div
+        id="pro-contra"
+        className="border border-gray-300 bg-white p-6 rounded-lg shadow-sm mb-8"
+      >
+        <h2 className="text-2xl font-bold text-center mt-12 mb-4">
+          Gründe nach Marokko zu reisen
+        </h2>
+        <div className="border-t border-gray-300 my-6"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Pro</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Nicht so weit weg</li>
+              <li>Selbst im Winter warm</li>
+              <li>Sehr günstig</li>
+              <li>
+                Sicher (ja, Marokko ist tatsächlich ein sehr sicheres Reiseland)
+              </li>
+              <li>Erstaunlich gute Straßenverhältnisse</li>
+              <li>Gutes Essen</li>
+              <li>Perfekt zum Surfen</li>
+              <li>Sehr gastfreudige Menschen</li>
+              <li>Günstiges Haschisch (ich kiffe leider nicht)</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Contra</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>
+                Der Verkehr, vor allem in den großen Städten, ist sehr chaotisch
+              </li>
+              <li>
+                Sehr großes Land (in 2 Wochen kann man viel sehen, sieht aber
+                bei weitem nicht alles)
+              </li>
+              <li>
+                Die Straßenhändler in den touristischen Regionen können sehr
+                aufdringlich sein
+              </li>
+            </ul>
           </div>
         </div>
+      </div>
+      <div className="map-container">
+        <MarokkoRoute />
+      </div>
 
+      {/* Artikel-Inhalt */}
+      <article className="container-style">
+        {/* Abschnitt 1 */}
+        <section id="start" className="marokko-box">
+          <h2>Unser Trip</h2>
+          <p>
+            Wir haben uns für 10 Tage ein Auto gemietet und sind die abgebildete
+            Route gefahren. Mit Start und Ziel in Marrakesch.{" "}
+          </p>
+        </section>
+
+        <section id="zusammenfassung" className="marokko-summary">
+          <h2>Zusammenfassung</h2>
+          <p>
+            Bevor du dich in die Details stürzt, hier die wichtigsten Punkte für
+            eine Reise nach Marokko:
+          </p>
+
+          <h3>Minimale Reisekosten pro Tag</h3>
+          <ul>
+            <li>
+              <strong>Budget-Backpacker:</strong> ca. 30-40 € (Hostels,
+              günstiges Essen, öffentliche Verkehrsmittel)
+            </li>
+            <li>
+              <strong>Mittelklasse:</strong> 40-60 € (Mittelklasse-Hotels,
+              Restaurants, Mietwagen für Kurzstrecken)
+            </li>
+            <li>
+              <strong>Komfortabel:</strong> Nach Oben gibs keine Grenzen
+              (Riad-Hotels, geführte Touren, luxuriöse Unterkünfte)
+            </li>
+          </ul>
+
+          <h3>Empfohlene Reisedauer</h3>
+          <p>Je nach Route empfiehlt sich:</p>
+          <ul>
+            <li>
+              <strong>1-2 Wochen:</strong> Marrakesch, Essaouira und das
+              Atlasgebirge
+            </li>
+            <li>
+              <strong>2-3 Wochen:</strong> Plus Wüste (Merzouga), Fès und
+              Chefchaouen
+            </li>
+            <li>
+              <strong>3-4 Wochen:</strong> Von Agadir bis nach Tanger. Oder
+              umgekehrt. Über Fes, Chefchaouen und Rabat.
+            </li>
+          </ul>
+
+          <h3>Sicherheit</h3>
+          <ul>
+            <li>
+              ✅ <strong>Allgemein sehr1 sicher</strong>, vor allem in
+              touristischen Gebieten.
+            </li>
+            <li>
+              ✅ <strong>Aufpassen vor Taschendiebstahl</strong> wie in jedem
+              anderen Land auch.
+            </li>
+            <li>
+              ✅{" "}
+              <strong>
+                Nicht unbedingt mit Riesensummen Bargeld rumlaufen.
+              </strong>
+              , einfach um Taschendieben vorzubeugen.
+            </li>
+            <li>
+              ✅ <strong>Aufdringliche Händler</strong> Einige Händler können
+              recht aufdringlich werden. Aber niemand wird dir Geld aus der
+              Tasche ziehen. Deshalb, wenn man nichts kaufen möchte, bestimmt
+              aber höflich abweisen.
+            </li>
+          </ul>
+
+          <h3>Beste Reisezeit</h3>
+          <ul>
+            <li>
+              🌞 Frühling (März - Mai) und Herbst (September - November) sind
+              ideal.
+            </li>
+            <li>
+              🔥 Sommer (Juni - August) kann in der Wüste sehr heiß werden.
+            </li>
+            <li>
+              ❄️ Winter (Dezember - Februar) ist gut für die Küstenregion
+              (surfen). Tagsüber angenehme Temperaturen, Nachts kann es kühler
+              werden.
+            </li>
+          </ul>
+
+          <h3>SIM-Karten</h3>
+          <p>
+            Günstige SIM-Karten gibt es bei <strong>Maroc Telecom</strong>,{" "}
+            <strong>Inwi</strong> und <strong>Orange</strong>. Sie kosten ca. 10
+            € und mehr. Ich hab für 2 Wochen <strong>Orange</strong> genutzt und
+            habe für 10GB oder 20GB (auf jeden Fall mehr als genug Datenvolumen
+            für 2 Wochen) 10€ bezahlt.
+          </p>
+
+          <h3>Transport & Autovermietung</h3>
+          <ul>
+            <li>
+              🚆 <strong>Zug:</strong> Zwischen großen Städten wie Marrakesch,
+              Fès und Tanger bequem.
+            </li>
+            <li>
+              🚕 <strong>Busse:</strong> Zwischen großen (aber auch kleineren
+              Städten) fahren Busse und Minibusse. Sehr günstig. Kann bei
+              frequentierten Strecken aber auch mal voller werden.
+            </li>
+            <li>
+              🚗 <strong>Mietwagen:</strong> Kosten ab 20 €/Tag.
+              <br />
+              Sehr empfehlenswert um das Gebirge zu erkunden.
+              <br />
+              Wir haben das Auto direkt am Flughafen bei AirCar gemietet und
+              hatten absolut keine Probleme. Die Rückgabe war schnell und
+              unkompliziert. (Das ist keine Werbung für den Anbieter, sondern
+              meine Erfahrung. Ich schätze alle Anbieter am Flughafen sind
+              ähnlich.) Einziges <strong>Manko</strong> ist, dass man eine
+              relativ <strong>hohe Kaution</strong>
+              (ausschließlich mit Kreditkarte) hinterlegen muss. Wir haben für
+              unseren Dacia Duster ca. 1400€ hinterlegt, bekamen es nach der
+              Rückgabe aber schnell zurückerstattet.
+              <br />
+              Für 10 Tage haben wir ca. 280€ bezahlt.
+            </li>
+          </ul>
+        </section>
+        <br />
+        <br />
         {/* Bildergalerie */}
+        <h2 className="text-2xl font-bold text-center mt-12 mb-4">
+          Kleine Eindrücke
+        </h2>
+
         <div
           id="bildergalerie"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 justify-items-center"
@@ -200,22 +339,30 @@ export default function Marokko() {
           </div>
         )}
 
-        {/* Meine Route */}
         <div id="highlights" className="mt-12">
           <h2 className="text-2xl font-bold mb-4">Highlights</h2>
           <ul className="list-disc pl-6">
             <li className="mb-2">
-              Die geschäftigen Märkte und farbenfrohen Souks in Marrakesch.
+              <strong>Marrakesh:</strong> Die pulsierende Stadt mit vielen
+              Märkten, Touristen, historischen Palästen und einer einzigartigen
+              Atmosphäre – ein Muss für jeden Marokko-Besucher.
             </li>
             <li className="mb-2">
-              Eine Wanderung durch das Atlasgebirge – atemberaubende Aussichten!
+              <strong>Atlasgebirge:</strong> Mein absoluter Favorit! Die Fahrt
+              durch die gewaltige Berglandschaft, vorbei an traditionellen
+              Berberdörfern und spektakulären Schluchten, war einfach
+              atemberaubend.
             </li>
             <li className="mb-2">
-              Die Ruhe und Gelassenheit an den Stränden von Essaouira.
+              <strong>Taghazout:</strong> Ein kleines, aber sehr touristisches
+              Surferörtchen an der Atlantikküste. Der perfekte Ort zum Leute
+              kennen zu lernen oder zu Surfen.
             </li>
             <li className="mb-2">
-              Abenteuerliche Fahrten durch die Wüste und Nächte unter den
-              Sternen.
+              <strong>Essaouira:</strong> Eine charmante Hafenstadt mit
+              portugiesischem Flair, starken Winden und einer beeindruckenden
+              Medina. Die frischen Meeresfrüchte, die Stadtmauern und die
+              Sonnenuntergänge am Strand sind einfach unvergesslich.
             </li>
           </ul>
         </div>
