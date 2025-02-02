@@ -1,0 +1,29 @@
+.animated-link {
+    color: blue;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    animation: shake 1s infinite ease-in-out;
+    animation-delay: 50s;
+    /* Wartezeit zwischen den Animationen */
+}
+
+.animated-link:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.map-container {
+    margin-bottom: 20px;
+    /* Fügt einen Abstand nach der Karte ein */
+}
+
+.summary-box {
+    background-color: #d5ffea;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
