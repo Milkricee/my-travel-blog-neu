@@ -136,7 +136,7 @@ export default function Marokko() {
                 bei weitem nicht alles)
               </li>
               <li>
-                Die Straßenhändler in den touristischen Regionen können sehr
+                Die Verkäufer in den touristischen Regionen können sehr
                 aufdringlich sein
               </li>
             </ul>
@@ -189,8 +189,7 @@ export default function Marokko() {
               Atlasgebirge
             </li>
             <li>
-              <strong>2-3 Wochen:</strong> Plus Wüste (Merzouga), Fès und
-              Chefchaouen
+              <strong>2-3 Wochen:</strong> Plus Wüste (Merzouga) und Agadir
             </li>
             <li>
               <strong>3-4 Wochen:</strong> Von Agadir bis nach Tanger. Oder
@@ -201,7 +200,7 @@ export default function Marokko() {
           <h3>Sicherheit</h3>
           <ul>
             <li>
-              ✅ <strong>Allgemein sehr1 sicher</strong>, vor allem in
+              ✅ <strong>Allgemein sehr sicher</strong>, vor allem in
               touristischen Gebieten.
             </li>
             <li>
