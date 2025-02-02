@@ -9,7 +9,7 @@
 }
 
 .animated-link:hover {
-    color: green;
+    color: rgb(152, 255, 152);
     text-decoration: underline;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .summary-box {
-    background-color: #d5ffea;
+    background-color: #f2fdf7;
     padding: 20px;
     border-radius: 8px;
     max-width: 1200px;
