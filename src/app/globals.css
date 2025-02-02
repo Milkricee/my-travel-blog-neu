@@ -65,7 +65,19 @@ h2 {                /* Überschrift */
   font-size: 30px; /* Schriftgröße */
   color: blue; /* Farbe */
   font-weight: bold; /* Optional: Schriftstil */
-  margin-bottom: 1rem; /* Optional: Abstand nach unten */
+  margin-top: 1rem; /* Optional: Abstand nach unten */
+}
+
+h3 {
+  /* Überschrift */
+  font-size: 20px;
+  /* Schriftgröße */
+  color: green;
+  /* Farbe */
+  font-weight: bold;
+  /* Optional: Schriftstil */
+  margin-top: 1rem;
+  /* Optional: Abstand nach unten */
 }
 /* Globale CSS */
 #map-senegal {

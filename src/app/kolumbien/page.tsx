@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import Accordion from "@/app/components/Akkordeon";
 import "./module.css";
+import KolumbienRoute from "../maps/kolumbien";
 
 // Dynamische Importe
 const NavbarWithButton = dynamic(
@@ -26,6 +27,7 @@ export default function Kolumbien() {
       <NavbarWithButton
         links={[
           { href: "#map-kolumbien", label: "Route" },
+          { href: "#zusammenfassung", label: "Zusammenfassung" },
           { href: "#Bogota", label: "Bogota" },
           { href: "#sanandres", label: "San Andres" },
           { href: "#carthagena", label: "Nordküste" },
@@ -57,13 +59,107 @@ export default function Kolumbien() {
           besichtigen möchte, zu planen.
         </p>
       </header>
+      <KolumbienRoute />
 
       {/* Artikel-Inhalt */}
       <article className="container-style">
-        {/* Abschnitt 1 */}
-        <section id="map-kolumbien">
-          <h2>Route</h2>
-          <p>Hier wird eine Karte oder Beschreibung der Route eingefügt.</p>
+        {/* Abschnitt 1.5 */}
+        <section id="zusammenfassung">
+          <h2>Zusammenfassung</h2>
+          <p>
+            Bevor du den riesen Text durchliest, hier die wichtigsten Punkte:
+          </p>
+          <p>
+            Kolumbien ist eines der vielseitigsten Reiseziele in Südamerika –
+            von karibischen Stränden und dichten Regenwäldern bis hin zu hohen
+            Anden und Wüstenlandschaften. Das Land ist ideal für Backpacker mit
+            einem flexiblen Budget, vielen günstigen Transportmöglichkeiten und
+            einer lebendigen Gastfreundschaft.
+          </p>
+
+          <h3>Minimale Reisekosten pro Tag</h3>
+          <ul>
+            <li>
+              <strong>Budget-Backpacker:</strong> ca 30 € (günstige Hostels,
+              lokales Essen, öffentliche Verkehrsmittel)
+            </li>
+            <li>
+              <strong>Mittelklasse:</strong> 30-50 € (private Zimmer,
+              Inlandsflüge, Restaurantbesuche)
+            </li>
+            <li>
+              <strong>Komfortabel:</strong> 50+ € (Hotels, geführte Touren,
+              Inlandsflüge)
+            </li>
+          </ul>
+
+          <h3>Empfohlene Reisedauer</h3>
+          <p>
+            Je nach Route sollte man mindestens 3-4 Wochen einplanen, um die
+            wichtigsten Regionen zu erkunden:
+          </p>
+          <ul>
+            <li>
+              <strong>2 Wochen:</strong> Bogotá, Medellín, Karibikküste
+              (Cartagena, Tayrona, Palomino)
+            </li>
+            <li>
+              <strong>3-4 Wochen:</strong> Plus Amazonas, Pazifikküste oder
+              Kaffeeregion
+            </li>
+            <li>
+              <strong>6+ Wochen:</strong> Vollständiges Eintauchen in Kultur und
+              Natur
+            </li>
+          </ul>
+
+          <h3>Sicherheit</h3>
+          <p>
+            Kolumbien hat sich stark verbessert, doch einige Sicherheitsregeln
+            sollten beachtet werden:
+          </p>
+          <ul>
+            <li>
+              ✅ <strong>Große Städte:</strong> In sicheren Vierteln bleiben (z.
+              B. Poblado in Medellín, Candelaria in Bogotá).
+            </li>
+            <li>
+              ✅{" "}
+              <strong>Nachts nicht allein durch dunkle Straßen laufen.</strong>
+            </li>
+            <li>
+              ✅ <strong>Wertsachen nicht offen tragen</strong> – vor allem in
+              Bussen und an touristischen Orten.
+            </li>
+            <li>
+              ✅ <strong>Bargeld nur in Maßen mitnehmen</strong> – viele Orte
+              akzeptieren Kreditkarten.
+            </li>
+            <li>
+              ✅ <strong>Inlandsreisen:</strong> Busse mit offiziellen Anbietern
+              buchen (z. B. Flota Magdalena, Bolivariano).
+            </li>
+          </ul>
+
+          <h3>Weitere Tipps für Backpacker</h3>
+          <ul>
+            <li>
+              📱 <strong>SIM-Karten:</strong> Am besten vor Ort kaufen (z. B.
+              Claro, Movistar, Tigo) für günstiges Internet.
+            </li>
+            <li>
+              🚍 <strong>Transport:</strong> Günstige Busverbindungen, aber auch
+              sehr günstige Inlandsflüge mit Viva Air oder Avianca.
+            </li>
+            <li>
+              🌎 <strong>Sprache:</strong> Wenig Englisch – ein paar
+              Spanisch-Grundkenntnisse sind hilfreich.
+            </li>
+            <li>
+              🌴 <strong>Beste Reisezeit:</strong> Dezember – März
+              (Trockenzeit), Juni – September ist auch möglich.
+            </li>
+          </ul>
         </section>
         {/* Abschnitt 2 */}
         <section id="Bogota">
@@ -578,7 +674,6 @@ export default function Kolumbien() {
           </p>
           <br />
         </section>
-
         <section id="iquitos">
           <h2>Im Amazonas. Leticia</h2>
           <p>
@@ -739,12 +834,8 @@ export default function Kolumbien() {
           <ImageGallery
             images={[
               {
-                src: "/kolumbien/amazonas/dorf.jpg",
-                alt: "Wenn man eine Dschungeltour macht, kommt man nicht drum herum sich dieses Dorf anzusehen.",
-              },
-              {
                 src: "/kolumbien/amazonas/dorffest.jpg",
-                alt: "Wir haben Glück gehabt und ein Dorffest miterlebt. Es gab viel Bier und tanzende Menschen",
+                alt: "Wenn man eine Dschungeltour macht, kommt man nicht drum herum sich dieses Dorf anzusehen. Wir haben Glück gehabt und ein Dorffest miterlebt. Es gab viel Bier und tanzende Menschen",
               },
               {
                 src: "/kolumbien/amazonas/faultier.jpg",
@@ -761,10 +852,6 @@ export default function Kolumbien() {
               {
                 src: "/kolumbien/amazonas/baum.jpg",
                 alt: "Wir haben unangefassten Dschungel und riesige Bäume gesehen",
-              },
-              {
-                src: "/kolumbien/amazonas/baum2.jpg",
-                alt: "Auch hier. Beeindruckende Bäume",
               },
               {
                 src: "/kolumbien/amazonas/tarantel.jpg",
