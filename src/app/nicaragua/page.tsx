@@ -187,26 +187,27 @@ export default function Nicaragua() {
             und Playa Escondida. Die Küste von Nicaragua ist ein Traum für alle,
             die Ruhe und Natur suchen. Ich habe einige Nächte in der El Gigante
             Area verbracht, wo es entspannte Unterkünfte gibt.
-            <Accordion title="Highlights">
-              <ul>
-                <li>
-                  🏖 <strong>Playa Coco</strong>: Ruhiger Strand mit wenigen
-                  Menschen
-                </li>
-                <li>
-                  🏝 <strong>Playa Escondida</strong>: Der Name sagt alles –
-                  verstecktes Paradies
-                </li>
-                <li>
-                  🏍 <strong>Motorradtour entlang der Küste</strong>: Eine der
-                  besten Entscheidungen der Reise.
-                </li>
-              </ul>
-            </Accordion>
             <br />
             Generell war es eins meiner Favorites, einfach mit dem Motorrad der
             Küste entlang zu brettern und versteckte Strände zu erkunden.
           </p>
+
+          <Accordion title="Highlights">
+            <ul>
+              <li>
+                🏖 <strong>Playa Coco</strong>: Ruhiger Strand mit wenigen
+                Menschen
+              </li>
+              <li>
+                🏝 <strong>Playa Escondida</strong>: Der Name sagt alles –
+                verstecktes Paradies
+              </li>
+              <li>
+                🏍 <strong>Motorradtour entlang der Küste</strong>: Eine der
+                besten Entscheidungen der Reise.
+              </li>
+            </ul>
+          </Accordion>
         </section>
 
         {/* Abschnitt Granada */}
@@ -219,23 +220,23 @@ export default function Nicaragua() {
             und ein pulsierendes Nachtleben. Ich verbrachte hier zwei Tage und
             erkundete die Stadt.
             <br />
-            <Accordion title="Must-Sees in Granada">
-              <ul>
-                <li>
-                  🏛 <strong>Kathedrale von Granada</strong> - mit Blick auf die
-                  Stadt
-                </li>
-                <li>
-                  🚤 <strong>Las Isletas</strong> - Kleine Inseln im
-                  Nicaragua-See erkunden
-                </li>
-                <li>
-                  🛶 <strong>Laguna de Apoyo</strong> - Perfekter Tagesausflug
-                  zum Schwimmen & Entspannen.
-                </li>
-              </ul>
-            </Accordion>
           </p>
+          <Accordion title="Must-Sees in Granada">
+            <ul>
+              <li>
+                🏛 <strong>Kathedrale von Granada</strong> - mit Blick auf die
+                Stadt
+              </li>
+              <li>
+                🚤 <strong>Las Isletas</strong> - Kleine Inseln im Nicaragua-See
+                erkunden
+              </li>
+              <li>
+                🛶 <strong>Laguna de Apoyo</strong> - Perfekter Tagesausflug zum
+                Schwimmen & Entspannen.
+              </li>
+            </ul>
+          </Accordion>
         </section>
 
         {/* Abschnitt Treehouse Nicaragua */}
