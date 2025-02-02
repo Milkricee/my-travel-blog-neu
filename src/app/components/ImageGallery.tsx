@@ -10,6 +10,7 @@ interface ImageGalleryProps {
 export default function ImageGallery({ images }: ImageGalleryProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [touchStartX, setTouchStartX] = useState<number | null>(null); // Startpunkt der Swipe-Geste
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -35,6 +36,28 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
     }
   };
 
+  // Touch-Event für Swipe (Mobile)
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!touchStartX) return;
+
+    const touchEndX = e.touches[0].clientX;
+    const diff = touchStartX - touchEndX;
+
+    if (diff > 50) {
+      // Swipe nach links → nächstes Bild
+      handleNext();
+      setTouchStartX(null);
+    } else if (diff < -50) {
+      // Swipe nach rechts → vorheriges Bild
+      handlePrev();
+      setTouchStartX(null);
+    }
+  };
+
   useEffect(() => {
     if (isFullscreen) {
       document.addEventListener("keydown", handleKeyPress);
@@ -51,6 +74,8 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
         <div
           className="fixed inset-0 bg-black bg-opacity-90 flex flex-col justify-center items-center z-50"
           onClick={() => setIsFullscreen(false)}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
         >
           <button
             onClick={(e) => {
