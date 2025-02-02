@@ -168,12 +168,12 @@ export default function Marokko() {
           <h3>Minimale Reisekosten pro Tag</h3>
           <ul>
             <li>
-              <strong>Budget-Backpacker:</strong> ca. 30-40 € (Hostels,
+              <strong>Budget-Backpacker:</strong> ca. 25-40 € (Hostels,
               günstiges Essen, öffentliche Verkehrsmittel)
             </li>
             <li>
               <strong>Mittelklasse:</strong> 40-60 € (Mittelklasse-Hotels,
-              Restaurants, Mietwagen für Kurzstrecken)
+              Restaurants, kleinere Touren)
             </li>
             <li>
               <strong>Komfortabel:</strong> Nach Oben gibs keine Grenzen
@@ -208,14 +208,11 @@ export default function Marokko() {
               anderen Land auch.
             </li>
             <li>
-              ✅{" "}
-              <strong>
-                Nicht unbedingt mit Riesensummen Bargeld rumlaufen.
-              </strong>
-              , einfach um Taschendieben vorzubeugen.
+              ✅ <strong>Nicht zu viel Bargeld</strong>, einfach um
+              Taschendiebstahl vorzubeugen.
             </li>
             <li>
-              ✅ <strong>Aufdringliche Händler</strong> Einige Händler können
+              ✅ <strong>Aufdringliche Händler </strong> Einige Händler können
               recht aufdringlich werden. Aber niemand wird dir Geld aus der
               Tasche ziehen. Deshalb, wenn man nichts kaufen möchte, bestimmt
               aber höflich abweisen.
@@ -342,26 +339,67 @@ export default function Marokko() {
           <h2 className="text-2xl font-bold mb-4">Highlights</h2>
           <ul className="list-disc pl-6">
             <li className="mb-2">
-              <strong>Marrakesh:</strong> Die pulsierende Stadt mit vielen
+              <strong>🕌 Marrakesh:</strong> Die pulsierende Stadt mit vielen
               Märkten, Touristen, historischen Palästen und einer einzigartigen
               Atmosphäre – ein Muss für jeden Marokko-Besucher.
             </li>
             <li className="mb-2">
-              <strong>Atlasgebirge:</strong> Mein absoluter Favorit! Die Fahrt
-              durch die gewaltige Berglandschaft, vorbei an traditionellen
+              <strong>⛰️ Atlasgebirge:</strong> Mein absoluter Favorit! Die
+              Fahrt durch die gewaltige Berglandschaft, vorbei an traditionellen
               Berberdörfern und spektakulären Schluchten, war einfach
               atemberaubend.
             </li>
             <li className="mb-2">
-              <strong>Taghazout:</strong> Ein kleines, aber sehr touristisches
-              Surferörtchen an der Atlantikküste. Der perfekte Ort zum Leute
-              kennen zu lernen oder zu Surfen.
+              <strong>🏄‍♂️ Taghazout:</strong> Ein kleines, aber sehr
+              touristisches Surferörtchen an der Atlantikküste. Der perfekte Ort
+              zum Leute kennen zu lernen oder zu Surfen.
             </li>
             <li className="mb-2">
-              <strong>Essaouira:</strong> Eine charmante Hafenstadt mit
+              <strong>🌊 Essaouira:</strong> Eine charmante Hafenstadt mit
               portugiesischem Flair, starken Winden und einer beeindruckenden
               Medina. Die frischen Meeresfrüchte, die Stadtmauern und die
               Sonnenuntergänge am Strand sind einfach unvergesslich.
+            </li>
+          </ul>
+        </div>
+
+        <div id="highlights2" className="mt-12">
+          <h2 className="text-2xl font-bold mb-4">
+            Weitere Highlights aus dem vorherigen Trip
+          </h2>
+          <ul className="list-disc pl-6">
+            <li className="mb-2">
+              <strong>🏜️ Merzouga Wüste:</strong>Mein persönlicher Favorit! Die
+              Fahrt durch die spektakuläre Berglandschaft, vorbei an
+              traditionellen Berberdörfern und tiefen Schluchten, war einfach
+              atemberaubend. In der unendlichen Weite der Sanddünen einen
+              Sonnenuntergang zu erleben, war ein magischer Moment.
+            </li>
+            <li className="mb-2">
+              <strong>🏂 Ifrane:</strong> Überraschung in Marokko! Diese Stadt
+              wird wegen ihrer alpinen Architektur oft als „die Schweiz
+              Marokkos“ bezeichnet. Ein beliebtes Ziel für Wintertouristen, da
+              man hier tatsächlich auch Ski fahren kann.
+            </li>
+            <li className="mb-2">
+              <strong>🏰Fes:</strong> Die älteste der vier Königsstädte
+              Marokkos. Die Medina ist ein Labyrinth aus verwinkelten Gassen,
+              die von Gewürzständen, Handwerkskunst und historischen Gebäuden
+              geprägt sind. Mir hat Marrakesh aber deutlich mehr gefallen.
+            </li>
+            <li className="mb-2">
+              <strong>🏛️Rabat:</strong> Die moderne Hauptstadt Marokkos
+              beeindruckt mit einer Mischung aus Geschichte und Moderne. Die
+              Kasbah des Oudaïas mit ihren weiß-blauen Häusern bietet einen
+              wunderschönen Ausblick auf den Atlantik. Hier spürt man eine
+              entspannte Atmosphäre, weit entfernt vom Trubel anderer Städte.
+            </li>
+            <li className="mb-2">
+              <strong>💙Chefchaouen:</strong> Ein Ort wie aus einem Märchen!
+              Auch eines meiner Favoriten. Die „blaue Perle“ Marokkos liegt
+              eingebettet in die Rif-Berge und begeistert mit ihren leuchtend
+              blauen Fassaden und engen Gassen. Ein perfekter Ort für
+              marokkanische Kultur oder wanderungen in den Bergen.
             </li>
           </ul>
         </div>
