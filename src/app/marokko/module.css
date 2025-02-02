@@ -37,7 +37,7 @@
 
 /* Hover-Effekt */
 .marokko-summary:hover {
-    transform: scale(1.05) !important;
+    transform: scale(1.03) !important;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2) !important;
 }
 
