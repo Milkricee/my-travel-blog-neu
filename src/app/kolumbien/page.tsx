@@ -1,11 +1,9 @@
-"use client";
-
+import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Accordion from "@/app/components/Akkordeon";
 import "./module.css";
-import KolumbienRoute from "../maps/kolumbien";
 
-// Dynamische Importe
+// ✅ Dynamische Imports für Performance-Optimierung (Client-seitige Komponenten)
 const NavbarWithButton = dynamic(
   () => import("../components/NavbarWithButton"),
   { ssr: false }
@@ -16,6 +14,53 @@ const Comments = dynamic(() => import("../components/comments"), {
 const ImageGallery = dynamic(() => import("../components/ImageGallery"), {
   ssr: false,
 });
+const KolumbienRoute = dynamic(() => import("../maps/kolumbien"), {
+  ssr: false,
+});
+
+// ✅ SEO-Metadaten für die metadata API
+export const metadata: Metadata = {
+  title: "Backpacking Kolumbien – Dein ultimativer Reiseguide",
+  description:
+    "Erkunde Kolumbien: Highlights von Bogotá, Medellín, Karibikküste & Amazonas. Tipps zu Kosten, Sicherheit, Mietwagen & günstigen Unterkünften für Backpacker!",
+  keywords: [
+    "Kolumbien Reisebericht",
+    "Backpacking Kolumbien",
+    "Bogotá",
+    "Medellín",
+    "Karibikküste",
+    "Amazonas Kolumbien",
+    "Guatapé",
+    "Kolumbien Sicherheit",
+    "Günstiges Reisen Kolumbien",
+  ],
+  openGraph: {
+    title: "Backpacking Kolumbien – Dein ultimativer Reiseguide",
+    description:
+      "Kolumbien entdecken: Die beste Route für Backpacker! Highlights, Kosten, Sicherheit & Transport-Tipps für dein Abenteuer.",
+    url: "https://deintravelblog.com/kolumbien",
+    type: "article",
+    images: [
+      {
+        url: "/images/kolumbien-cover.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Kolumbien Backpacking Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Backpacking Kolumbien – Dein ultimativer Reiseguide",
+    description:
+      "Kolumbien für Backpacker: Tipps zu Kosten, Transport, Sicherheit & Highlights. Perfekt für deine Reiseplanung!",
+    images: ["/images/kolumbien-cover.jpg"],
+  },
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://deintravelblog.com/kolumbien",
+  },
+};
 
 export default function Kolumbien() {
   return (
@@ -28,10 +73,10 @@ export default function Kolumbien() {
         links={[
           { href: "#map-kolumbien", label: "Route" },
           { href: "#zusammenfassung", label: "Zusammenfassung" },
-          { href: "#Bogota", label: "Bogota" },
-          { href: "#sanandres", label: "San Andres" },
+          { href: "#Bogota", label: "Bogotá" },
+          { href: "#sanandres", label: "San Andrés" },
           { href: "#carthagena", label: "Nordküste" },
-          { href: "#medellin", label: "Medellin/Guatape" },
+          { href: "#medellin", label: "Medellín/Guatapé" },
           { href: "#pacific", label: "Pazifische Küste" },
           { href: "#leticia", label: "Amazonas (Leticia)" },
           { href: "#iquitos", label: "Iquitos" },
@@ -59,9 +104,11 @@ export default function Kolumbien() {
           besichtigen möchte, zu planen.
         </p>
       </header>
+
       <div className="map-container">
         <KolumbienRoute />
       </div>
+
       {/* Artikel-Inhalt */}
       <article className="container-style">
         {/* Abschnitt 1.5 */}
