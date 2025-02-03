@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/images/marokko-cover.jpg",
+        url: "/images/marokko-cover-q.jpg", // Querformat für OpenGraph
         width: 1200,
         height: 630,
         alt: "Marokko Backpacking Guide",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "Backpacking Marokko – Dein ultimativer Reiseführer",
     description:
       "Marokko für Backpacker: Tipps zu Kosten, Transport, Sicherheit & Highlights. Perfekt für deine Reiseplanung!",
-    images: ["/images/marokko-cover.jpg"],
+    images: ["/images/marokko-cover-q.jpg"],
   },
   robots: "index, follow",
   alternates: {
@@ -109,6 +109,17 @@ export default function Marokko() {
 
   return (
     <div className="container-style">
+      {/* Hochformat für mobile Nutzer (Instagram/Pinterest) */}
+      <div className="relative w-full max-w-3xl mx-auto md:hidden">
+        <Image
+          src="/images/marokko-cover-h.jpg" // Hochformat-Version
+          alt="Backpacking Marokko Hochformat"
+          width={1080}
+          height={1350}
+          className="w-full rounded-lg shadow-lg"
+        />
+      </div>
+
       {/* Inhaltsverzeichnis mit allgemeiner Komponente */}
       <NavbarWithButton
         links={[
@@ -122,6 +133,23 @@ export default function Marokko() {
 
       {/* Einführung */}
       <article className="container-style">
+        {/* Pinterest-optimiertes Bild mit Download */}
+        <section className="text-center my-12">
+          <h2 className="text-2xl font-bold mb-4">
+            Teile diesen Reisebericht!
+          </h2>
+          <p>Lade das Pinterest-optimierte Bild herunter:</p>
+          <a href="/images/marokko-cover-h.jpg" download>
+            <Image
+              src="/images/marokko-cover-h.jpg"
+              alt="Pinterest Cover für Marokko"
+              width={1080}
+              height={1920}
+              className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
+            />
+          </a>
+        </section>
+
         <div id="intro">
           <h1 className="text-4xl font-bold text-center mb-8 mt-9">
             Mein Marokko-Trip
