@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Accordion from "@/app/components/Akkordeon";
 import "./module.css";
+import Image from "next/image";
 
 // ✅ Dynamische Imports für Performance-Optimierung (Client-seitige Komponenten)
 const NavbarWithButton = dynamic(
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/images/kolumbien-cover.jpg",
+        url: "/images/columbien-cover-q.jpg",
         width: 1200,
         height: 630,
         alt: "Kolumbien Backpacking Guide",
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
     title: "Backpacking Kolumbien – Dein ultimativer Reiseguide",
     description:
       "Kolumbien für Backpacker: Tipps zu Kosten, Transport, Sicherheit & Highlights. Perfekt für deine Reiseplanung!",
-    images: ["/images/kolumbien-cover.jpg"],
+    images: ["/images/columbien-cover-q.jpg"],
   },
   robots: "index, follow",
   alternates: {
@@ -111,6 +112,23 @@ export default function Kolumbien() {
 
       {/* Artikel-Inhalt */}
       <article className="container-style">
+        {/* Pinterest-optimiertes Bild mit Download */}
+        <section className="text-center my-12">
+          <h2 className="text-2xl font-bold mb-4">
+            Teile diesen Reisebericht!
+          </h2>
+          <p>Lade das Pinterest-optimierte Bild herunter:</p>
+          <a href="/images/columbien-cover-h.jpg" download>
+            <Image
+              src="/images/columbien-cover-h.jpg"
+              alt="Pinterest Cover für Kolumbien"
+              width={1080}
+              height={1920}
+              className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
+            />
+          </a>
+        </section>
+
         {/* Abschnitt 1.5 */}
         <section id="zusammenfassung" className="summary-box">
           <h2>Zusammenfassung</h2>
