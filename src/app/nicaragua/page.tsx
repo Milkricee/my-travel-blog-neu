@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import NicaraguaRoute from "../maps/nicaragua";
 import Accordion from "@/app/components/Akkordeon";
 import "./module.css";
+import Image from "next/image";
 
 // Dynamische Importe (Client-Only Komponenten)
 const NavbarWithButton = dynamic(
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/images/nicaragua-cover.jpg",
+        url: "/images/nicaragua-cover-q.jpg", // Querformat für OpenGraph
         width: 1200,
         height: 630,
         alt: "Nicaragua Backpacking Guide",
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
     title: "Backpacking Nicaragua – Dein Guide für Abenteuer & Reisen",
     description:
       "Reisetipps zu Nicaragua: Kosten, Transport, Sicherheit und Highlights für Backpacker!",
-    images: ["/images/nicaragua-cover.jpg"],
+    images: ["/images/nicaragua-cover-q.jpg"],
   },
   robots: "index, follow",
   alternates: {
@@ -63,6 +64,17 @@ export default function Nicaragua() {
       className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8"
       style={{ paddingTop: "var(--header-height)" }}
     >
+      {/* Hochformat für mobile Nutzer (Instagram/Pinterest) */}
+      <div className="relative w-full max-w-3xl mx-auto md:hidden">
+        <Image
+          src="/images/nicaragua-cover-h.jpg" // Hochformat-Version
+          alt="Backpacking Nicaragua Hochformat"
+          width={1080}
+          height={1350}
+          className="w-full rounded-lg shadow-lg"
+        />
+      </div>
+
       {/* Header-Bereich */}
       <NavbarWithButton
         links={[
@@ -91,6 +103,21 @@ export default function Nicaragua() {
           sonst nicht so leicht erreichbar sind.
         </p>
       </header>
+
+      {/* Pinterest-optimiertes Bild mit Download */}
+      <section className="text-center my-12">
+        <h2 className="text-2xl font-bold mb-4">Teile diesen Reisebericht!</h2>
+        <p>Lade das Pinterest-optimierte Bild herunter:</p>
+        <a href="/images/nicaragua-cover-h.jpg" download>
+          <Image
+            src="/images/nicaragua-cover-h.jpg"
+            alt="Pinterest Cover für Nicaragua"
+            width={1080}
+            height={1920}
+            className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
+          />
+        </a>
+      </section>
 
       <div className="map-container">
         <NicaraguaRoute />
