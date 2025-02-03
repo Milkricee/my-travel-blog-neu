@@ -79,6 +79,8 @@ export default function MobileHeader() {
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
           className="text-white text-2xl focus:outline-none"
+          aria-label={isMenuOpen ? "Menü schließen" : "Menü öffnen"}
+          title={isMenuOpen ? "Menü schließen" : "Menü öffnen"}
         >
           {isMenuOpen ? <FiX /> : <FiMenu />}
         </button>
@@ -93,7 +95,7 @@ export default function MobileHeader() {
       >
         <nav className="p-6">
           <ul className="space-y-4">
-          <li className=" border-b border-white">
+            <li className=" border-b border-white">
               <Link
                 href="/about"
                 className="block hover:text-blue-400"

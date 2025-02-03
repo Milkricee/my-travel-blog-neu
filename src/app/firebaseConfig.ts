@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import { getAnalytics, Analytics } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -10,8 +11,18 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
-console.log("Penis penis:", firebaseConfig);
+
+// Firebase App initialisieren
 const app = initializeApp(firebaseConfig);
+
+// **Firebase Authentication**
 export const auth = getAuth(app);
+
+// **Firebase Analytics (nur falls verfügbar)**
+export let analytics: Analytics | null = null;
+
+if (typeof window !== "undefined") {
+  analytics = getAnalytics(app);
+}
 
 export default app;

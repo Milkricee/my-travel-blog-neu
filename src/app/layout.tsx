@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Footer from "./components/Footer";
 import "./globals.css";
 import HeaderWrapper from "./components/HeaderWrapper";
+import AnalyticsWrapper from "./components/AnalyticsWrapper"; // NEU: Analytics separat als Client Component
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -16,6 +17,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+// **SEO Einstellungen**
 export const metadata: Metadata = {
   title: "Daniel's Travelblog – Backpacking weltweit",
   description:
@@ -47,6 +49,7 @@ export const metadata: Metadata = {
   },
 };
 
+// **Hauptlayout als Server Component**
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -72,8 +75,8 @@ export default function RootLayout({
         >
           {children}
         </main>
-
         <Footer />
+        <AnalyticsWrapper /> {/* Analytics als separate Client Component */}
       </body>
     </html>
   );
