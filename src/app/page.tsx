@@ -8,53 +8,57 @@ export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Überwache die Bildschirmgröße
+  // **Optimierter Resize-Listener mit Debounce**
   useEffect(() => {
     const updateScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768); // Ist true, wenn Breite ≤ 768px (mobile)
+      setIsMobile(window.innerWidth <= 768);
     };
 
-    updateScreenSize(); // Initial überprüfen
-    window.addEventListener("resize", updateScreenSize);
+    updateScreenSize(); // Initial aufrufen
 
-    return () => window.removeEventListener("resize", updateScreenSize); // Aufräumen
+    const resizeListener = () => {
+      const win = window as unknown as {
+        resizeTimer?: ReturnType<typeof setTimeout>;
+      };
+      clearTimeout(win.resizeTimer);
+      win.resizeTimer = setTimeout(updateScreenSize, 200);
+    };
+
+    window.addEventListener("resize", resizeListener);
+    return () => window.removeEventListener("resize", resizeListener);
   }, []);
 
-  const totalImages = isMobile ? totalImagesMobile : totalImagesPC; // Bilderanzahl basierend auf Gerätetyp
+  const totalImages = isMobile ? totalImagesMobile : totalImagesPC;
+  const currentImage = `/${isMobile ? "background_mobile" : "background"}/${
+    currentImageIndex + 1
+  }.jpg`;
 
-  // Automatischer Wechsel der Hintergrundbilder
+  // **Optimierter Bildwechsel mit Cleanup**
   useEffect(() => {
-    const interval = setInterval(() => {
+    const intervalId = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalImages);
-    }, 5000); // Wechsel alle 5 Sekunden
+    }, 7000); // Wechsel alle 7 Sekunden
 
-    return () => clearInterval(interval); // Aufräumen
+    return () => clearInterval(intervalId);
   }, [totalImages]);
 
-  // Manuelles Navigieren
-  const goToPreviousImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? totalImages - 1 : prevIndex - 1
-    );
-  };
-
-  const goToNextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalImages);
-  };
+  // **Preload für das erste Bild → FIX: Berechnung im useEffect selbst**
+  useEffect(() => {
+    const firstImage: HTMLImageElement = new Image();
+    firstImage.src = `/${isMobile ? "background_mobile" : "background"}/1.jpg`;
+  }, [isMobile]); // Nur `isMobile` als Abhängigkeit!
 
   return (
     <div
-    style={{
-      position: "relative",
-      height: "100vh", // Vollbildhöhe
-      backgroundImage: `url('/${
-        isMobile ? 'background_mobile' : 'background'
-      }/${currentImageIndex + 1}.jpg')`, // Hintergrundbild je nach Gerätetyp und Ordner
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      transition: "background-image 1s ease-in-out", // Weicher Übergang
-    }}
+      style={{
+        position: "relative",
+        height: "100vh", // Vollbildhöhe
+        backgroundImage: `url('${currentImage}')`, // Korrekte Bildpfade
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        transition: "background-image 1s ease-in-out",
+      }}
     >
       {/* Begrüßungstext mit halbtransparentem Hintergrund */}
       <div
@@ -63,7 +67,7 @@ export default function Home() {
           top: "50%",
           left: "50%",
           transform: "translate(-50%, -50%)",
-          backgroundColor: "rgba(0, 0, 0, 0.5)", // Schwarzer, halbtransparenter Hintergrund
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
           color: "white",
           padding: "2rem",
           borderRadius: "10px",
@@ -71,18 +75,28 @@ export default function Home() {
           maxWidth: "90%", // Begrenzt die Breite auf kleineren Bildschirmen
         }}
       >
-        <h1 style={{ fontSize: "2.5rem", fontWeight: "bold", marginBottom: "1rem" }}>
+        <h1
+          style={{
+            fontSize: "2.5rem",
+            fontWeight: "bold",
+            marginBottom: "1rem",
+          }}
+        >
           Willkommen bei Dan&apos;s Travelblog!
         </h1>
         <p style={{ fontSize: "1.2rem" }}>
-          Hier erzähle ich von meinen Trips und gebe Ratschläge und Empfehlungen zu Ländern die ich bereist habe. Viel Spaß beim
-          Erkunden!
+          Hier erzähle ich von meinen Trips und gebe Ratschläge und Empfehlungen
+          zu Ländern, die ich bereist habe. Viel Spaß beim Erkunden!
         </p>
       </div>
 
       {/* Navigation für Hintergrundwechsel */}
       <button
-        onClick={goToPreviousImage}
+        onClick={() =>
+          setCurrentImageIndex((prev) =>
+            prev === 0 ? totalImages - 1 : prev - 1
+          )
+        }
         style={{
           position: "absolute",
           top: "50%",
@@ -100,7 +114,7 @@ export default function Home() {
       </button>
 
       <button
-        onClick={goToNextImage}
+        onClick={() => setCurrentImageIndex((prev) => (prev + 1) % totalImages)}
         style={{
           position: "absolute",
           top: "50%",
