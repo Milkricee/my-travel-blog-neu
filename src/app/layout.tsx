@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import "./globals.css";
 import HeaderWrapper from "./components/HeaderWrapper";
 import ClientAnalytics from "./components/ClientAnalytics"; // ✅ Analytics global tracken
+import CookieBanner from "./components/CookieBanner";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -72,9 +73,9 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-
         {/* ✅ Analytics wird global geladen, beeinflusst aber keine API-Calls */}
         <ClientAnalytics />
+        <CookieBanner /> {/* 🔽 Hier wird der Cookie-Banner hinzugefügt */}
       </body>
     </html>
   );

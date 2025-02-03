@@ -9,18 +9,20 @@ export default function AnalyticsWrapper() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (analytics) {
+    const analyticsConsent = localStorage.getItem("analyticsConsent");
+
+    if (analytics && analyticsConsent === "true") {
       logEvent(analytics, "page_view", { page_path: pathname });
       console.log("📊 Analytics: Page View getrackt ->", pathname);
     }
 
-    // ⏱️ Tracke, wie lange ein Nutzer auf einer Seite bleibt
+    // ⏱️ Verweildauer tracking
     const startTime = Date.now();
 
     const handleVisibilityChange = () => {
       if (document.visibilityState === "hidden") {
         const duration = Date.now() - startTime;
-        if (analytics) {
+        if (analytics && analyticsConsent === "true") {
           logEvent(analytics, "time_on_page", {
             page_path: pathname,
             duration: duration / 1000, // In Sekunden
