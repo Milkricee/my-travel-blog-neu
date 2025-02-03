@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import Footer from "./components/Footer";
 import "./globals.css";
 import HeaderWrapper from "./components/HeaderWrapper";
-import AnalyticsWrapper from "./components/AnalyticsWrapper"; // NEU: Analytics separat als Client Component
+import ClientAnalytics from "./components/ClientAnalytics"; // ✅ Analytics global tracken
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,7 +17,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-// **SEO Einstellungen**
 export const metadata: Metadata = {
   title: "Daniel's Travelblog – Backpacking weltweit",
   description:
@@ -49,12 +48,9 @@ export const metadata: Metadata = {
   },
 };
 
-// **Hauptlayout als Server Component**
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="de">
       <body
@@ -62,7 +58,7 @@ export default function RootLayout({
         style={{
           margin: 0,
           padding: 0,
-          overflowX: "hidden", // Verhindert horizontales Scrollen
+          overflowX: "hidden",
         }}
       >
         <HeaderWrapper />
@@ -70,13 +66,15 @@ export default function RootLayout({
           style={{
             minHeight: "100vh",
             position: "relative",
-            paddingTop: "var(--header-height)", // Dynamisch anhand der CSS-Variable
+            paddingTop: "var(--header-height)",
           }}
         >
           {children}
         </main>
         <Footer />
-        <AnalyticsWrapper /> {/* Analytics als separate Client Component */}
+
+        {/* ✅ Analytics wird global geladen, beeinflusst aber keine API-Calls */}
+        <ClientAnalytics />
       </body>
     </html>
   );
