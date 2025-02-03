@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+"use client";
+
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import Image from "next/image";
@@ -13,51 +14,6 @@ const NavbarWithButton = dynamic(
 const Comments = dynamic(() => import("../components/comments"), {
   ssr: false,
 });
-
-// ✅ SEO-Metadaten für die metadata API
-export const metadata: Metadata = {
-  title: "Backpacking Marokko – Dein ultimativer Reiseführer",
-  description:
-    "Erkunde Marokko: Highlights von Marrakesch, Atlasgebirge, Sahara & mehr. Tipps zu Kosten, Sicherheit, Mietwagen & günstigen Unterkünften für Backpacker!",
-  keywords: [
-    "Marokko Reisebericht",
-    "Backpacking Marokko",
-    "Atlasgebirge",
-    "Marrakesch",
-    "Essaouira",
-    "Sahara Wüste",
-    "Fes",
-    "Chefchaouen",
-    "Marokko Mietwagen",
-    "Günstiges Reisen Marokko",
-  ],
-  openGraph: {
-    title: "Backpacking Marokko – Dein ultimativer Reiseführer",
-    description:
-      "Marokko erleben: Die beste Route für Backpacker! Highlights, Kosten, Sicherheit & Transport-Tipps für dein Abenteuer.",
-    url: "https://deintravelblog.com/marokko",
-    type: "article",
-    images: [
-      {
-        url: "/images/marokko-cover-q.jpg", // Querformat für OpenGraph
-        width: 1200,
-        height: 630,
-        alt: "Marokko Backpacking Guide",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Backpacking Marokko – Dein ultimativer Reiseführer",
-    description:
-      "Marokko für Backpacker: Tipps zu Kosten, Transport, Sicherheit & Highlights. Perfekt für deine Reiseplanung!",
-    images: ["/images/marokko-cover-q.jpg"],
-  },
-  robots: "index, follow",
-  alternates: {
-    canonical: "https://deintravelblog.com/marokko",
-  },
-};
 
 export default function Marokko() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -133,23 +89,6 @@ export default function Marokko() {
 
       {/* Einführung */}
       <article className="container-style">
-        {/* Pinterest-optimiertes Bild mit Download */}
-        <section className="text-center my-12">
-          <h2 className="text-2xl font-bold mb-4">
-            Teile diesen Reisebericht!
-          </h2>
-          <p>Lade das Pinterest-optimierte Bild herunter:</p>
-          <a href="/images/marokko-cover-h.jpg" download>
-            <Image
-              src="/images/marokko-cover-h.jpg"
-              alt="Pinterest Cover für Marokko"
-              width={1080}
-              height={1920}
-              className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
-            />
-          </a>
-        </section>
-
         <div id="intro">
           <h1 className="text-4xl font-bold text-center mb-8 mt-9">
             Mein Marokko-Trip
@@ -168,7 +107,6 @@ export default function Marokko() {
             >
               hier lang
             </a>
-            .
           </p>
         </div>
       </article>
@@ -217,6 +155,7 @@ export default function Marokko() {
           </div>
         </div>
       </div>
+
       <div className="map-container">
         <MarokkoRoute />
       </div>

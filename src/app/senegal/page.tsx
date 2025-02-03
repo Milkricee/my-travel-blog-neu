@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import SenegalRoute from "../maps/senegal";
@@ -11,56 +10,14 @@ const NavbarWithButton = dynamic(
   () => import("../components/NavbarWithButton"),
   { ssr: false }
 );
+
 const Comments = dynamic(() => import("../components/comments"), {
   ssr: false,
 });
+
 const ImageGallery = dynamic(() => import("../components/ImageGallery"), {
   ssr: false,
 });
-
-// ✅ SEO-Metadaten für die metadata API
-export const metadata: Metadata = {
-  title: "Backpacking Senegal – Dein ultimativer Reisebericht",
-  description:
-    "Erkunde Senegal: Highlights von Dakar, Cap Skirring, Saloum-Delta & mehr. Tipps zu Kosten, Sicherheit, Transport & günstigen Unterkünften für Backpacker!",
-  keywords: [
-    "Senegal Reisebericht",
-    "Backpacking Senegal",
-    "Dakar",
-    "Cap Skirring",
-    "Saloum Delta",
-    "M'bour",
-    "Senegal Sicherheit",
-    "Günstiges Reisen Senegal",
-    "Senegal Mietwagen",
-  ],
-  openGraph: {
-    title: "Backpacking Senegal – Dein ultimativer Reisebericht",
-    description:
-      "Senegal erleben: Die beste Route für Backpacker! Highlights, Kosten, Sicherheit & Transport-Tipps für dein Abenteuer.",
-    url: "https://deintravelblog.com/senegal",
-    type: "article",
-    images: [
-      {
-        url: "/images/senegal-cover-q.jpg", // Querformat für OpenGraph
-        width: 1200,
-        height: 630,
-        alt: "Senegal Backpacking Guide",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Backpacking Senegal – Dein ultimativer Reisebericht",
-    description:
-      "Senegal für Backpacker: Tipps zu Kosten, Transport, Sicherheit & Highlights. Perfekt für deine Reiseplanung!",
-    images: ["/images/senegal-cover-q.jpg"],
-  },
-  robots: "index, follow",
-  alternates: {
-    canonical: "https://deintravelblog.com/senegal",
-  },
-};
 
 export default function Senegal() {
   return (
@@ -109,21 +66,6 @@ export default function Senegal() {
       </header>
 
       <SenegalRoute />
-
-      {/* Pinterest-optimiertes Bild mit Download */}
-      <section className="text-center my-12">
-        <h2 className="text-2xl font-bold mb-4">Teile diesen Reisebericht!</h2>
-        <p>Lade das Pinterest-optimierte Bild herunter:</p>
-        <a href="/images/senegal-cover-h.jpg" download>
-          <Image
-            src="/images/senegal-cover-h.jpg"
-            alt="Pinterest Cover für Senegal"
-            width={1080}
-            height={1920}
-            className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
-          />
-        </a>
-      </section>
 
       {/* Artikel-Inhalt */}
       <article className="container-style">
