@@ -1,11 +1,11 @@
-"use client";
-
+import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import Image from "next/image";
 import MarokkoRoute from "../maps/marokko";
 import "./module.css";
 
+// ✅ Dynamische Imports für Performance-Optimierung (Client-seitige Komponenten)
 const NavbarWithButton = dynamic(
   () => import("../components/NavbarWithButton"),
   { ssr: false }
@@ -13,6 +13,51 @@ const NavbarWithButton = dynamic(
 const Comments = dynamic(() => import("../components/comments"), {
   ssr: false,
 });
+
+// ✅ SEO-Metadaten für die metadata API
+export const metadata: Metadata = {
+  title: "Backpacking Marokko – Dein ultimativer Reiseführer",
+  description:
+    "Erkunde Marokko: Highlights von Marrakesch, Atlasgebirge, Sahara & mehr. Tipps zu Kosten, Sicherheit, Mietwagen & günstigen Unterkünften für Backpacker!",
+  keywords: [
+    "Marokko Reisebericht",
+    "Backpacking Marokko",
+    "Atlasgebirge",
+    "Marrakesch",
+    "Essaouira",
+    "Sahara Wüste",
+    "Fes",
+    "Chefchaouen",
+    "Marokko Mietwagen",
+    "Günstiges Reisen Marokko",
+  ],
+  openGraph: {
+    title: "Backpacking Marokko – Dein ultimativer Reiseführer",
+    description:
+      "Marokko erleben: Die beste Route für Backpacker! Highlights, Kosten, Sicherheit & Transport-Tipps für dein Abenteuer.",
+    url: "https://deintravelblog.com/marokko",
+    type: "article",
+    images: [
+      {
+        url: "/images/marokko-cover.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Marokko Backpacking Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Backpacking Marokko – Dein ultimativer Reiseführer",
+    description:
+      "Marokko für Backpacker: Tipps zu Kosten, Transport, Sicherheit & Highlights. Perfekt für deine Reiseplanung!",
+    images: ["/images/marokko-cover.jpg"],
+  },
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://deintravelblog.com/marokko",
+  },
+};
 
 export default function Marokko() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -74,6 +119,7 @@ export default function Marokko() {
           { href: "#comments", label: "Kommentare" },
         ]}
       />
+
       {/* Einführung */}
       <article className="container-style">
         <div id="intro">
@@ -274,9 +320,11 @@ export default function Marokko() {
             </li>
           </ul>
         </section>
+
         <br />
         <br />
-        {/* Bildergalerie */}
+
+        {/* Bildergalerie optimiert */}
         <h2 className="text-2xl font-bold text-center mt-12 mb-4">
           Kleine Eindrücke
         </h2>
@@ -296,6 +344,7 @@ export default function Marokko() {
                 alt={image.description}
                 width={400}
                 height={300}
+                priority={index < 2} // Nur die ersten 2 Bilder priorisiert laden
                 className="rounded-lg shadow-lg"
               />
               <p className="text-center mt-2 text-sm text-gray-700">
@@ -304,6 +353,7 @@ export default function Marokko() {
             </div>
           ))}
         </div>
+
         {/* Modal für Vollbildmodus */}
         {isModalOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
