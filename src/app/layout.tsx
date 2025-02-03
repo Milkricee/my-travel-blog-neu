@@ -16,7 +16,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-
 export const metadata: Metadata = {
   title: "Daniel's Travelblog – Backpacking weltweit",
   description:
@@ -65,14 +64,14 @@ export default function RootLayout({
       >
         <HeaderWrapper />
         <main
-  style={{
-    minHeight: "100vh",
-    position: "relative",
-    paddingTop: "var(--header-height)", // Dynamisch anhand der CSS-Variable
-  }}
->
-  {children}
-</main>
+          style={{
+            minHeight: "100vh",
+            position: "relative",
+            paddingTop: "var(--header-height)", // Dynamisch anhand der CSS-Variable
+          }}
+        >
+          {children}
+        </main>
 
         <Footer />
       </body>
