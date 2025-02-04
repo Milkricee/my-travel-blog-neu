@@ -1,8 +1,5 @@
-"use client"
-
 import type { Metadata } from "next";
 
-// ✅ SEO-Metadaten für die metadata API
 export const metadata: Metadata = {
   title: "Backpacking Kolumbien – Dein ultimativer Reiseguide",
   description:
