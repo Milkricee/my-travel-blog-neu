@@ -65,17 +65,6 @@ export default function Marokko() {
 
   return (
     <div className="container-style">
-      {/* Hochformat für mobile Nutzer (Instagram/Pinterest) */}
-      <div className="relative w-full max-w-3xl mx-auto md:hidden">
-        <Image
-          src="/images/marokko-cover-h.jpg" // Hochformat-Version
-          alt="Backpacking Marokko Hochformat"
-          width={1080}
-          height={1350}
-          className="w-full rounded-lg shadow-lg"
-        />
-      </div>
-
       {/* Inhaltsverzeichnis mit allgemeiner Komponente */}
       <NavbarWithButton
         links={[
