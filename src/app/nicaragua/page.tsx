@@ -1,3 +1,5 @@
+"use client";
+
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import NicaraguaRoute from "../maps/nicaragua";
@@ -10,6 +12,7 @@ const NavbarWithButton = dynamic(
   () => import("../components/NavbarWithButton"),
   { ssr: false }
 );
+
 const Comments = dynamic(() => import("../components/comments"), {
   ssr: false,
 });

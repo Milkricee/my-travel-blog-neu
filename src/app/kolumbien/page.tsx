@@ -1,10 +1,12 @@
+"use client"; // ✅ Die Datei als Client Component markieren
+
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Accordion from "@/app/components/Akkordeon";
 import "./module.css";
 import Image from "next/image";
 
-// ✅ Dynamische Imports für Performance-Optimierung (Client-seitige Komponenten)
+// ✅ Dynamische Imports müssen in einer Client Component verwendet werden
 const NavbarWithButton = dynamic(
   () => import("../components/NavbarWithButton"),
   { ssr: false }
