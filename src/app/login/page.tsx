@@ -61,28 +61,41 @@ function LoginForm() {
   return (
     <div className="flex flex-col justify-center items-center h-screen bg-gray-100">
       <div className="bg-white p-8 shadow-md rounded-lg text-center">
+        <p>
+          Aktuell kann man sich nur einloggen, wenn man einen{" "}
+          <strong>Google </strong> oder
+          <strong> Facebook</strong> Account besitzt.
+          <br />
+          Eventuell implementiere ich später noch andere Login-Methoden.
+          <br />
+          Keine Sorge, um die Seite zu erkunden{" "}
+          <strong>brauchst du dich nicht einloggen</strong>. Nur, falls du etwas
+          kommentieren möchtest😉
+        </p>
         <h1 className="text-2xl font-bold mb-6">Anmelden</h1>
         {error && <p className="text-red-500 mb-4">{error}</p>}
 
-        {/* Google Login */}
-        <button
-          type="button"
-          onClick={handleGoogleLogin}
-          className="flex items-center justify-center gap-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-600 transition mb-4"
-        >
-          <FcGoogle size={24} /> {/* Google-Icon */}
-          Mit Google einloggen
-        </button>
+        <div className="flex flex-col items-center gap-4 w-full">
+          {/* Google Login */}
+          <button
+            type="button"
+            onClick={handleGoogleLogin}
+            className="flex items-center justify-center gap-2 bg-blue-500 text-white px-6 py-3 rounded w-full max-w-xs hover:bg-green-600 transition"
+          >
+            <FcGoogle size={24} />
+            Mit Google einloggen
+          </button>
 
-        {/* Facebook Login */}
-        <button
-          type="button"
-          onClick={handleFacebookLogin}
-          className="flex items-center justify-center gap-2 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition"
-        >
-          <FaFacebook size={24} /> {/* Facebook-Icon */}
-          Mit Facebook einloggen
-        </button>
+          {/* Facebook Login */}
+          <button
+            type="button"
+            onClick={handleFacebookLogin}
+            className="flex items-center justify-center gap-2 bg-blue-700 text-white px-6 py-3 rounded w-full max-w-xs hover:bg-blue-800 transition"
+          >
+            <FaFacebook size={24} />
+            Mit Facebook einloggen
+          </button>
+        </div>
       </div>
     </div>
   );

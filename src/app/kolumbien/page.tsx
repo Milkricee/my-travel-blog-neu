@@ -3,7 +3,6 @@
 import dynamic from "next/dynamic";
 import Accordion from "@/app/components/Akkordeon";
 import "./module.css";
-import Image from "next/image";
 
 // ✅ Dynamische Imports müssen in einer Client Component verwendet werden
 const NavbarWithButton = dynamic(
@@ -69,23 +68,6 @@ export default function Kolumbien() {
 
       {/* Artikel-Inhalt */}
       <article className="container-style">
-        {/* Pinterest-optimiertes Bild mit Download */}
-        <section className="text-center my-12">
-          <h2 className="text-2xl font-bold mb-4">
-            Teile diesen Reisebericht!
-          </h2>
-          <p>Lade das Pinterest-optimierte Bild herunter:</p>
-          <a href="/images/columbien-cover-h.jpg" download>
-            <Image
-              src="/images/columbien-cover-h.jpg"
-              alt="Pinterest Cover für Kolumbien"
-              width={1080}
-              height={1920}
-              className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
-            />
-          </a>
-        </section>
-
         {/* Abschnitt 1.5 */}
         <section id="zusammenfassung" className="summary-box">
           <h2>Zusammenfassung</h2>
@@ -304,13 +286,23 @@ export default function Kolumbien() {
             Von Carthagena ging es weiter nach Santa Marta, um von dort aus den
             Tayrona Nationalpark zu besuchen.
             <br />
-            WICHTIG!
+            <strong className="text-red-600">WICHTIG!</strong>
             <br />
             Es fahren 2 Arten von Bussen nach Santa Marta. Bei einem kann man
-            ein Ticket nur mit Reisepass kaufen, bei dem anderen nicht. Kauft
-            ausschließlich die Tickets mit Reisepass, da die anderen Busse ab
-            und zu überfallen werden. Ich habe tatsächlich jemanden im späteren
-            Verlauf der Reise kennengelenrt, der auf der Route ausgeraubt wurde.
+            ein Ticket nur mit Reisepass kaufen, bei dem anderen nicht.
+            <strong>
+              {" "}
+              Kauft ausschließlich die Tickets wo man den Reisepass vorzeigen
+              muss
+            </strong>
+            , da die anderen Busse ab und zu überfallen werden. Ich habe
+            tatsächlich jemanden im späteren Verlauf der Reise kennengelenrt,
+            der auf der Route ausgeraubt wurde. (Nicht nur er, sondern der ganze
+            Bus. Und es war kein klassischer Touristenbus). 3 Passagiere sind
+            auf einmal aufgestanden mit Pistolen in der Hand und haben allen
+            ihre Wertgegenstände abgenommen. Aber keine sorge, das passiert
+            nicht so oft. Wie schon gesagt, ich hatte in 2,5 Monaten absolut
+            keine Probleme in irgend einer Art und Weise.
             <br />
             <br />
             Santa Marta an sich, ist nicht unbedingt sehenswert, aber von hier

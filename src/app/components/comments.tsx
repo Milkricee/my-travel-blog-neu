@@ -15,6 +15,7 @@ import {
 } from "firebase/firestore";
 import { auth } from "@/app/firebaseConfig";
 import { onAuthStateChanged } from "firebase/auth";
+import Link from "next/link";
 
 const db = getFirestore();
 
@@ -184,7 +185,10 @@ export default function Comments({ pageId }: { pageId: string }) {
         </form>
       ) : (
         <p className="text-gray-500 text-sm mt-4">
-          Melde dich an, um einen Kommentar zu hinterlassen.
+          <Link href="/login" className="text-blue-500 hover:underline">
+            Melde dich an
+          </Link>
+          , um einen Kommentar zu hinterlassen.
         </p>
       )}
     </div>
