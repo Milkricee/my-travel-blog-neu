@@ -4,7 +4,6 @@ import dynamic from "next/dynamic";
 import NicaraguaRoute from "../maps/nicaragua";
 import Accordion from "@/app/components/Akkordeon";
 import "./module.css";
-import Image from "next/image";
 
 // Dynamische Importe (Client-Only Komponenten)
 const NavbarWithButton = dynamic(
@@ -51,21 +50,6 @@ export default function Nicaragua() {
           sonst nicht so leicht erreichbar sind.
         </p>
       </header>
-
-      {/* Pinterest-optimiertes Bild mit Download */}
-      <section className="text-center my-12">
-        <h2 className="text-2xl font-bold mb-4">Teile diesen Reisebericht!</h2>
-        <p>Lade das Pinterest-optimierte Bild herunter:</p>
-        <a href="/images/nicaragua-cover-h.jpg" download>
-          <Image
-            src="/images/nicaragua-cover-h.jpg"
-            alt="Pinterest Cover für Nicaragua"
-            width={1080}
-            height={1920}
-            className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
-          />
-        </a>
-      </section>
 
       <div className="map-container">
         <NicaraguaRoute />
