@@ -23,17 +23,6 @@ export default function Nicaragua() {
       className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8"
       style={{ paddingTop: "var(--header-height)" }}
     >
-      {/* Hochformat für mobile Nutzer (Instagram/Pinterest) */}
-      <div className="relative w-full max-w-3xl mx-auto md:hidden">
-        <Image
-          src="/images/nicaragua-cover-h.jpg" // Hochformat-Version
-          alt="Backpacking Nicaragua Hochformat"
-          width={1080}
-          height={1350}
-          className="w-full rounded-lg shadow-lg"
-        />
-      </div>
-
       {/* Header-Bereich */}
       <NavbarWithButton
         links={[
