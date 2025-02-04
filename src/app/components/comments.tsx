@@ -1,7 +1,18 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { getFirestore, collection, getDocs, query, orderBy, addDoc, Timestamp, where, deleteDoc, doc } from "firebase/firestore";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  query,
+  orderBy,
+  addDoc,
+  Timestamp,
+  where,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
 import { auth } from "@/app/firebaseConfig";
 import { onAuthStateChanged } from "firebase/auth";
 
@@ -26,7 +37,7 @@ export default function Comments({ pageId }: { pageId: string }) {
   const [comments, setComments] = useState<Comment[]>([]);
   const [newComment, setNewComment] = useState("");
   const [loading, setLoading] = useState(false);
-  const [user, setUser] = useState<{ email: string } | null>(null); // Benutzerstatus
+  const [user, setUser] = useState<{ email: string } | null>(null);
 
   // Überwachung des Authentifizierungsstatus
   useEffect(() => {
@@ -46,8 +57,8 @@ export default function Comments({ pageId }: { pageId: string }) {
       setLoading(true);
       const q = query(
         collection(db, "comments"),
-        where("pageId", "==", pageId), // Filtere nach der spezifischen pageId
-        orderBy("timestamp", "desc") // Sortiere nach Zeitstempel
+        where("pageId", "==", pageId),
+        orderBy("timestamp", "desc")
       );
       const querySnapshot = await getDocs(q);
       const commentsData = querySnapshot.docs.map((doc) => {
@@ -76,36 +87,40 @@ export default function Comments({ pageId }: { pageId: string }) {
         user: obfuscateEmail(user?.email || "Anonym"),
         text: newComment.trim(),
         timestamp: Timestamp.now(),
-        pageId, // Speichere die spezifische pageId
+        pageId,
       });
       setNewComment("");
-      fetchComments(); // Kommentare nach dem Hinzufügen erneut abrufen
+      fetchComments();
     } catch (error) {
       console.error("Fehler beim Hinzufügen des Kommentars:", error);
     }
   };
 
   // Kommentar löschen
-const handleDeleteComment = async (commentId: string) => {
-  try {
-    await deleteDoc(doc(db, "comments", commentId)); // Löscht den Kommentar
-    fetchComments(); // Aktualisiert die Kommentare nach dem Löschen
-  } catch (error) {
-    console.error("Fehler beim Löschen des Kommentars:", error);
-  }
-};
+  const handleDeleteComment = async (commentId: string) => {
+    try {
+      await deleteDoc(doc(db, "comments", commentId));
+      fetchComments();
+    } catch (error) {
+      console.error("Fehler beim Löschen des Kommentars:", error);
+    }
+  };
 
-
-  // Kommentare beim Laden der Komponente abrufen
+  // Kommentare beim Laden abrufen
   useEffect(() => {
     fetchComments();
   }, [fetchComments]);
 
   return (
-    <div id="comments" className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-      <h2 className="text-3xl font-semibold text-gray-800 mb-6 border-b pb-2">Kommentare</h2>
+    <div
+      id="comments"
+      className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg"
+    >
+      <h2 className="text-3xl font-semibold text-gray-800 mb-6 border-b pb-2">
+        Kommentare
+      </h2>
 
-      {/* Kommentarformular */}
+      {/* Kommentarformular nur für eingeloggte Benutzer anzeigen */}
       {user ? (
         <form onSubmit={handleAddComment} className="mb-8">
           <textarea
@@ -123,43 +138,44 @@ const handleDeleteComment = async (commentId: string) => {
           </button>
         </form>
       ) : (
-        <p className="text-red-500 mb-4">
-          <a
-            href={`/login?redirect=${encodeURIComponent(window.location.pathname)}`}
-            className="underline text-blue-500 hover:text-blue-700"
-          >
-            Melde dich an
-          </a>
-          , um einen Kommentar zu hinterlassen.
+        <p className="text-gray-500 text-sm mb-4">
+          Melde dich an, um einen Kommentar zu hinterlassen.
         </p>
       )}
 
-      {/* Kommentare anzeigen */}
+      {/* Kommentare für alle sichtbar */}
       {loading ? (
         <p className="text-center text-gray-500">Lade Kommentare...</p>
+      ) : comments.length === 0 ? (
+        <p className="text-center text-gray-500">
+          Noch keine Kommentare vorhanden.
+        </p>
       ) : (
         <ul className="space-y-6">
-        {comments.map((comment) => (
-          <li key={comment.id} className="p-4 border rounded-lg shadow-md">
-            <div className="flex items-center justify-between mb-2">
-              <p className="text-sm font-medium text-gray-700">Von: {comment.user}</p>
-              <p className="text-xs text-gray-400">
-                {new Date(comment.timestamp?.seconds * 1000).toLocaleString()}
-              </p>
-            </div>
-            <p className="text-gray-800">{comment.text}</p>
-            {/* Lösch-Button anzeigen, wenn der aktuelle Benutzer der Autor ist */}
-            {user?.email && obfuscateEmail(user.email) === comment.user && (
-              <button
-                onClick={() => handleDeleteComment(comment.id)}
-                className="text-red-500 text-sm mt-2 hover:underline"
-              >
-                Kommentar löschen
-              </button>
-            )}
-          </li>
-        ))}
-      </ul>
+          {comments.map((comment) => (
+            <li key={comment.id} className="p-4 border rounded-lg shadow-md">
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-sm font-medium text-gray-700">
+                  Von: {comment.user}
+                </p>
+                <p className="text-xs text-gray-400">
+                  {new Date(comment.timestamp?.seconds * 1000).toLocaleString()}
+                </p>
+              </div>
+              <p className="text-gray-800">{comment.text}</p>
+
+              {/* Lösch-Button nur für den eigenen Kommentar anzeigen */}
+              {user?.email && obfuscateEmail(user.email) === comment.user && (
+                <button
+                  onClick={() => handleDeleteComment(comment.id)}
+                  className="text-red-500 text-sm mt-2 hover:underline"
+                >
+                  Kommentar löschen
+                </button>
+              )}
+            </li>
+          ))}
+        </ul>
       )}
     </div>
   );
