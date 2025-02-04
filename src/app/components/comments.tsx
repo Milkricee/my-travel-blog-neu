@@ -36,25 +36,23 @@ export default function Comments({ pageId }: { pageId: string }) {
 
   const [comments, setComments] = useState<Comment[]>([]);
   const [newComment, setNewComment] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true); // Standardmäßig auf true setzen
   const [user, setUser] = useState<{ email: string } | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   // Überwachung des Authentifizierungsstatus
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      if (currentUser) {
-        setUser({ email: currentUser.email || "Anonym" });
-      } else {
-        setUser(null);
-      }
+      setUser(currentUser ? { email: currentUser.email || "Anonym" } : null);
     });
     return () => unsubscribe();
   }, []);
 
-  // Kommentare abrufen
+  // Kommentare abrufen (immer, auch wenn nicht eingeloggt)
   const fetchComments = useCallback(async () => {
     try {
       setLoading(true);
+      setError(null);
       const q = query(
         collection(db, "comments"),
         where("pageId", "==", pageId),
@@ -73,6 +71,9 @@ export default function Comments({ pageId }: { pageId: string }) {
       setComments(commentsData);
     } catch (error) {
       console.error("Fehler beim Abrufen der Kommentare:", error);
+      setError(
+        "Fehler beim Laden der Kommentare. Bitte versuche es später erneut."
+      );
     } finally {
       setLoading(false);
     }
@@ -82,31 +83,37 @@ export default function Comments({ pageId }: { pageId: string }) {
   const handleAddComment = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!newComment.trim()) return;
+    if (!user) return; // Sicherheitscheck
+
     try {
       await addDoc(collection(db, "comments"), {
-        user: obfuscateEmail(user?.email || "Anonym"),
+        user: obfuscateEmail(user.email),
         text: newComment.trim(),
         timestamp: Timestamp.now(),
         pageId,
       });
       setNewComment("");
-      fetchComments();
+      fetchComments(); // Nach dem Speichern erneut abrufen
     } catch (error) {
       console.error("Fehler beim Hinzufügen des Kommentars:", error);
+      setError(
+        "Kommentar konnte nicht hinzugefügt werden. Versuche es später erneut."
+      );
     }
   };
 
-  // Kommentar löschen
+  // Kommentar löschen (nur eigene)
   const handleDeleteComment = async (commentId: string) => {
     try {
       await deleteDoc(doc(db, "comments", commentId));
       fetchComments();
     } catch (error) {
       console.error("Fehler beim Löschen des Kommentars:", error);
+      setError("Fehler beim Löschen des Kommentars.");
     }
   };
 
-  // Kommentare beim Laden abrufen
+  // Kommentare immer abrufen (unabhängig von Login)
   useEffect(() => {
     fetchComments();
   }, [fetchComments]);
@@ -120,30 +127,10 @@ export default function Comments({ pageId }: { pageId: string }) {
         Kommentare
       </h2>
 
-      {/* Kommentarformular nur für eingeloggte Benutzer anzeigen */}
-      {user ? (
-        <form onSubmit={handleAddComment} className="mb-8">
-          <textarea
-            placeholder="Schreibe einen Kommentar..."
-            value={newComment}
-            onChange={(e) => setNewComment(e.target.value)}
-            className="w-full p-4 border rounded-lg mb-4 text-gray-700 focus:outline-none focus:ring focus:ring-blue-300"
-            rows={4}
-          ></textarea>
-          <button
-            type="submit"
-            className="bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-all"
-          >
-            Kommentar hinzufügen
-          </button>
-        </form>
-      ) : (
-        <p className="text-gray-500 text-sm mb-4">
-          Melde dich an, um einen Kommentar zu hinterlassen.
-        </p>
-      )}
+      {/* Fehler anzeigen */}
+      {error && <p className="text-red-500">{error}</p>}
 
-      {/* Kommentare für alle sichtbar */}
+      {/* Kommentare für ALLE Besucher sichtbar */}
       {loading ? (
         <p className="text-center text-gray-500">Lade Kommentare...</p>
       ) : comments.length === 0 ? (
@@ -176,6 +163,29 @@ export default function Comments({ pageId }: { pageId: string }) {
             </li>
           ))}
         </ul>
+      )}
+
+      {/* Kommentarformular NUR für eingeloggte Nutzer */}
+      {user ? (
+        <form onSubmit={handleAddComment} className="mt-6">
+          <textarea
+            placeholder="Schreibe einen Kommentar..."
+            value={newComment}
+            onChange={(e) => setNewComment(e.target.value)}
+            className="w-full p-4 border rounded-lg mb-4 text-gray-700 focus:outline-none focus:ring focus:ring-blue-300"
+            rows={4}
+          ></textarea>
+          <button
+            type="submit"
+            className="bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-all"
+          >
+            Kommentar hinzufügen
+          </button>
+        </form>
+      ) : (
+        <p className="text-gray-500 text-sm mt-4">
+          Melde dich an, um einen Kommentar zu hinterlassen.
+        </p>
       )}
     </div>
   );
