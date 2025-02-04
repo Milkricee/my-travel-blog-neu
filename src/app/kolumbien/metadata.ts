@@ -1,3 +1,5 @@
+"use client"
+
 import type { Metadata } from "next";
 
 // ✅ SEO-Metadaten für die metadata API
