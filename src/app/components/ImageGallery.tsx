@@ -66,10 +66,9 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
     }
     return () => document.removeEventListener("keydown", handleKeyPress);
   }, [isFullscreen, currentIndex]);
-
   return (
     <div className="relative w-full max-w-3xl mx-auto">
-      {/* Vollbildansicht */}
+      {/* Vollbildmodus (nimmt die gesamte Bildschirmbreite ein, Höhe passt sich an) */}
       {isFullscreen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-[99999] backdrop-blur-md"
@@ -88,19 +87,16 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
             {"<"}
           </button>
 
-          {/* Bildcontainer: sorgt für exakte Zentrierung */}
-          <div className="relative flex justify-center items-center w-[80vw] h-[80vh]">
+          {/* Hochwertiges Bild im Vollbildmodus */}
+          <div className="relative w-full h-full flex justify-center items-center">
             <Image
               src={images[currentIndex].src}
               alt={images[currentIndex].alt}
-              fill
-              className="object-contain w-full h-full scale-95 transition-all duration-300 ease-in-out"
+              width={1920} // Maximale Auflösung für Schärfe
+              height={1080} // Höhe wird automatisch angepasst
+              className="w-full h-auto max-w-screen max-h-screen object-contain cursor-pointer"
+              onClick={() => setIsFullscreen(false)}
             />
-          </div>
-
-          {/* Bildbeschreibung AM UNTEREN RAND FEST POSITIONIERT */}
-          <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-gray-900 bg-opacity-80 text-white text-lg px-5 py-3 rounded-lg shadow-lg max-w-[80%] text-center">
-            {images[currentIndex].alt}
           </div>
 
           {/* Pfeil rechts */}
@@ -116,31 +112,33 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
         </div>
       )}
 
-      {/* Standard-Bildanzeige */}
-      <Image
-        onClick={handleImageClick}
-        src={images[currentIndex].src}
-        alt={images[currentIndex].alt}
-        width={800}
-        height={500}
-        className="rounded-lg shadow-lg object-contain max-w-full max-h-[70vh] cursor-pointer"
-      />
+      {/* Standardansicht: Bild passt sich der Bildschirmbreite an, Höhe skaliert automatisch */}
+      <div className="w-full flex justify-center items-center">
+        <Image
+          onClick={handleImageClick}
+          src={images[currentIndex].src}
+          alt={images[currentIndex].alt}
+          width={800} // Fest definierte Breite für schärfere Darstellung
+          height={500} // Höhe wird proportional angepasst
+          className="w-full h-auto rounded-lg shadow-lg object-cover cursor-pointer"
+        />
+      </div>
+
       <p className="text-sm text-gray-500 mt-2 text-center">
         {images[currentIndex].alt}
       </p>
 
-      {/* Pfeil links */}
+      {/* Pfeile für Desktop */}
       <button
         onClick={handlePrev}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white rounded-full p-2 hover:bg-gray-900"
+        className="hidden sm:block absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white rounded-full p-2 hover:bg-gray-900"
       >
         {"<"}
       </button>
 
-      {/* Pfeil rechts */}
       <button
         onClick={handleNext}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white rounded-full p-2 hover:bg-gray-900"
+        className="hidden sm:block absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white rounded-full p-2 hover:bg-gray-900"
       >
         {">"}
       </button>
