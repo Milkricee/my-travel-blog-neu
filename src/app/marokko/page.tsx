@@ -88,7 +88,7 @@ export default function Marokko() {
       />
 
       {/* Einführung */}
-      <article className="container-style">
+      <article className="container-style fade-in-mobile">
         <div id="intro">
           <h1 className="text-4xl font-bold text-center mb-8 mt-9">
             Mein Marokko-Trip
