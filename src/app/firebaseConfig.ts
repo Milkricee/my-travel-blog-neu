@@ -1,4 +1,4 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getAnalytics, Analytics } from "firebase/analytics";
 
@@ -12,8 +12,8 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-// Firebase App initialisieren
-const app = initializeApp(firebaseConfig);
+// **Verhindert doppelte Initialisierung von Firebase**
+const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 
 // **Firebase Authentication**
 export const auth = getAuth(app);
