@@ -16,6 +16,7 @@
     "contentful-management": "^11.40.0",
     "firebase": "^11.0.2",
     "next": "^15.0.4",
+    "next-sitemap": "^4.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
