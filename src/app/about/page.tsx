@@ -57,7 +57,7 @@ export default function About() {
             <br />
             <strong>
               <a
-                href="mailto:jnr.daniil@gmail.com"
+                href="mailto:daniel@dan-travels.com"
                 className="text-blue-500 underline hover:text-blue-700"
               >
                 do not hesitate to contact me.
