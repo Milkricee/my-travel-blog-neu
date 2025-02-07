@@ -7,7 +7,7 @@ export const metadata = {
 export default function DatenschutzPage() {
   return (
     <div className="max-w-3xl mx-auto py-10 px-6">
-      <h1 className="text-3xl font-bold mb-6">Datenschutzerklärung</h1>
+      <h2 className="text-3xl font-bold mb-6">Datenschutzerklärung</h2>
 
       <p className="mb-4">
         Personenbezogene Daten (nachfolgend nur „Daten“ genannt) werden von uns
