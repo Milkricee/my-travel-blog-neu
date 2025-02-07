@@ -30,7 +30,7 @@ export default function Home() {
 
   const totalImages = isMobile ? totalImagesMobile : totalImagesPC;
   const currentImage = `/${isMobile ? "background_mobile" : "background"}/${
-    currentImageIndex + 1
+    (currentImageIndex % totalImages) + 1
   }.jpg`;
 
   // **Optimierter Bildwechsel mit Cleanup**
