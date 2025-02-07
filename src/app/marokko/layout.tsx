@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dan-travels.com"), // Füge dies hinzu
   title: "Backpacking Marokko – Dein ultimativer Reiseführer",
   description:
     "Erkunde Marokko: Highlights von Marrakesch, Atlasgebirge, Sahara & mehr. Tipps zu Kosten, Sicherheit, Mietwagen & günstigen Unterkünften für Backpacker!",
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
     title: "Backpacking Marokko – Dein ultimativer Reiseführer",
     description:
       "Marokko erleben: Die beste Route für Backpacker! Highlights, Kosten, Sicherheit & Transport-Tipps für dein Abenteuer.",
-    url: "https://deintravelblog.com/marokko",
+    url: "https://dan-travels.com/marokko",
     type: "article",
     images: [
       {
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
   },
   robots: "index, follow",
   alternates: {
-    canonical: "https://deintravelblog.com/marokko",
+    canonical: "https://dan-travels.com/marokko",
   },
 };
 
