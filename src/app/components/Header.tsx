@@ -91,9 +91,6 @@ export default function Header() {
           <button className="hover:underline">Asien</button>
           <ul className="absolute hidden group-hover:block bg-white text-black py-2 rounded shadow-lg">
             <li className="px-4 py-1 hover:bg-gray-200">
-              <Link href="/vietnam">Vietnam</Link>
-            </li>
-            <li className="px-4 py-1 hover:bg-gray-200">
               <Link href="/pakistan">Pakistan</Link>
             </li>
           </ul>
