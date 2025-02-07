@@ -87,15 +87,10 @@ export default function Marokko() {
             Landes ist einfach unglaublich. <br />
             Es ist nicht so weit weg, es hat eine erstaunlich krasse Vielfalt an
             Kultur und Landschaft und es ist auch sehr günstig. Und selbst im
-            Winter ist es dort noch angenehm warm. <br />
-            Das war mein 2. Trip. (Nov. 2024) <br />
-            Zum 1. Trip geht&apos;s{" "}
-            <a
-              href="/1-trip"
-              className="text-blue-500 underline hover:text-blue-700"
-            >
-              hier lang
-            </a>
+            Winter ist es dort noch angenehm warm.
+            <br />
+            Das war mein 2. Trip. (Nov. 2024)
+            <br />
           </p>
         </div>
       </article>
