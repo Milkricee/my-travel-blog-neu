@@ -44,16 +44,24 @@ export default function Home() {
 
   // **Preload für das erste Bild → FIX: Berechnung im useEffect selbst**
   useEffect(() => {
-    const firstImage: HTMLImageElement = new Image();
-    firstImage.src = `/${isMobile ? "background_mobile" : "background"}/1.avif`;
-  }, [isMobile]); // Nur `isMobile` als Abhängigkeit!
+    const img = new Image();
+    img.src = currentImage;
+    img.onload = () => {
+      const backgroundElement = document.querySelector(".background");
+      if (backgroundElement) {
+        (
+          backgroundElement as HTMLElement
+        ).style.backgroundImage = `url('${currentImage}')`;
+      }
+    };
+  }, [currentImage]);
 
   return (
     <div
+      className="background"
       style={{
         position: "relative",
-        height: "100vh", // Vollbildhöhe
-        backgroundImage: `url('${currentImage}')`, // Korrekte Bildpfade
+        height: "100vh",
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
