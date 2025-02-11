@@ -31,7 +31,7 @@ export default function Home() {
   const totalImages = isMobile ? totalImagesMobile : totalImagesPC;
   const currentImage = `/${isMobile ? "background_mobile" : "background"}/${
     (currentImageIndex % totalImages) + 1
-  }.jpg`;
+  }.avif`;
 
   // **Optimierter Bildwechsel mit Cleanup**
   useEffect(() => {
@@ -45,7 +45,7 @@ export default function Home() {
   // **Preload für das erste Bild → FIX: Berechnung im useEffect selbst**
   useEffect(() => {
     const firstImage: HTMLImageElement = new Image();
-    firstImage.src = `/${isMobile ? "background_mobile" : "background"}/1.jpg`;
+    firstImage.src = `/${isMobile ? "background_mobile" : "background"}/1.avif`;
   }, [isMobile]); // Nur `isMobile` als Abhängigkeit!
 
   return (
