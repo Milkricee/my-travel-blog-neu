@@ -35,7 +35,7 @@ export default function About() {
             overflowY: "auto", // Scrollbar nur für mobile Ansicht
           }}
         >
-          <h1 className="text-4xl font-bold mb-4">Über mich</h1>
+          <h2 className="text-4xl font-bold mb-4">Über mich</h2>
           <p className="text-lg mb-4">
             Hallo! Ich bin <strong>Daniel</strong>, der Reiseenthusiast hinter
             diesem Blog. Ich studiere <strong>Wirtschaftsinformatik</strong> im

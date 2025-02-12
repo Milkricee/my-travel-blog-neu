@@ -70,9 +70,9 @@ export default function MobileHeader() {
             height={36}
             className="rounded"
           />
-          <h1 className="text-lg font-bold">
+          <h2 className="text-lg font-bold">
             <Link href="/">Dan&apos;s Travelblog</Link>
-          </h1>
+          </h2>
         </div>
 
         {/* Burger-Menü Button */}
