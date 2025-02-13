@@ -18,7 +18,7 @@ export default function Pakistan() {
       <NavbarWithButton links={[{ href: "#pakistan", label: "Pakistan" }]} />
 
       <header className="text-center mb-8" style={{ color: "black" }}>
-        <h2 className="text-4xl font-bold mb-4">Pakistan</h2>
+        <h1 className="text-4xl font-bold mb-4">Pakistan</h1>
         <p>
           Aktuell befinde ich mich für ein paar Wochen in Pakistan.
           <br />

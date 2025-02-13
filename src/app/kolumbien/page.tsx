@@ -43,7 +43,7 @@ export default function Kolumbien() {
       />
 
       <header className="text-center mb-8" style={{ color: "black" }}>
-        <h2 className="text-4xl font-bold mb-4">Entdecke Kolumbien</h2>
+        <h1 className="text-4xl font-bold mb-4">Entdecke Kolumbien</h1>
         <p>
           Kolumbien ist eines meiner absoluten Lieblingsländer. Von karibischen
           Stränden, über Regenwälder, bis hin zu Wüsten und Hochgebirgen.
