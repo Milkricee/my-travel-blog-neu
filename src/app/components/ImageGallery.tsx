@@ -67,6 +67,9 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
     return () => document.removeEventListener("keydown", handleKeyPress);
   }, [isFullscreen, currentIndex]);
 
+  // Funktion zur Ermittlung, ob das Gerät mobil ist
+  const isMobile = () => window.innerWidth <= 768;
+
   return (
     <div className="relative w-full max-w-3xl mx-auto">
       {/* Vollbildansicht */}
@@ -89,12 +92,18 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
           </button>
 
           {/* Bildcontainer: sorgt für exakte Zentrierung */}
-          <div className="relative flex justify-center items-center w-[80vw] h-[80vh]">
+          <div
+            className={`relative flex justify-center items-center w-[80vw] ${
+              isMobile() ? "h-auto w-full" : "h-[80vh]"
+            }`}
+          >
             <Image
               src={images[currentIndex].src}
               alt={images[currentIndex].alt}
               fill
-              className="object-contain w-full h-full scale-95 transition-all duration-300 ease-in-out"
+              className={`object-contain ${
+                isMobile() ? "w-full" : "w-full h-full scale-95"
+              } transition-all duration-300 ease-in-out`}
             />
           </div>
 
