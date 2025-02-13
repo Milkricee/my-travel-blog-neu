@@ -20,7 +20,7 @@ const geistMono = localFont({
   display: "swap", // Verbessert Ladezeit
 });
 
-const siteUrl = "https://dan-travels.com"; // Falls später änderbar: Nutze process.env.NEXT_PUBLIC_SITE_URL
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://dan-travels.com";
 
 export const metadata: Metadata = {
   title: "Daniel's Travelblog – Backpacking weltweit",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/imgs/sea.jpg",
+        url: `${siteUrl}/imgs/sea.jpg`,
         width: 1200,
         height: 630,
         alt: "Daniel's Travelblog – Backpacking weltweit",
@@ -45,11 +45,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@deintravelblog", // Falls du Twitter hast, anpassen
+    site: "@deintravelblog",
     title: "Daniel's Travelblog – Backpacking weltweit",
     description:
       "Budget-Reisetipps für Vietnam, Kolumbien, Marokko und mehr. Perfekt für Backpacker und Abenteurer!",
-    images: "/imgs/sea.jpg",
+    images: [
+      {
+        url: `${siteUrl}/imgs/sea.jpg`,
+        alt: "Daniel's Travelblog – Backpacking weltweit",
+      },
+    ],
   },
 };
 
