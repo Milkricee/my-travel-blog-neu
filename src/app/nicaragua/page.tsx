@@ -42,7 +42,10 @@ export default function Nicaragua() {
         />
 
         <header className="text-center mb-8" style={{ color: "black" }}>
-          <h2 className="text-4xl font-bold mb-4">Entdecke Nicaragua</h2>
+          <h2 className="text-4xl font-bold mb-4">
+            <br />
+            Nicaragua✨🏞️
+          </h2>
           <p>
             Nicaragua war für mich eine echte Überraschung und hat mich mit
             seinen traumhaften Stränden, unberührter Natur und einer entspannten
