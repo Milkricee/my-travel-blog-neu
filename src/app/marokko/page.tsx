@@ -79,7 +79,7 @@ export default function Marokko() {
       {/* Einführung */}
       <article className="container-style fade-in-mobile">
         <div id="intro">
-          <h2 className="text-4xl font-bold text-center mb-8 mt-9">
+          <h2 className="text-4xl font-bold text-center mb-8 mt-12">
             Mein Marokko-Trip
           </h2>
           <p className="text-lg text-center mb-8">
