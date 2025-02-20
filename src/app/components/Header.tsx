@@ -61,9 +61,9 @@ export default function Header() {
       {/* Linke Seite: Logo und Titel */}
       <div className="flex items-center gap-6 flex-shrink-0">
         <Image src="/imgs/cat.png" alt="Logo" width={60} height={60} />
-        <h2 className="text-2xl font-bold whitespace-nowrap">
+        <h1 className="text-2xl font-bold whitespace-nowrap">
           <Link href="/">Dan&apos;s Travelblog</Link>
-        </h2>
+        </h1>
       </div>
 
       {/* Navigation: Dynamisch anzeigen/verstecken */}
