@@ -83,7 +83,7 @@ export default function Home() {
           maxWidth: "90%", // Begrenzt die Breite auf kleineren Bildschirmen
         }}
       >
-        <h2
+        <h1
           style={{
             fontSize: "2.5rem",
             fontWeight: "bold",
@@ -91,7 +91,7 @@ export default function Home() {
           }}
         >
           Willkommen bei Dan&apos;s Travelblog!
-        </h2>
+        </h1>
         <p style={{ fontSize: "1.2rem" }}>
           Hier erzähle ich von meinen Trips und gebe Ratschläge und Empfehlungen
           zu Ländern, die ich bereist habe. Viel Spaß beim Erkunden!
