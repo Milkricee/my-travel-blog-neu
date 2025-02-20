@@ -1,11 +1,13 @@
 "use client";
 
+import Head from "next/head"; // Importiere die Head-Komponente aus next/head
+
 export default function About() {
   return (
     <>
-      <head>
+      <Head>
         <link rel="canonical" href="https://www.dan-travels.com/about" />
-      </head>
+      </Head>
       <div
         style={{ position: "relative", height: "100vh", overflow: "hidden" }}
       >
