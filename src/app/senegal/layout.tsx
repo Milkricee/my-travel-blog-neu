@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Backpacking Senegal – Dein ultimativer Reisebericht",
     description:
       "Senegal erleben: Die beste Route für Backpacker! Highlights, Kosten, Sicherheit & Transport-Tipps für dein Abenteuer.",
-    url: "https://deintravelblog.com/senegal",
+    url: "https://dan-travels.com/senegal",
     type: "article",
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   robots: "index, follow",
   alternates: {
-    canonical: "https://deintravelblog.com/senegal",
+    canonical: "https://dan-travels.com/senegal",
   },
 };
 
