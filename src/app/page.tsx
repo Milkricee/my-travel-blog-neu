@@ -8,7 +8,7 @@ export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
-  // **Optimierter Resize-Listener mit Debounce**
+  // Optimierter Resize-Listener mit Debounce
   useEffect(() => {
     const updateScreenSize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -33,7 +33,7 @@ export default function Home() {
     (currentImageIndex % totalImages) + 1
   }.avif`;
 
-  // **Optimierter Bildwechsel mit Cleanup**
+  // Optimierter Bildwechsel mit Cleanup
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalImages);
@@ -42,7 +42,7 @@ export default function Home() {
     return () => clearInterval(intervalId);
   }, [totalImages]);
 
-  // **Preload für das erste Bild → FIX: Berechnung im useEffect selbst**
+  // Preload für das erste Bild
   useEffect(() => {
     const img = new Image();
     img.src = currentImage;
@@ -57,87 +57,95 @@ export default function Home() {
   }, [currentImage]);
 
   return (
-    <div
-      className="background"
-      style={{
-        position: "relative",
-        height: "100vh",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        transition: "background-image 1s ease-in-out",
-      }}
-    >
-      {/* Begrüßungstext mit halbtransparentem Hintergrund */}
+    <>
+      <head>
+        <link rel="canonical" href="https://www.dan-travels.com/" />
+      </head>
       <div
+        className="background"
         style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
-          color: "white",
-          padding: "2rem",
-          borderRadius: "10px",
-          textAlign: "center",
-          maxWidth: "90%", // Begrenzt die Breite auf kleineren Bildschirmen
+          position: "relative",
+          height: "100vh",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          transition: "background-image 1s ease-in-out",
         }}
       >
-        <h1
+        {/* Begrüßungstext mit halbtransparentem Hintergrund */}
+        <div
           style={{
-            fontSize: "2.5rem",
-            fontWeight: "bold",
-            marginBottom: "1rem",
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            color: "white",
+            padding: "2rem",
+            borderRadius: "10px",
+            textAlign: "center",
+            maxWidth: "90%", // Begrenzt die Breite auf kleineren Bildschirmen
           }}
         >
-          Willkommen bei Dan&apos;s Travelblog!
-        </h1>
-        <p style={{ fontSize: "1.2rem" }}>
-          Hier erzähle ich von meinen Trips und gebe Ratschläge und Empfehlungen
-          zu Ländern, die ich bereist habe. Viel Spaß beim Erkunden!
-        </p>
+          <h1
+            style={{
+              fontSize: "2.5rem",
+              fontWeight: "bold",
+              marginBottom: "1rem",
+            }}
+          >
+            Willkommen bei Dan&apos;s Travelblog!
+          </h1>
+          <p style={{ fontSize: "1.2rem" }}>
+            Hier erzähle ich von meinen Trips und gebe Ratschläge und
+            Empfehlungen zu Ländern, die ich bereist habe. Viel Spaß beim
+            Erkunden!
+          </p>
+        </div>
+
+        {/* Navigation für Hintergrundwechsel */}
+        <button
+          onClick={() =>
+            setCurrentImageIndex((prev) =>
+              prev === 0 ? totalImages - 1 : prev - 1
+            )
+          }
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "10px",
+            transform: "translateY(-50%)",
+            backgroundColor: "rgba(0, 0, 0, 0.3)",
+            color: "white",
+            border: "none",
+            padding: "10px",
+            cursor: "pointer",
+            borderRadius: "50%",
+          }}
+        >
+          &#8249; {/* Pfeil nach links */}
+        </button>
+
+        <button
+          onClick={() =>
+            setCurrentImageIndex((prev) => (prev + 1) % totalImages)
+          }
+          style={{
+            position: "absolute",
+            top: "50%",
+            right: "10px",
+            transform: "translateY(-50%)",
+            backgroundColor: "rgba(0, 0, 0, 0.3)",
+            color: "white",
+            border: "none",
+            padding: "10px",
+            cursor: "pointer",
+            borderRadius: "50%",
+          }}
+        >
+          &#8250; {/* Pfeil nach rechts */}
+        </button>
       </div>
-
-      {/* Navigation für Hintergrundwechsel */}
-      <button
-        onClick={() =>
-          setCurrentImageIndex((prev) =>
-            prev === 0 ? totalImages - 1 : prev - 1
-          )
-        }
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "10px",
-          transform: "translateY(-50%)",
-          backgroundColor: "rgba(0, 0, 0, 0.3)",
-          color: "white",
-          border: "none",
-          padding: "10px",
-          cursor: "pointer",
-          borderRadius: "50%",
-        }}
-      >
-        &#8249; {/* Pfeil nach links */}
-      </button>
-
-      <button
-        onClick={() => setCurrentImageIndex((prev) => (prev + 1) % totalImages)}
-        style={{
-          position: "absolute",
-          top: "50%",
-          right: "10px",
-          transform: "translateY(-50%)",
-          backgroundColor: "rgba(0, 0, 0, 0.3)",
-          color: "white",
-          border: "none",
-          padding: "10px",
-          cursor: "pointer",
-          borderRadius: "50%",
-        }}
-      >
-        &#8250; {/* Pfeil nach rechts */}
-      </button>
-    </div>
+    </>
   );
 }
