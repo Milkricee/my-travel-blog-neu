@@ -53,7 +53,7 @@ h2 {
   color: rgb(74, 155, 28); /* Farbe */
   font-weight: bold; /* : Schriftstil */
   margin-bottom: 1rem; /* : Abstand nach unten */
-  margin-top: 1rem; /* : Abstand nach oben */
+  margin-top: 2rem; /* : Abstand nach oben */
 }
 
 h3 {
