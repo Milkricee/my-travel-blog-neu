@@ -41,7 +41,7 @@ export default function Senegal() {
       />
 
       <header className="text-center mb-8" style={{ color: "black" }}>
-        <h1 className="text-4xl font-bold mb-4">Entdecke den Senegal</h1>
+        <h2 className="text-4xl font-bold mb-4">Entdecke den Senegal</h2>
         <p>
           Ich berichte von meinem 16-Tägigen Solotrip nach Senegal und gebe
           generelle Tipps und meine Reiseroute, aber keine konkreten

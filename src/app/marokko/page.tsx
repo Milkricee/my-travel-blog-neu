@@ -79,9 +79,9 @@ export default function Marokko() {
       {/* Einführung */}
       <article className="container-style fade-in-mobile">
         <div id="intro">
-          <h1 className="text-4xl font-bold text-center mb-8 mt-9">
+          <h2 className="text-4xl font-bold text-center mb-8 mt-9">
             Mein Marokko-Trip
-          </h1>
+          </h2>
           <p className="text-lg text-center mb-8">
             Marokko ist eines meiner Lieblingsreiseziele. Die Vielfalt des
             Landes ist einfach unglaublich. <br />
