@@ -141,28 +141,7 @@ export default function MobileHeader() {
               >
                 Asien
               </button>
-              {isDropdownOpen["Asien"] && (
-                <ul className="ml-4 space-y-2">
-                  <li>
-                    <Link
-                      href="/philippinen"
-                      className="block hover:text-blue-400"
-                      onClick={closeMenuOnNavigate}
-                    >
-                      Philippinen
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/vietnam"
-                      className="block hover:text-blue-400"
-                      onClick={closeMenuOnNavigate}
-                    >
-                      Vietnam
-                    </Link>
-                  </li>
-                </ul>
-              )}
+              {isDropdownOpen["Asien"] && <ul className="ml-4 space-y-2"></ul>}
             </li>
             <li className=" border-b border-white">
               <button
