@@ -72,7 +72,10 @@ function LoginForm() {
           <strong>brauchst du dich nicht einloggen</strong>. Nur, falls du etwas
           kommentieren möchtest😉
         </p>
-        <h1 className="text-2xl font-bold mb-6">Anmelden</h1>
+        <h1 className="text-2xl font-bold mb-6">
+          <br />
+          Anmelden
+        </h1>
         {error && <p className="text-red-500 mb-4">{error}</p>}
 
         <div className="flex flex-col items-center gap-4 w-full">

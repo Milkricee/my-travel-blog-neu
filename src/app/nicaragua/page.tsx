@@ -29,14 +29,14 @@ export default function Nicaragua() {
         {/* Header-Bereich */}
         <NavbarWithButton
           links={[
-            { href: "#map-nicaragua", label: "Route" },
+            { href: "#map-nicaragua", label: "Map" },
             { href: "#zusammenfassung", label: "Zusammenfassung" },
             { href: "#managua", label: "Managua" },
             { href: "#sanjuandelsur", label: "San Juan del Sur" },
             { href: "#ometepe", label: "Ometepe" },
             { href: "#pazifikkueste", label: "Pazifikküste" },
             { href: "#granada", label: "Granada" },
-            { href: "#treehouse", label: "Treehouse Nicaragua" },
+            { href: "#treehouse", label: "Treehouse" },
             { href: "#comments", label: "Kommentare" },
           ]}
         />
