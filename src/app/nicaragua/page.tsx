@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Head from "next/head"; // Importiere die Head-Komponente aus next/head
 import NicaraguaRoute from "../maps/nicaragua";
 import Accordion from "@/app/components/Akkordeon";
 import "./module.css";
@@ -15,13 +16,12 @@ const Comments = dynamic(() => import("../components/comments"), {
   ssr: false,
 });
 
-// ✅ Root Component ist jetzt **eine Server Component** (ohne "use client")
 export default function Nicaragua() {
   return (
     <>
-      <head>
+      <Head>
         <link rel="canonical" href="https://www.dan-travels.com/nicaragua" />
-      </head>
+      </Head>
       <div
         className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8"
         style={{ paddingTop: "var(--header-height)" }}
@@ -180,7 +180,6 @@ export default function Nicaragua() {
               </li>
             </ul>
           </section>
-
           {/* Abschnitt Managua */}
           <section id="managua">
             <h2>Managua</h2>

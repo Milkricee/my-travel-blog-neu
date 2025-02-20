@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Head from "next/head";
 
 export default function Home() {
   const totalImagesPC = 8; // Anzahl der Bilder im Querformat (PC)
@@ -58,9 +59,9 @@ export default function Home() {
 
   return (
     <>
-      <head>
+      <Head>
         <link rel="canonical" href="https://www.dan-travels.com/" />
-      </head>
+      </Head>
       <div
         className="background"
         style={{
