@@ -1,15 +1,8 @@
 "use client";
 
-import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
+import GoogleMapProvider from "../components/GoogleMapProvider";
+import { Marker } from "@react-google-maps/api";
 
-const mapContainerStyle = {
-  width: "100%",
-  height: "500px",
-};
-
-const center = { lat: 4.5709, lng: -74.2973 }; // Zentrum auf Kolumbien setzen
-
-// Korrekte Koordinaten für besuchte Orte in Kolumbien
 const locations = [
   { name: "Bogotá", lat: 4.6097, lng: -74.0817 },
   { name: "San Andrés", lat: 12.5847, lng: -81.7004 },
@@ -28,16 +21,11 @@ const locations = [
   { name: "Villa de Leyva", lat: 5.636499, lng: -73.527058 },
 ];
 
+const center = { lat: 4.5709, lng: -74.2973 }; // Kolumbien-Zentrum
+
 export default function KolumbienRoute() {
-  const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
-  });
-
-  if (!isLoaded) return <div>Loading Map...</div>;
-
   return (
-    <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={5}>
-      {/* Blaue Marker für die Orte */}
+    <GoogleMapProvider center={center} zoom={5}>
       {locations.map((loc, index) => (
         <Marker
           key={index}
@@ -52,6 +40,6 @@ export default function KolumbienRoute() {
           }}
         />
       ))}
-    </GoogleMap>
+    </GoogleMapProvider>
   );
 }

@@ -19,6 +19,7 @@ export default function GoogleMapProvider({
     <div className="map-wrapper">
       <LoadScript
         googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}
+        libraries={["places", "geometry"]} // Ergänze alle benötigten Bibliotheken
       >
         <GoogleMap
           mapContainerStyle={{ width: "100%", height }}

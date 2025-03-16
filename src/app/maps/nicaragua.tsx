@@ -1,16 +1,8 @@
 "use client";
 
-import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
+import GoogleMapProvider from "../components/GoogleMapProvider";
+import { Marker } from "@react-google-maps/api";
 
-const mapContainerStyle = {
-  width: "100%",
-  height: "500px",
-};
-
-// Zentrum auf Nicaragua setzen (ungefähre Mitte des Landes)
-const center = { lat: 11.812051, lng: -86.130901 };
-
-// Koordinaten für besuchte Orte in Nicaragua
 const locations = [
   { name: "Managua", lat: 12.1364, lng: -86.251 },
   { name: "San Juan del Sur", lat: 11.2529, lng: -85.87 },
@@ -27,16 +19,11 @@ const locations = [
   { name: "Big Corn Island", lat: 12.172945562885143, lng: -83.05934123223462 },
 ];
 
+const center = { lat: 11.812051, lng: -86.130901 }; // Zentrum auf Nicaragua
+
 export default function NicaraguaRoute() {
-  const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
-  });
-
-  if (!isLoaded) return <div>Loading Map...</div>;
-
   return (
-    <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={9}>
-      {/* Marker für alle Orte */}
+    <GoogleMapProvider center={center} zoom={9}>
       {locations.map((loc, index) => (
         <Marker
           key={index}
@@ -51,6 +38,6 @@ export default function NicaraguaRoute() {
           }}
         />
       ))}
-    </GoogleMap>
+    </GoogleMapProvider>
   );
 }
