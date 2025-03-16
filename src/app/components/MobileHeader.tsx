@@ -60,14 +60,14 @@ export default function MobileHeader() {
 
   return (
     <header className="bg-gray-800 text-white fixed top-0 left-0 w-full z-50 shadow-md">
-      <div className="flex justify-between items-center px-4 py-3">
+      <div className="flex justify-between items-center px-4">
         {/* Logo */}
         <div className="flex items-center gap-4">
           <Image
             src="/imgs/cat.png"
             alt="Logo"
-            width={36}
-            height={36}
+            width={50}
+            height={50}
             className="rounded"
           />
           <h2 className="text-lg font-bold">
