@@ -47,11 +47,12 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
     const touchEndX = e.touches[0].clientX;
     const diff = touchStartX - touchEndX;
 
+    // Erkennung von Swipe-Gesten
     if (diff > 50) {
-      handleNext();
+      handleNext(); // Nach rechts wischen → nächstes Bild
       setTouchStartX(null);
     } else if (diff < -50) {
-      handlePrev();
+      handlePrev(); // Nach links wischen → vorheriges Bild
       setTouchStartX(null);
     }
   };
@@ -67,7 +68,6 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
     return () => document.removeEventListener("keydown", handleKeyPress);
   }, [isFullscreen, currentIndex]);
 
-  // Funktion zur Ermittlung, ob das Gerät mobil ist
   const isMobile = () => window.innerWidth <= 768;
 
   return (
@@ -91,10 +91,10 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
             {"<"}
           </button>
 
-          {/* Bildcontainer: sorgt für exakte Zentrierung */}
+          {/* Bildcontainer */}
           <div
-            className={`relative flex justify-center items-center w-[80vw] ${
-              isMobile() ? "h-auto w-full" : "h-[80vh]"
+            className={`relative flex justify-center items-center ${
+              isMobile() ? "w-full h-full" : "w-[80vw] h-[80vh]"
             }`}
           >
             <Image
@@ -102,12 +102,12 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
               alt={images[currentIndex].alt}
               fill
               className={`object-contain ${
-                isMobile() ? "w-full" : "w-full h-full scale-95"
+                isMobile() ? "w-full h-full" : "scale-95"
               } transition-all duration-300 ease-in-out`}
             />
           </div>
 
-          {/* Bildbeschreibung AM UNTEREN RAND FEST POSITIONIERT */}
+          {/* Bildbeschreibung */}
           <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-gray-900 bg-opacity-80 text-white text-lg px-5 py-3 rounded-lg shadow-lg max-w-[80%] text-center">
             {images[currentIndex].alt}
           </div>
