@@ -11,8 +11,8 @@ export default function Footer() {
 
       {/* Haupttext bleibt zentriert */}
       <p>
-        &copy; 2024 Dan&apos;s Travelblog. Alle Rechte vorbehalten. Folge mir
-        auf{" "}
+        &copy; {new Date().getFullYear()} Dan&apos;s Travelblog. Alle Rechte
+        vorbehalten. Folge mir auf{" "}
         <a
           href="https://www.instagram.com/milchreiss/"
           target="_blank"

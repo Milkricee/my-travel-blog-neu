@@ -45,7 +45,10 @@ main {
   font-size: 18px;
   line-height: 1.5;
   color: var(--foreground);
+  margin-left: 5%; /* Abstand links */
+  margin-right: 5%; /* Abstand rechts */
   /* Jetzt passt es sich an */
+  margin-top: 2rem; /* Abstand nach oben */
 }
 
 h2 {               

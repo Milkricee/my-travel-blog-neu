@@ -99,7 +99,7 @@ export default function Marokko() {
       {/* Pro und Contra */}
       <div
         id="pro-contra"
-        className="border border-gray-300 bg-white p-6 rounded-lg shadow-sm mb-8"
+        className="border border-gray-300 bg-white p-6 rounded-lg shadow-sm mb-8 ml-9 mr-9"
       >
         <h2 className="text-2xl font-bold text-center mt-12 mb-4">
           Gründe nach Marokko zu reisen
