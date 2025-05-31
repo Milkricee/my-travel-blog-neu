@@ -1,48 +1,15 @@
 "use client";
 
-import Head from "next/head"; // Importiere die Head-Komponente aus next/head
-
 export default function About() {
   return (
     <>
-      <Head>
-        <link rel="canonical" href="https://www.dan-travels.com/about" />
-      </Head>
-      <div
-        style={{ position: "relative", height: "100vh", overflow: "hidden" }}
-      >
+      <div className="about-container">
         {/* Parallax-Hintergrund */}
-        <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundImage: "url('/imgs/ich.jpg?updated=1')",
-            backgroundAttachment: "fixed",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            zIndex: -1, // Stelle sicher, dass es hinter dem Text liegt
-          }}
-        ></div>
+        <div className="parallax-background"></div>
 
         {/* Inhalt */}
-        <div
-          className="relative flex items-center justify-center h-full"
-          style={{
-            zIndex: 1, // Inhalt wird über dem Bild angezeigt
-          }}
-        >
-          <div
-            className="bg-black bg-opacity-50 text-white p-8 rounded-lg text-center max-w-2xl w-full mx-auto"
-            style={{
-              animation: "slideIn 1s ease-out",
-              maxHeight: "100vh", // Begrenzung für mobile Ansicht
-              overflowY: "auto", // Scrollbar nur für mobile Ansicht
-            }}
-          >
+        <div className="content-wrapper relative flex items-center justify-center h-full">
+          <div className="content-box bg-black bg-opacity-50 text-white p-8 rounded-lg text-center max-w-2xl w-full mx-auto">
             <h2 className="text-4xl font-bold mb-4">Über mich</h2>
             <p className="text-lg mb-4">
               Hallo! Ich bin <strong>Daniel</strong>, der Reiseenthusiast hinter
@@ -76,16 +43,45 @@ export default function About() {
           </div>
 
           {/* Footer */}
-          <footer
-            className="text-center text-gray-500 mt-4"
-            style={{
-              position: "fixed",
-              zIndex: 1,
-            }}
-          ></footer>
+          <footer className="footer-fixed text-center text-gray-500 mt-4"></footer>
         </div>
 
         <style jsx>{`
+          .about-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+          }
+
+          .parallax-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/imgs/ich.jpg?updated=1");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+          }
+
+          .content-wrapper {
+            z-index: 1;
+          }
+
+          .content-box {
+            animation: slideIn 1s ease-out;
+            max-height: 100vh;
+            overflow-y: auto;
+          }
+
+          .footer-fixed {
+            position: fixed;
+            z-index: 1;
+          }
+
           @keyframes slideIn {
             from {
               transform: translateY(100%);
@@ -98,22 +94,22 @@ export default function About() {
           }
 
           @media (max-width: 768px) {
-            div[style] {
-              height: 100vh; /* Volle Höhe für mobile Ansicht */
+            .about-container {
+              height: 100vh;
             }
 
-            .bg-black {
-              max-height: 70vh; /* Scrollbare Textbox für mobile Ansicht */
+            .content-box {
+              max-height: 70vh;
             }
           }
 
           @media (min-width: 769px) {
-            .bg-black {
-              max-height: none; /* Keine Begrenzung der Textbox in der Webansicht */
-              overflow-y: visible; /* Kein Scrollen innerhalb der Textbox */
+            .content-box {
+              max-height: none;
+              overflow-y: visible;
             }
 
-            footer {
+            .footer-fixed {
               position: absolute;
               bottom: 0;
               left: 50%;

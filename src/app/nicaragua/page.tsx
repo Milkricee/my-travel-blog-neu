@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import Head from "next/head"; // Importiere die Head-Komponente aus next/head
+
 import NicaraguaRoute from "../maps/nicaragua";
 import Accordion from "@/app/components/Akkordeon";
 import "./module.css";
@@ -19,13 +19,7 @@ const Comments = dynamic(() => import("../components/comments"), {
 export default function Nicaragua() {
   return (
     <>
-      <Head>
-        <link rel="canonical" href="https://www.dan-travels.com/nicaragua" />
-      </Head>
-      <div
-        className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8"
-        style={{ paddingTop: "var(--header-height)" }}
-      >
+      <div className="max-w-screen-lg mx-auto px-4 sm:px-6 md:px-8 nicaragua-padding-top">
         {/* Header-Bereich */}
         <NavbarWithButton
           links={[
@@ -41,7 +35,7 @@ export default function Nicaragua() {
           ]}
         />
 
-        <header className="text-center mb-8" style={{ color: "black" }}>
+        <header className="text-center mb-8 nicaragua-header">
           <h2 className="text-4xl font-bold mb-4">Nicaragua✨🏞️</h2>
           <p>
             Nicaragua war für mich eine echte Überraschung und hat mich mit
@@ -109,8 +103,8 @@ export default function Nicaragua() {
             <ul>
               <li>
                 🏙 <strong>Stadtverkehr:</strong> In und zwischen Städten fahren
-                meist alte Schulbusse („Chicken Buses“). Sehr günstig und sehr
-                local.
+                meist alte Schulbusse („Chicken Buses&quot;). Sehr günstig und
+                sehr local.
               </li>
               <li>
                 🚍 <strong>Langstreckenbusse:</strong> Für längere Strecken gibt

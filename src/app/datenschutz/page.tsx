@@ -1,25 +1,19 @@
-export const metadata = {
-  title: "Datenschutzerklärung - Dan's Travelblog",
-  description:
-    "Hier findest du alle Informationen zum Datenschutz auf Dan's Travelblog gemäß DSGVO.",
-};
-
 export default function DatenschutzPage() {
   return (
     <div className="max-w-3xl mx-auto py-10 px-6">
       <h2 className="text-3xl font-bold mb-6">Datenschutzerklärung</h2>
 
       <p className="mb-4">
-        Personenbezogene Daten (nachfolgend nur „Daten“ genannt) werden von uns
-        nur im Rahmen der Erforderlichkeit sowie zum Zwecke der Bereitstellung
-        eines funktionsfähigen und nutzerfreundlichen Internetauftritts,
-        inklusive seiner Inhalte und der dort angebotenen Leistungen,
-        verarbeitet.
+        Personenbezogene Daten (nachfolgend nur „Daten&quot; genannt) werden von
+        uns nur im Rahmen der Erforderlichkeit sowie zum Zwecke der
+        Bereitstellung eines funktionsfähigen und nutzerfreundlichen
+        Internetauftritts, inklusive seiner Inhalte und der dort angebotenen
+        Leistungen, verarbeitet.
       </p>
 
       <p className="mb-4">
         Gemäß Art. 4 Ziffer 1 der Verordnung (EU) 2016/679 (DSGVO) gilt als
-        „Verarbeitung“ jeder mit oder ohne Hilfe automatisierter Verfahren
+        „Verarbeitung&quot; jeder mit oder ohne Hilfe automatisierter Verfahren
         ausgeführte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit
         personenbezogenen Daten.
       </p>

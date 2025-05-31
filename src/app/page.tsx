@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Head from "next/head";
 
 export default function Home() {
   const totalImagesPC = 8; // Anzahl der Bilder im Querformat (PC)
@@ -59,45 +58,13 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <link rel="canonical" href="https://www.dan-travels.com/" />
-      </Head>
-      <div
-        className="background"
-        style={{
-          position: "relative",
-          height: "100vh",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          transition: "background-image 1s ease-in-out",
-        }}
-      >
+      <div className="background home-background">
         {/* Begrüßungstext mit halbtransparentem Hintergrund */}
-        <div
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-            color: "white",
-            padding: "2rem",
-            borderRadius: "10px",
-            textAlign: "center",
-            maxWidth: "90%", // Begrenzt die Breite auf kleineren Bildschirmen
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "2.5rem",
-              fontWeight: "bold",
-              marginBottom: "1rem",
-            }}
-          >
+        <div className="welcome-container">
+          <h2 className="welcome-title">
             Willkommen bei Dan&apos;s Travelblog!
           </h2>
-          <p style={{ fontSize: "1.2rem" }}>
+          <p className="welcome-text">
             Hier erzähle ich von meinen Trips und gebe Ratschläge und
             Empfehlungen zu Ländern, die ich bereist habe. Viel Spaß beim
             Erkunden!
@@ -111,18 +78,7 @@ export default function Home() {
               prev === 0 ? totalImages - 1 : prev - 1
             )
           }
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "10px",
-            transform: "translateY(-50%)",
-            backgroundColor: "rgba(0, 0, 0, 0.3)",
-            color: "white",
-            border: "none",
-            padding: "10px",
-            cursor: "pointer",
-            borderRadius: "50%",
-          }}
+          className="nav-button nav-button-left"
         >
           &#8249; {/* Pfeil nach links */}
         </button>
@@ -131,18 +87,7 @@ export default function Home() {
           onClick={() =>
             setCurrentImageIndex((prev) => (prev + 1) % totalImages)
           }
-          style={{
-            position: "absolute",
-            top: "50%",
-            right: "10px",
-            transform: "translateY(-50%)",
-            backgroundColor: "rgba(0, 0, 0, 0.3)",
-            color: "white",
-            border: "none",
-            padding: "10px",
-            cursor: "pointer",
-            borderRadius: "50%",
-          }}
+          className="nav-button nav-button-right"
         >
           &#8250; {/* Pfeil nach rechts */}
         </button>

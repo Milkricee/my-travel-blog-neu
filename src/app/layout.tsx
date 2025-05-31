@@ -56,6 +56,9 @@ export const metadata: Metadata = {
       },
     ],
   },
+  alternates: {
+    canonical: "https://dan-travels.com",
+  },
 };
 
 export default function RootLayout({
