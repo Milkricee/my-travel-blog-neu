@@ -90,8 +90,7 @@ export default function MobileHeader() {
       <div
         className={`fixed top-[60px] right-0 bg-gray-700 text-white shadow-lg rounded-l-xl transition-transform duration-1000 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-        style={{ width: "Auto", height: "Auto" }}
+        } mobile-header-menu`}
       >
         <nav className="p-6">
           <ul className="space-y-4">
@@ -141,7 +140,19 @@ export default function MobileHeader() {
               >
                 Asien
               </button>
-              {isDropdownOpen["Asien"] && <ul className="ml-4 space-y-2"></ul>}
+              {isDropdownOpen["Asien"] && (
+                <ul className="ml-4 space-y-2">
+                  <li>
+                    <Link
+                      href="/asien/philippinen"
+                      className="block hover:text-blue-400"
+                      onClick={closeMenuOnNavigate}
+                    >
+                      Philippinen
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
             <li className=" border-b border-white">
               <button
